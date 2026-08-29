@@ -1,0 +1,5 @@
+import type { Faculty } from '../types'
+export default function FacultyCard({ faculty }: { faculty: Faculty }) {
+  const initials = faculty.name.replace(/[^A-Z]/g, '').slice(-2)
+  return <article className="glass rounded-2xl p-4"><div className="flex gap-3"><div className="grid size-11 shrink-0 place-items-center rounded-full bg-gradient-to-br from-orange-400 to-rose-400 text-sm font-bold text-white">{initials}</div><div className="min-w-0 flex-1"><h3 className="font-semibold text-slate-800">{faculty.name}</h3><p className="mt-0.5 text-sm text-slate-500">{faculty.designation}</p></div></div><div className="mt-4 flex gap-2"><a href={`tel:${faculty.phone}`} aria-label={`Call ${faculty.name}`} className="flex h-11 flex-1 items-center justify-center rounded-xl bg-orange-50 text-sm font-semibold text-orange-600">Call</a><a href={`mailto:${faculty.email}`} aria-label={`Email ${faculty.name}`} className="flex h-11 flex-1 items-center justify-center rounded-xl bg-sky-50 text-sm font-semibold text-sky-700">Email</a></div></article>
+}
