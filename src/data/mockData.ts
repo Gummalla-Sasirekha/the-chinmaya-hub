@@ -2,10 +2,16 @@ import type { Announcement, Faculty, School } from '../types'
 
 export const schools: School[] = [
   { id: 'stem', name: 'Faculty of Science, Technology, Engineering and Management (STEM)' },
+  { id: 'business', name: 'School of Business and Economics' },
+  { id: 'education', name: 'School of Education, Governance, Culture & Social Systems' },
+  { id: 'kalayoga', name: 'School of Kalayoga' },
+  { id: 'languages', name: 'School of Linguistics & Literary Studies' },
   { id: 'philosophy', name: 'School of Philosophy, Psychology & Scientific Heritage' },
   { id: 'contemporary', name: 'School of Contemporary Knowledge Systems' },
   { id: 'education', name: 'School of Education, Governance, Culture and Social Systems' },
   { id: 'languages', name: 'School of Linguistics & Literary Studies' }
+  { id: 'vedic', name: 'School of Vedic Knowledge Systems' },
+  { id: 'physical-education', name: 'Department of Physical Education and Sports' }
 ]
 
 export const faculty: Faculty[] = [
@@ -13,7 +19,7 @@ export const faculty: Faculty[] = [
   { id: 'f2', schoolId: 'stem', name: 'Dr. Kavitha Rajan', phone: '+917337229854', email: 'kavitha.rajan@cvv.ac.in', designation: 'Associate Professor', roomNo: '206' },
   { id: 'f3', schoolId: 'philosophy', name: 'Dr. Ramesh Pattni', phone: '+917337229854', email: 'ramesh.pattni@cvv.ac.in', designation: 'Professor of Practice', roomNo: 'B-112' },
   { id: 'f4', schoolId: 'philosophy', name: 'Dr. K. Suresh', phone: '+917337229854', email: 'suresh.k@cvv.ac.in', designation: 'Associate Professor', roomNo: 'B-114' },
-  { id: 'f5', schoolId: 'contemporary', name: 'Dr. Renju Chandran', phone: '+917337229854', email: 'renju.chandran@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'C-301' },
+  { id: 'f5', schoolId: 'business', name: 'Dr. Renju Chandran', phone: '+917337229854', email: 'renju.chandran@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'C-301' },
   { id: 'f7', schoolId: 'education', name: 'Dr. Chandrasekharan Praveen', phone: '+917337229854', email: 'chandrasekharan.praveen@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'D-208' },
   { id: 'f6', schoolId: 'languages', name: 'Prof. Lakshmi Raman', phone: '+917337229854', email: 'lakshmi.r@cvv.ac.in', designation: 'Professor', roomNo: 'E-105' }
 ]
