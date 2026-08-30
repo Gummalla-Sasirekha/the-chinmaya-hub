@@ -9,13 +9,13 @@ export const schools: School[] = [
 ]
 
 export const faculty: Faculty[] = [
-  { id: 'f1', schoolId: 'stem', name: 'Dr. Praveen K M', phone: '+919961276492', email: 'praveen.km@cvv.ac.in', designation: 'Assistant Dean – Learning and Innovation | Associate Professor', roomNo: '204' },
-  { id: 'f2', schoolId: 'stem', name: 'Dr. Kavitha Rajan', phone: '+919811223344', email: 'kavitha.rajan@cvv.ac.in', designation: 'Associate Professor', roomNo: '206' },
-  { id: 'f3', schoolId: 'philosophy', name: 'Dr. Ramesh Pattni', phone: '+919700112233', email: 'ramesh.pattni@cvv.ac.in', designation: 'Professor of Practice', roomNo: 'B-112' },
-  { id: 'f4', schoolId: 'philosophy', name: 'Dr. K. Suresh', phone: '+919844556677', email: 'suresh.k@cvv.ac.in', designation: 'Associate Professor', roomNo: 'B-114' },
-  { id: 'f5', schoolId: 'contemporary', name: 'Dr. Renju Chandran', phone: '+919866778899', email: 'renju.chandran@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'C-301' },
-  { id: 'f7', schoolId: 'education', name: 'Dr. Chandrasekharan Praveen', phone: '+919866775511', email: 'chandrasekharan.praveen@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'D-208' },
-  { id: 'f6', schoolId: 'languages', name: 'Prof. Lakshmi Raman', phone: '+919811998877', email: 'lakshmi.r@cvv.ac.in', designation: 'Professor', roomNo: 'E-105' }
+  { id: 'f1', schoolId: 'stem', name: 'Dr. Praveen K M', phone: '+917337229854, email: 'praveen.km@cvv.ac.in', designation: 'Assistant Dean – Learning and Innovation | Associate Professor', roomNo: '204' },
+  { id: 'f2', schoolId: 'stem', name: 'Dr. Kavitha Rajan', phone: '+917337229854', email: 'kavitha.rajan@cvv.ac.in', designation: 'Associate Professor', roomNo: '206' },
+  { id: 'f3', schoolId: 'philosophy', name: 'Dr. Ramesh Pattni', phone: '+917337229854', email: 'ramesh.pattni@cvv.ac.in', designation: 'Professor of Practice', roomNo: 'B-112' },
+  { id: 'f4', schoolId: 'philosophy', name: 'Dr. K. Suresh', phone: '+917337229854', email: 'suresh.k@cvv.ac.in', designation: 'Associate Professor', roomNo: 'B-114' },
+  { id: 'f5', schoolId: 'contemporary', name: 'Dr. Renju Chandran', phone: '+917337229854', email: 'renju.chandran@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'C-301' },
+  { id: 'f7', schoolId: 'education', name: 'Dr. Chandrasekharan Praveen', phone: '+917337229854', email: 'chandrasekharan.praveen@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'D-208' },
+  { id: 'f6', schoolId: 'languages', name: 'Prof. Lakshmi Raman', phone: '+917337229854', email: 'lakshmi.r@cvv.ac.in', designation: 'Professor', roomNo: 'E-105' }
 ]
 
 export const announcements: Announcement[] = [
