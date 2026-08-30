@@ -19,9 +19,14 @@ export const faculty: Faculty[] = [
   { id: 'f5', schoolId: 'stem', name: 'Ms. Pradeeba V.', phone: '+919751994860', email: 'pradeeba.v@cvv.ac.in', designation: 'Assistant Professor', roomNo: '209' },
   { id: 'f6', schoolId: 'philosophy', name: 'Dr. Ramesh Pattni', phone: '+917337229854', email: 'ramesh.pattni@cvv.ac.in', designation: 'Professor of Practice', roomNo: 'B-112' },
   { id: 'f7', schoolId: 'philosophy', name: 'Dr. K. Suresh', phone: '+917337229854', email: 'suresh.k@cvv.ac.in', designation: 'Associate Professor', roomNo: 'B-114' },
-  { id: 'f8', schoolId: 'business', name: 'Dr. Renju Chandran', phone: '+917337229854', email: 'renju.chandran@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'C-301' },
-  { id: 'f9', schoolId: 'education', name: 'Dr. Chandrasekharan Praveen', phone: '+917337229854', email: 'chandrasekharan.praveen@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'D-208' },
-  { id: 'f10', schoolId: 'languages', name: 'Prof. Lakshmi Raman', phone: '+917337229854', email: 'lakshmi.r@cvv.ac.in', designation: 'Professor', roomNo: 'E-105' }
+  { id: 'f8', schoolId: 'business', name: 'Mr. Bharath K', phone: '+919445701744', email: 'bharath.k@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'C-301' },
+  { id: 'f9', schoolId: 'education', name: 'Dr. Pramod Dinakar', phone: '+919447792228', email: 'pramod.dinakar@cvv.ac.in', designation: 'Associate Professor | Head – School of Education, Governance, Culture and Social Systems | School of Education, Governance, Culture and Social Systems', roomNo: 'D-208' },
+  { id: 'f10', schoolId: 'languages', name: 'Prof. Lakshmi Raman', phone: '+917337229854', email: 'lakshmi.r@cvv.ac.in', designation: 'Professor', roomNo: 'E-105' },
+  { id: 'f11', schoolId: 'business', name: 'Dr. Abha Mohan', phone: '+919895238246', email: 'abha.mohan@cvv.ac.in', designation: 'Associate Professor | Associate Dean – UG & PG Programmes, Assistant Dean – Student Activity Engagement', roomNo: 'C-301' },
+  { id: 'f12', schoolId: 'business', name: 'Dr. Manjula R Iyer', phone: '+917337229854', email: 'manjula.iyer@cvv.ac.in', designation: 'Head – School of Business and Economics Studies | Professor', roomNo: 'C-301' },
+  { id: 'f13', schoolId: 'education', name: 'Dr. Bindusree A. R.', phone: '+919847135577', email: 'bindusree.ar@cvv.ac.in', designation: 'Associate Professor | Associate Dean – HASSM | School of Education, Governance, Culture and Social Systems', roomNo: 'C-301' },
+  { id: 'f14', schoolId: 'education', name: 'Dr. Bindu M. P.', phone: '+918547840746', email: 'bindu.mp@cvv.ac.in', designation: 'Associate Professor |  Assistant Dean – Community Engagement and Rural Development, Assistant Dean – Student Culture | HoS Education Governance Culture and Social System', roomNo: 'C-301' },
+  { id: 'f14', schoolId: 'education', name: 'Dr. Nikhitha Raju.', phone: '+919747275247', email: 'nikhitha.raju@cvv.ac.in', designation: 'Associate Professor', roomNo: 'C-301' }
 ]
 
 export const announcements: Announcement[] = [
