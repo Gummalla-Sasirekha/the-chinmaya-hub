@@ -9,7 +9,7 @@ export const schools: School[] = [
 ]
 
 export const faculty: Faculty[] = [
-  { id: 'f1', schoolId: 'stem', name: 'Dr. Praveen K M', phone: '+919876543210', email: 'praveen.km@cvv.ac.in', designation: 'Assistant Dean – Learning and Innovation | Associate Professor', roomNo: '204' },
+  { id: 'f1', schoolId: 'stem', name: 'Dr. Praveen K M', phone: '+919961276492', email: 'praveen.km@cvv.ac.in', designation: 'Assistant Dean – Learning and Innovation | Associate Professor', roomNo: '204' },
   { id: 'f2', schoolId: 'stem', name: 'Dr. Kavitha Rajan', phone: '+919811223344', email: 'kavitha.rajan@cvv.ac.in', designation: 'Associate Professor', roomNo: '206' },
   { id: 'f3', schoolId: 'philosophy', name: 'Dr. Ramesh Pattni', phone: '+919700112233', email: 'ramesh.pattni@cvv.ac.in', designation: 'Professor of Practice', roomNo: 'B-112' },
   { id: 'f4', schoolId: 'philosophy', name: 'Dr. K. Suresh', phone: '+919844556677', email: 'suresh.k@cvv.ac.in', designation: 'Associate Professor', roomNo: 'B-114' },
