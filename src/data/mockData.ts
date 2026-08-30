@@ -12,11 +12,11 @@ export const schools: School[] = [
 ]
 
 export const faculty: Faculty[] = [
-  { id: 'f1', schoolId: 'stem', name: 'Dr. Anand H. S.', phone: '+917337229854', email: 'associatedean.stem@cvv.ac.in', designation: 'Associate Dean — STEM | Head – Department of Artificial Intelligence and Emerging Technologies', roomNo: '201' },
+  { id: 'f1', schoolId: 'stem', name: 'Dr. Anand H. S.', phone: '+919567092300', email: 'associatedean.stem@cvv.ac.in', designation: 'Associate Dean — STEM | Head – Department of Artificial Intelligence and Emerging Technologies', roomNo: '201' },
   { id: 'f2', schoolId: 'stem', name: 'Dr. Praveen K M', phone: '+919876543210', email: 'praveen.km@cvv.ac.in', designation: 'Assistant Dean – Learning and Innovation | Associate Professor', roomNo: '204' },
-  { id: 'f3', schoolId: 'stem', name: 'Dr. Resmi N.G.', phone: '+917337229854', email: 'resmi.ng@cvv.ac.in', designation: 'Head – Department of Computer Science and Engineering | Senior Assistant Professor', roomNo: '203' },
-  { id: 'f4', schoolId: 'stem', name: 'Dr. Raisun Mathew', phone: '+917337229854', email: 'raisun.mathew@cvv.ac.in', designation: 'Assistant Dean – Doctoral Programmes | Assistant Professor | Associate Head of School, School of Linguistics and Literary Studies (LLS)', roomNo: '207' },
-  { id: 'f5', schoolId: 'stem', name: 'Ms. Pradeeba V.', phone: '+917337229854', email: 'pradeeba.v@cvv.ac.in', designation: 'Assistant Professor', roomNo: '209' },
+  { id: 'f3', schoolId: 'stem', name: 'Dr. Resmi N.G.', phone: '+919633291997', email: 'resmi.ng@cvv.ac.in', designation: 'Head – Department of Computer Science and Engineering | Senior Assistant Professor', roomNo: '203' },
+  { id: 'f4', schoolId: 'stem', name: 'Dr. Raisun Mathew', phone: '+919048101997', email: 'raisun.mathew@cvv.ac.in', designation: 'Assistant Dean – Doctoral Programmes | Assistant Professor | Associate Head of School, School of Linguistics and Literary Studies (LLS)', roomNo: '207' },
+  { id: 'f5', schoolId: 'stem', name: 'Ms. Pradeeba V.', phone: '+919751994860', email: 'pradeeba.v@cvv.ac.in', designation: 'Assistant Professor', roomNo: '209' },
   { id: 'f6', schoolId: 'philosophy', name: 'Dr. Ramesh Pattni', phone: '+917337229854', email: 'ramesh.pattni@cvv.ac.in', designation: 'Professor of Practice', roomNo: 'B-112' },
   { id: 'f7', schoolId: 'philosophy', name: 'Dr. K. Suresh', phone: '+917337229854', email: 'suresh.k@cvv.ac.in', designation: 'Associate Professor', roomNo: 'B-114' },
   { id: 'f8', schoolId: 'business', name: 'Dr. Renju Chandran', phone: '+917337229854', email: 'renju.chandran@cvv.ac.in', designation: 'Assistant Professor', roomNo: 'C-301' },
