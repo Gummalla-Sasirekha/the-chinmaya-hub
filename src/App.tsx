@@ -20,6 +20,6 @@ export default function App() {
   const selected = school ?? schools[0]; if (!selected) return null
   if (view === 'directory') return <FacultyDirectory school={selected} faculty={faculty} onBack={() => setView('dashboard')} onAnnouncements={() => setView('announcements')} onViewProfile={showProfile} />
   if (view === 'profile' && activeFaculty) return <FacultyProfile faculty={activeFaculty} timetable={timetable} onBack={() => setView('directory')} />
-  if (view === 'announcements') return <Announcements school={selected} annnouncements={announcements} onBack={() => setView('dashboard')} />
-  return <Dashboard school={selected} faculty={faculty} announcements={announcements} role={role} onDirectory={() => setView('directory')} onAnnnouncements={() => setView('announcements')} />
+  if (view === 'announcements') return <Announcements school={selected} announcements={announcements} onBack={() => setView('dashboard')} />
+  return <Dashboard school={selected} faculty={faculty} announcements={announcements} role={role} onDirectory={() => setView('directory')} onAnnouncements={() => setView('announcements')} />
 }
