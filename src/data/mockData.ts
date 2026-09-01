@@ -61,7 +61,7 @@ export const faculty: Faculty[] = [
   { id: 'f47', schoolId: 'stem', name: 'Mr. Alen T. Binu', phone: '+917558066581', email: 'alen.tbinu@cvv.ac.in', designation: 'Assistant Professor –  Faculty of STEM', roomNo: '347', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f48', schoolId: 'stem', name: 'Ms. Nikitha V', phone: '+918139071268', email: 'nikitha.v@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '348', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0' },
   { id: 'f49', schoolId: 'stem', name: 'Ms. Gayathri Ashok', phone: '+917012892169', email: 'gayathri.ashok@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '349', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
-  { id: 'f50', schoolId: 'stem', name: 'Dr. Rajendran', phone: '', email: 'rajendran.p@cvv.ac.in', designation: 'Associate Professor | Director, Accreditation and Quality Systems | Acting Registrar', roomNo: '350', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 }
+  { id: 'f50', schoolId: 'stem', name: 'Dr. Rajendran', phone: '+917337229854', email: 'rajendran.p@cvv.ac.in', designation: 'Associate Professor | Director, Accreditation and Quality Systems | Acting Registrar', roomNo: '350', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 }
 ];
 
 export const timetable: TimetableEntry[] = [
