@@ -204,7 +204,147 @@ export const timetable: TimetableEntry[] = [
   { id: 'tt88', facultyId: 'f48', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Signals and Systems', class: 'B.Tech ECE Year II', roomNo: 'A314' },
   { id: 'tt89', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'B.Tech ECE Year II', roomNo: 'A314' },
   { id: 'tt90', facultyId: 'f32', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt91', facultyId: 'f6', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'B.Tech ECE Year II', roomNo: 'A314' }
+  { id: 'tt91', facultyId: 'f6', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'B.Tech ECE Year II', roomNo: 'A314' },
+
+
+  // =========================================================
+  // B.Tech CSE - DATA SCIENCE - YEAR III
+  // Room: A404
+  // =========================================================
+
+  { id: 'tt92', facultyId: 'f37', day: 'Mon', startTime: '09:00', endTime: '11:00', subject: 'Computer Networks Lab', class: 'B.Tech CSE Data Science Year III', roomNo: 'A101' },
+  { id: 'tt93', facultyId: 'f37', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks Lab', class: 'B.Tech CSE Data Science Year III', roomNo: 'A101' },
+
+  { id: 'tt94', facultyId: 'f25', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+  { id: 'tt95', facultyId: 'f43', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+  { id: 'tt96', facultyId: 'f25', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+  { id: 'tt97', facultyId: 'f43', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+
+  { id: 'tt98', facultyId: 'f43', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+  { id: 'tt99', facultyId: 'f25', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+
+  { id: 'tt100', facultyId: 'f43', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+  { id: 'tt101', facultyId: 'f37', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+  { id: 'tt102', facultyId: 'f25', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+  { id: 'tt103', facultyId: 'f43', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+
+  { id: 'tt104', facultyId: 'f37', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+  { id: 'tt105', facultyId: 'f37', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
+
+  // =========================================================
+  // B.Tech CSE - AIML 2 - YEAR III
+  // Room: A402
+  // =========================================================
+
+  { id: 'tt106', facultyId: 'f38', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt107', facultyId: 'f33', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt108', facultyId: 'f10', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+
+  { id: 'tt109', facultyId: 'f38', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt110', facultyId: 'f45', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt111', facultyId: 'f24', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt112', facultyId: 'f33', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt113', facultyId: 'f10', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt114', facultyId: 'f45', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+
+  { id: 'tt115', facultyId: 'f38', day: 'Wed', startTime: '09:00', endTime: '12:10', subject: 'Computer Networks Lab', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A101' },
+
+  { id: 'tt116', facultyId: 'f33', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt117', facultyId: 'f24', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt118', facultyId: 'f33', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt119', facultyId: 'f10', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+
+  { id: 'tt120', facultyId: 'f45', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt121', facultyId: 'f38', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt122', facultyId: 'f24', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+  { id: 'tt123', facultyId: 'f10', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML 2 Year III', roomNo: 'A402' },
+
+  // =========================================================
+  // B.Tech CSE - AIML 1 - YEAR III
+  // Room: A316
+  // =========================================================
+
+  { id: 'tt124', facultyId: 'f42', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt125', facultyId: 'f24', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt126', facultyId: 'f42', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt127', facultyId: 'f10', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt128', facultyId: 'f38', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+
+  { id: 'tt129', facultyId: 'f10', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt130', facultyId: 'f38', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt131', facultyId: 'f38', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt132', facultyId: 'f5', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+
+  { id: 'tt133', facultyId: 'f5', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt134', facultyId: 'f24', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt135', facultyId: 'f42', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+
+  { id: 'tt136', facultyId: 'f24', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt137', facultyId: 'f38', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt138', facultyId: 'f38', day: 'Thu', startTime: '14:00', endTime: '17:00', subject: 'Computer Networks Lab', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A101' },
+
+  { id: 'tt139', facultyId: 'f24', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt140', facultyId: 'f42', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt141', facultyId: 'f5', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+  { id: 'tt142', facultyId: 'f10', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML 1 Year III', roomNo: 'A316' },
+
+  // =========================================================
+  // B.Tech CSE - CYBER SECURITY - YEAR III
+  // Room: A410
+  // =========================================================
+
+  { id: 'tt143', facultyId: 'f43', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+  { id: 'tt144', facultyId: 'f25', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+  { id: 'tt145', facultyId: 'f9', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Computer Networks', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+
+  { id: 'tt146', facultyId: 'f25', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+  { id: 'tt147', facultyId: 'f25', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+  { id: 'tt148', facultyId: 'f43', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+
+  { id: 'tt149', facultyId: 'f9', day: 'Wed', startTime: '09:00', endTime: '12:10', subject: 'Computer Networks Lab', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A301' },
+  { id: 'tt150', facultyId: 'f43', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+
+  { id: 'tt151', facultyId: 'f25', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+  { id: 'tt152', facultyId: 'f9', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+
+  { id: 'tt153', facultyId: 'f43', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+  { id: 'tt154', facultyId: 'f25', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
+
+  // =========================================================
+  // B.Tech ECE - YEAR III
+  // Room: A513
+  // =========================================================
+
+  { id: 'tt155', facultyId: 'f23', day: 'Mon', startTime: '09:00', endTime: '11:00', subject: 'Digital Signal Processing Lab', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt156', facultyId: 'f48', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Control Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt157', facultyId: 'f24', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Embedded Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt158', facultyId: 'f23', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Digital Signal Processing', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt159', facultyId: 'f48', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Control Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+
+  { id: 'tt160', facultyId: 'f23', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Digital Signal Processing', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt161', facultyId: 'f23', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Electromagnetic Waves and Antenna Propagation', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt162', facultyId: 'f18', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Professional Ethics', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt163', facultyId: 'f48', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Control Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt164', facultyId: 'f24', day: 'Tue', startTime: '14:00', endTime: '16:00', subject: 'Embedded Systems Lab', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+
+  { id: 'tt165', facultyId: 'f24', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Information Theory and Coding', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt166', facultyId: 'f23', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Digital Signal Processing', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt167', facultyId: 'f24', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Information Theory and Coding', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt168', facultyId: 'f18', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Professional Ethics', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+
+  { id: 'tt169', facultyId: 'f23', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Digital Signal Processing', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt170', facultyId: 'f24', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Embedded Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt171', facultyId: 'f23', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Electromagnetic Waves and Antenna Propagation', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt172', facultyId: 'f7', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Entrepreneurship', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt173', facultyId: 'f23', day: 'Thu', startTime: '14:00', endTime: '16:00', subject: 'Electromagnetic Waves and Antenna Propagation Lab', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+
+  { id: 'tt174', facultyId: 'f23', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Electromagnetic Waves and Antenna Propagation', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt175', facultyId: 'f7', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Entrepreneurship', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt176', facultyId: 'f24', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Information Theory and Coding', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt177', facultyId: 'f24', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Embedded Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt178', facultyId: 'f24', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Embedded Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
+  { id: 'tt179', facultyId: 'f7', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Entrepreneurship', class: 'B.Tech ECE Year III', roomNo: 'A513' }
+
 ]
 
 export const announcements: Announcement[] = [
