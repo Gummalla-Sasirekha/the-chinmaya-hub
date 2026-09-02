@@ -19,7 +19,6 @@ import Dashboard from './components/Dashboard'
 import FacultyDirectory from './components/FacultyDirectory'
 import Announcements from './components/Announcements'
 import FacultyProfile from './components/FacultyProfile'
-import AdminDashboard from './components/AdminDashboard'
 
 type View =
   | 'login'
