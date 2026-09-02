@@ -432,7 +432,157 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt257', facultyId: 'f23', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Electromagnetic Waves and Antenna Propagation', class: 'ECE Year III', roomNo: 'A513' },
 { id: 'tt258', facultyId: 'f24', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Information Theory and Coding', class: 'ECE Year III', roomNo: 'A513' },
 { id: 'tt259', facultyId: 'f24', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Embedded Systems', class: 'ECE Year III', roomNo: 'A513' },
-{ id: 'tt260', facultyId: 'f7', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Entrepreneurship', class: 'ECE Year III', roomNo: 'A513' }
+{ id: 'tt260', facultyId: 'f7', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Entrepreneurship', class: 'ECE Year III', roomNo: 'A513' },
+
+// =========================================================
+// BCA 1 Year III
+// Room: A416
+// =========================================================
+
+{ id: 'tt273', day: 'Monday', time: '09:00-10:00', subject: 'NLP', facultyId: 'f11', roomNo: 'A416' },
+{ id: 'tt274', day: 'Monday', time: '10:00-11:00', subject: 'CV', facultyId: 'UNKNOWN', roomNo: 'A416' },
+{ id: 'tt275', day: 'Monday', time: '11:10-12:10', subject: 'CN', facultyId: 'f35', roomNo: 'A416' },
+{ id: 'tt276', day: 'Monday', time: '12:10-13:10', subject: 'KOTLIN', facultyId: 'f41', roomNo: 'A416' },
+{ id: 'tt277', day: 'Monday', time: '14:00-15:00', subject: 'WT LAB', facultyId: 'f34', roomNo: 'A416' },
+{ id: 'tt278', day: 'Monday', time: '15:00-16:00', subject: 'WT LAB', facultyId: 'f34', roomNo: 'A416' },
+
+{ id: 'tt279', day: 'Tuesday', time: '09:00-10:00', subject: 'CV', facultyId: 'UNKNOWN', roomNo: 'A416' },
+{ id: 'tt280', day: 'Tuesday', time: '10:00-11:00', subject: 'NLP', facultyId: 'f11', roomNo: 'A416' },
+{ id: 'tt281', day: 'Tuesday', time: '11:10-12:10', subject: 'KOTLIN LAB', facultyId: 'f41', roomNo: 'A416' },
+{ id: 'tt282', day: 'Tuesday', time: '12:10-13:10', subject: 'KOTLIN LAB', facultyId: 'f41', roomNo: 'A416' },
+{ id: 'tt283', day: 'Tuesday', time: '14:00-15:00', subject: 'WT LAB', facultyId: 'f34', roomNo: 'A416' },
+{ id: 'tt284', day: 'Tuesday', time: '15:00-16:00', subject: 'WT LAB', facultyId: 'f34', roomNo: 'A416' },
+
+{ id: 'tt285', day: 'Wednesday', time: '09:00-10:00', subject: 'WT', facultyId: 'f34', roomNo: 'A416' },
+{ id: 'tt286', day: 'Wednesday', time: '10:00-11:00', subject: 'CN', facultyId: 'f35', roomNo: 'A416' },
+{ id: 'tt287', day: 'Wednesday', time: '11:10-12:10', subject: 'CV', facultyId: 'UNKNOWN', roomNo: 'A416' },
+{ id: 'tt288', day: 'Wednesday', time: '12:10-13:10', subject: 'KOTLIN', facultyId: 'f41', roomNo: 'A416' },
+
+{ id: 'tt289', day: 'Thursday', time: '09:00-10:00', subject: 'WT', facultyId: 'f34', roomNo: 'A416' },
+{ id: 'tt290', day: 'Thursday', time: '10:00-11:00', subject: 'CN', facultyId: 'f35', roomNo: 'A416' },
+{ id: 'tt291', day: 'Thursday', time: '11:10-12:10', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f34', roomNo: 'A416' },
+{ id: 'tt292', day: 'Thursday', time: '12:10-13:10', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f38', roomNo: 'A416' },
+{ id: 'tt293', day: 'Thursday', time: '14:00-15:00', subject: 'KOTLIN', facultyId: 'f41', roomNo: 'A416' },
+{ id: 'tt294', day: 'Thursday', time: '15:00-16:00', subject: 'CN', facultyId: 'f35', roomNo: 'A416' },
+
+{ id: 'tt295', day: 'Friday', time: '09:00-10:00', subject: 'WT', facultyId: 'f34', roomNo: 'A416' },
+{ id: 'tt296', day: 'Friday', time: '10:00-11:00', subject: 'CV', facultyId: 'UNKNOWN', roomNo: 'A416' },
+{ id: 'tt297', day: 'Friday', time: '11:10-12:10', subject: 'KOTLIN', facultyId: 'f41', roomNo: 'A416' },
+{ id: 'tt298', day: 'Friday', time: '12:10-13:10', subject: 'NLP', facultyId: 'f11', roomNo: 'A416' },
+{ id: 'tt299', day: 'Friday', time: '14:00-15:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f34', roomNo: 'A416' },
+{ id: 'tt300', day: 'Friday', time: '15:00-16:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f38', roomNo: 'A416' },
+
+// =========================================================
+// BCA 2 Year III
+// Room: A425
+// =========================================================
+
+{ id: 'tt301', day: 'Monday', time: '09:00-10:00', subject: 'CV', facultyId: 'f21', roomNo: 'A425' },
+{ id: 'tt302', day: 'Monday', time: '10:00-11:00', subject: 'KOTLIN', facultyId: 'f41', roomNo: 'A425' },
+{ id: 'tt303', day: 'Monday', time: '11:10-12:10', subject: 'NLP', facultyId: 'f11', roomNo: 'A425' },
+{ id: 'tt304', day: 'Monday', time: '12:10-13:10', subject: 'WT', facultyId: 'f34', roomNo: 'A425' },
+{ id: 'tt305', day: 'Monday', time: '14:00-15:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'UNKNOWN', roomNo: 'A425' },
+{ id: 'tt306', day: 'Monday', time: '15:00-16:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'UNKNOWN', roomNo: 'A425' },
+
+{ id: 'tt307', day: 'Tuesday', time: '09:00-10:00', subject: 'KOTLIN', facultyId: 'f41', roomNo: 'A425' },
+{ id: 'tt308', day: 'Tuesday', time: '10:00-11:00', subject: 'CV', facultyId: 'f21', roomNo: 'A425' },
+{ id: 'tt309', day: 'Tuesday', time: '11:10-12:10', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'UNKNOWN', roomNo: 'A425' },
+{ id: 'tt310', day: 'Tuesday', time: '12:10-13:10', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'UNKNOWN', roomNo: 'A425' },
+{ id: 'tt311', day: 'Tuesday', time: '14:00-15:00', subject: 'CN', facultyId: 'f35', roomNo: 'A425' },
+{ id: 'tt312', day: 'Tuesday', time: '15:00-16:00', subject: 'NLP', facultyId: 'f11', roomNo: 'A425' },
+
+{ id: 'tt313', day: 'Wednesday', time: '09:00-10:00', subject: 'CV', facultyId: 'f21', roomNo: 'A425' },
+{ id: 'tt314', day: 'Wednesday', time: '10:00-11:00', subject: 'KOTLIN', facultyId: 'f41', roomNo: 'A425' },
+{ id: 'tt315', day: 'Wednesday', time: '11:10-12:10', subject: 'CN', facultyId: 'f35', roomNo: 'A425' },
+{ id: 'tt316', day: 'Wednesday', time: '12:10-13:10', subject: 'WT', facultyId: 'f34', roomNo: 'A425' },
+
+{ id: 'tt317', day: 'Thursday', time: '09:00-10:00', subject: 'KOTLIN', facultyId: 'f41', roomNo: 'A425' },
+{ id: 'tt318', day: 'Thursday', time: '10:00-11:00', subject: 'NLP', facultyId: 'f11', roomNo: 'A425' },
+{ id: 'tt319', day: 'Thursday', time: '11:10-12:10', subject: 'KOTLIN LAB', facultyId: 'f41', roomNo: 'A301' },
+{ id: 'tt320', day: 'Thursday', time: '12:10-13:10', subject: 'KOTLIN LAB', facultyId: 'f41', roomNo: 'A301' },
+{ id: 'tt321', day: 'Thursday', time: '14:00-15:00', subject: 'WT LAB', facultyId: 'f34', roomNo: 'A201' },
+{ id: 'tt322', day: 'Thursday', time: '15:00-16:00', subject: 'WT LAB', facultyId: 'f34', roomNo: 'A201' },
+
+{ id: 'tt323', day: 'Friday', time: '09:00-10:00', subject: 'CV', facultyId: 'f21', roomNo: 'A425' },
+{ id: 'tt324', day: 'Friday', time: '10:00-11:00', subject: 'CN', facultyId: 'f35', roomNo: 'A425' },
+{ id: 'tt325', day: 'Friday', time: '14:00-15:00', subject: 'CN', facultyId: 'f35', roomNo: 'A425' },
+{ id: 'tt326', day: 'Friday', time: '15:00-16:00', subject: 'WT', facultyId: 'f34', roomNo: 'A425' },
+
+// =========================================================
+// BCA 3 Year III
+// Room: A427
+// =========================================================
+
+{ id: 'tt327', day: 'Monday', time: '09:00-10:00', subject: 'CN', facultyId: 'f40', roomNo: 'A427' },
+{ id: 'tt328', day: 'Monday', time: '10:00-11:00', subject: 'MFS', facultyId: 'f54', roomNo: 'A427' },
+{ id: 'tt329', day: 'Monday', time: '11:10-12:10', subject: 'WT LAB', facultyId: 'f46', roomNo: 'A201' },
+{ id: 'tt330', day: 'Monday', time: '12:10-13:10', subject: 'WT LAB', facultyId: 'f46', roomNo: 'A201' },
+{ id: 'tt331', day: 'Monday', time: '14:00-15:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f58', roomNo: 'A427' },
+{ id: 'tt332', day: 'Monday', time: '15:00-16:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f58', roomNo: 'A427' },
+
+{ id: 'tt333', day: 'Tuesday', time: '09:00-10:00', subject: 'WT', facultyId: 'f46', roomNo: 'A427' },
+{ id: 'tt334', day: 'Tuesday', time: '10:00-11:00', subject: 'CN', facultyId: 'f40', roomNo: 'A427' },
+{ id: 'tt335', day: 'Tuesday', time: '11:10-12:10', subject: 'BC&CRYPTO', facultyId: 'f22', roomNo: 'A427' },
+{ id: 'tt336', day: 'Tuesday', time: '12:10-13:10', subject: 'MFS', facultyId: 'f54', roomNo: 'A427' },
+{ id: 'tt337', day: 'Tuesday', time: '14:00-15:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f58', roomNo: 'A427' },
+{ id: 'tt338', day: 'Tuesday', time: '15:00-16:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f58', roomNo: 'A427' },
+
+{ id: 'tt339', day: 'Wednesday', time: '09:00-10:00', subject: 'KOTLIN', facultyId: 'f47', roomNo: 'A427' },
+{ id: 'tt340', day: 'Wednesday', time: '10:00-11:00', subject: 'MFS', facultyId: 'f54', roomNo: 'A427' },
+{ id: 'tt341', day: 'Wednesday', time: '11:10-12:10', subject: 'WT LAB', facultyId: 'f46', roomNo: 'A201' },
+{ id: 'tt342', day: 'Wednesday', time: '12:10-13:10', subject: 'WT LAB', facultyId: 'f46', roomNo: 'A201' },
+
+{ id: 'tt343', day: 'Thursday', time: '09:00-10:00', subject: 'WT', facultyId: 'f46', roomNo: 'A427' },
+{ id: 'tt344', day: 'Thursday', time: '10:00-11:00', subject: 'BC&CRYPTO', facultyId: 'f22', roomNo: 'A427' },
+{ id: 'tt345', day: 'Thursday', time: '11:10-12:10', subject: 'CN', facultyId: 'f40', roomNo: 'A427' },
+{ id: 'tt346', day: 'Thursday', time: '12:10-13:10', subject: 'KOTLIN', facultyId: 'f47', roomNo: 'A427' },
+{ id: 'tt347', day: 'Thursday', time: '14:00-15:00', subject: 'BC&CRYPTO', facultyId: 'f22', roomNo: 'A427' },
+{ id: 'tt348', day: 'Thursday', time: '15:00-16:00', subject: 'KOTLIN', facultyId: 'f47', roomNo: 'A427' },
+
+{ id: 'tt349', day: 'Friday', time: '09:00-10:00', subject: 'KOTLIN', facultyId: 'f47', roomNo: 'A427' },
+{ id: 'tt350', day: 'Friday', time: '10:00-11:00', subject: 'CN', facultyId: 'f40', roomNo: 'A427' },
+{ id: 'tt351', day: 'Friday', time: '11:10-12:10', subject: 'KOTLIN LAB', facultyId: 'f47', roomNo: 'A301' },
+{ id: 'tt352', day: 'Friday', time: '12:10-13:10', subject: 'KOTLIN LAB', facultyId: 'f47', roomNo: 'A301' },
+{ id: 'tt353', day: 'Friday', time: '14:00-15:00', subject: 'WT', facultyId: 'f46', roomNo: 'A427' },
+{ id: 'tt354', day: 'Friday', time: '15:00-16:00', subject: 'MFS', facultyId: 'f54', roomNo: 'A427' },
+
+// =========================================================
+// BCA 4 Year III
+// Room: A502
+// =========================================================
+
+{ id: 'tt355', day: 'Monday', time: '09:00-10:00', subject: 'WT', facultyId: 'f46', roomNo: 'A502' },
+{ id: 'tt356', day: 'Monday', time: '10:00-11:00', subject: 'KOTLIN', facultyId: 'f47', roomNo: 'A502' },
+{ id: 'tt357', day: 'Monday', time: '11:10-12:10', subject: 'CV', facultyId: 'f21', roomNo: 'A502' },
+{ id: 'tt358', day: 'Monday', time: '12:10-13:10', subject: 'CN', facultyId: 'f40', roomNo: 'A502' },
+{ id: 'tt359', day: 'Monday', time: '14:00-15:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f42', roomNo: 'A502' },
+{ id: 'tt360', day: 'Monday', time: '15:00-16:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f5', roomNo: 'A502' },
+
+{ id: 'tt361', day: 'Tuesday', time: '09:00-10:00', subject: 'CN', facultyId: 'f40', roomNo: 'A502' },
+{ id: 'tt362', day: 'Tuesday', time: '10:00-11:00', subject: 'KOTLIN', facultyId: 'f47', roomNo: 'A502' },
+{ id: 'tt363', day: 'Tuesday', time: '11:10-12:10', subject: 'WT LAB', facultyId: 'f46', roomNo: 'A502' },
+{ id: 'tt364', day: 'Tuesday', time: '12:10-13:10', subject: 'WT LAB', facultyId: 'f46', roomNo: 'A502' },
+{ id: 'tt365', day: 'Tuesday', time: '14:00-15:00', subject: 'KOTLIN LAB', facultyId: 'f47', roomNo: 'A502' },
+{ id: 'tt366', day: 'Tuesday', time: '15:00-16:00', subject: 'KOTLIN LAB', facultyId: 'f47', roomNo: 'A502' },
+
+{ id: 'tt367', day: 'Wednesday', time: '09:00-10:00', subject: 'WT', facultyId: 'f46', roomNo: 'A502' },
+{ id: 'tt368', day: 'Wednesday', time: '10:00-11:00', subject: 'KOTLIN', facultyId: 'f47', roomNo: 'A502' },
+{ id: 'tt369', day: 'Wednesday', time: '11:10-12:10', subject: 'CV', facultyId: 'f21', roomNo: 'A502' },
+{ id: 'tt370', day: 'Wednesday', time: '12:10-13:10', subject: 'NLP', facultyId: 'f11', roomNo: 'A502' },
+
+{ id: 'tt371', day: 'Thursday', time: '09:00-10:00', subject: 'KOTLIN', facultyId: 'f47', roomNo: 'A502' },
+{ id: 'tt372', day: 'Thursday', time: '10:00-11:00', subject: 'CV', facultyId: 'f21', roomNo: 'A502' },
+{ id: 'tt373', day: 'Thursday', time: '11:10-12:10', subject: 'WT LAB', facultyId: 'f46', roomNo: 'A502' },
+{ id: 'tt374', day: 'Thursday', time: '12:10-13:10', subject: 'WT LAB', facultyId: 'f46', roomNo: 'A502' },
+{ id: 'tt375', day: 'Thursday', time: '14:00-15:00', subject: 'NLP', facultyId: 'f11', roomNo: 'A502' },
+{ id: 'tt376', day: 'Thursday', time: '15:00-16:00', subject: 'CN', facultyId: 'f40', roomNo: 'A502' },
+
+{ id: 'tt377', day: 'Friday', time: '09:00-10:00', subject: 'WT', facultyId: 'f46', roomNo: 'A502' },
+{ id: 'tt378', day: 'Friday', time: '10:00-11:00', subject: 'NLP', facultyId: 'f11', roomNo: 'A502' },
+{ id: 'tt379', day: 'Friday', time: '11:10-12:10', subject: 'CN', facultyId: 'f40', roomNo: 'A502' },
+{ id: 'tt380', day: 'Friday', time: '12:10-13:10', subject: 'CV', facultyId: 'f21', roomNo: 'A502' },
+{ id: 'tt381', day: 'Friday', time: '14:00-15:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f42', roomNo: 'A502' },
+{ id: 'tt382', day: 'Friday', time: '15:00-16:00', subject: 'INTERNSHIP/CAPSTONE PROJECT', facultyId: 'f5', roomNo: 'A502' }
 
 ]
 
