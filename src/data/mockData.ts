@@ -61,7 +61,16 @@ export const faculty: Faculty[] = [
   { id: 'f47', schoolId: 'stem', name: 'Mr. Alen T. Binu', phone: '+917558066581', email: 'alen.tbinu@cvv.ac.in', designation: 'Assistant Professor –  Faculty of STEM', roomNo: '347', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f48', schoolId: 'stem', name: 'Ms. Nikitha V', phone: '+918139071268', email: 'nikitha.v@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '348', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f49', schoolId: 'stem', name: 'Ms. Gayathri Ashok', phone: '+917012892169', email: 'gayathri.ashok@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '349', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
-  { id: 'f50', schoolId: 'stem', name: 'Dr. Rajendran', phone: '+917337229854', email: 'rajendran.p@cvv.ac.in', designation: 'Associate Professor | Director, Accreditation and Quality Systems | Acting Registrar', roomNo: '350', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 }
+  { id: 'f50', schoolId: 'stem', name: 'Dr. Mohini Billore', phone: '+917337229854', email: 'mohini.b@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '350', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f51', schoolId: 'stem', name: 'Mr. Narayan Baban Shete', phone: '+918928786552', email: 'narayan.shete@cvv.ac.in', designation: 'Assistant Professor', roomNo: '350', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f52', schoolId: 'stem', name: 'Dr. Dinta Muralidharan', phone: '+919167670629', email: 'dinta.muralidharan@cvv.ac.in', designation: 'Assistant Professor', roomNo: '350', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f53', schoolId: 'stem', name: 'Ms. Suparna', phone: '+917736958422', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM' , roomNo: '350', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f54', schoolId: 'stem', name: 'Ms. Aparna', phone: '+919048876668', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM' , roomNo: '350', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f55', schoolId: 'stem', name: 'Dr. Haritha H', phone: '+919961932229', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '351', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f56', schoolId: 'stem', name: 'Ms. Jayalakshmi', phone: '+916235494493', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '352', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f57', schoolId: 'stem', name: 'Ms. Devika', phone: '+917337229854', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '353', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f58', schoolId: 'stem', name: 'Ms. Anupriya', phone: '+919400308747', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '354', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f59', schoolId: 'stem', name: 'Prof. Vivek Deshpande', phone: '+917337229854', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Professor – Faculty of STEM', roomNo: '355', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
 ];
 
 export const timetable: TimetableEntry[] = [
@@ -207,6 +216,51 @@ export const timetable: TimetableEntry[] = [
   { id: 'tt91', facultyId: 'f6', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'B.Tech ECE Year II', roomNo: 'A314' },
 
 
+  // =========================================================
+  // B.Tech CSE - 1 - Year III
+  // Room: A302
+  // =========================================================
+  { id: 'cse1-mon-1a', facultyId: 'f56', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning', class: 'B.Tech CSE 1' },
+  { id: 'cse1-mon-1b', facultyId: 'f35', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Data Compression', class: 'B.Tech CSE 1' },
+  { id: 'cse1-mon-1c', facultyId: 'f53', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Data Science', class: 'B.Tech CSE 1' },
+  { id: 'cse1-mon-2', facultyId: 'f5', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-mon-3a', facultyId: 'f55', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'DVA', class: 'B.Tech CSE 1' },
+  { id: 'cse1-mon-3b', facultyId: 'f53', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Steganography & Digital Watermarking', class: 'B.Tech CSE 1' },
+  { id: 'cse1-mon-3c', facultyId: 'f22', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'DVA', class: 'B.Tech CSE 1' },
+  { id: 'cse1-mon-4', facultyId: 'f49', day: 'Mon', startTime: '13:10', endTime: '16:00', subject: 'Computer Networks Lab', class: 'B.Tech CSE 1', roomNo: '302' },
+
+  { id: 'cse1-tue-1a', facultyId: 'f55', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'DVA', class: 'B.Tech CSE 1' },
+  { id: 'cse1-tue-1b', facultyId: 'f53', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Steganography & Digital Watermarking', class: 'B.Tech CSE 1' },
+  { id: 'cse1-tue-1c', facultyId: 'f22', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'DVA', class: 'B.Tech CSE 1' },
+  { id: 'cse1-tue-2', facultyId: 'f42', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Design & Analysis of Algorithms', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-tue-3a', facultyId: 'f56', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning', class: 'B.Tech CSE 1' },
+  { id: 'cse1-tue-3b', facultyId: 'f35', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Data Compression', class: 'B.Tech CSE 1' },
+  { id: 'cse1-tue-3c', facultyId: 'f53', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'B.Tech CSE 1' },
+  { id: 'cse1-tue-4', facultyId: 'f44', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Software Engineering', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-tue-5', facultyId: 'f16', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Constitution of India', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-tue-6', facultyId: 'f44', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Software Engineering', class: 'B.Tech CSE 1', roomNo: '302' },
+
+  { id: 'cse1-wed-1', facultyId: 'f42', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Design & Analysis of Algorithms', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-wed-2', facultyId: 'f5', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-wed-3', facultyId: 'f49', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-wed-4', facultyId: 'f49', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Computer Networks', class: 'B.Tech CSE 1', roomNo: '302' },
+
+  { id: 'cse1-thu-1', facultyId: 'f44', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Software Engineering', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-thu-2', facultyId: 'f42', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Design & Analysis of Algorithms', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-thu-3', facultyId: 'f5', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-thu-4a', facultyId: 'f56', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Deep Learning', class: 'B.Tech CSE 1' },
+  { id: 'cse1-thu-4b', facultyId: 'f35', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Data Compression', class: 'B.Tech CSE 1' },
+  { id: 'cse1-thu-4c', facultyId: 'f53', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'B.Tech CSE 1' },
+  { id: 'cse1-thu-5', facultyId: 'f42', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Design & Analysis of Algorithms', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-thu-6', facultyId: 'f16', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Constitution of India', class: 'B.Tech CSE 1', roomNo: '302' },
+
+  { id: 'cse1-fri-1', facultyId: 'f49', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-fri-2a', facultyId: 'f55', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'DVA', class: 'B.Tech CSE 1' },
+  { id: 'cse1-fri-2b', facultyId: 'f53', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Steganography & Digital Watermarking', class: 'B.Tech CSE 1' },
+  { id: 'cse1-fri-2c', facultyId: 'f22', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'DVA', class: 'B.Tech CSE 1' },
+  { id: 'cse1-fri-3', facultyId: 'f16', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Constitution of India', class: 'B.Tech CSE 1', roomNo: '302' },
+  { id: 'cse1-fri-4', facultyId: 'f5', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'B.Tech CSE 1', roomNo: '302' },
+  
   // =========================================================
   // B.Tech CSE - DATA SCIENCE - YEAR III
   // Room: A404
