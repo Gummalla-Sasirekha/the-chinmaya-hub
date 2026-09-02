@@ -13,7 +13,7 @@ export type Faculty = {
   dutiesDone: number
   dutiesSwapped: number
 }
-export type TimetableEntry = { id: string; facultyId: string; day: string; startTime: string; endTime: string; subject: string; class: string; roomNo: string }
+export type TimetableEntry = { id: string; facultyId: string; day: string; startTime: string; endTime: string; subject: string; class: string; roomNo?: string }
 export type AnnouncementCategory = 'Invigilation' | 'Evaluation' | 'Meeting' | 'Circular'
 export type Priority = 'high' | 'med' | 'low'
 export type Announcement = { id: string; schoolId: string; category: AnnouncementCategory; title: string; priority: Priority; date: string; time: string; venue: string; assignedFaculty: string[] }
