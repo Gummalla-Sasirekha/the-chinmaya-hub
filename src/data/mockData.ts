@@ -177,6 +177,42 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt72', facultyId: 'f31', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt73', facultyId: 'f25', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' }
 
+
+// =========================================================
+// B.Tech ECE - YEAR II
+// Room: A314
+// =========================================================
+
+{ id: 'tt74', facultyId: 'f6', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Digital Logic Design', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt75', facultyId: 'f24', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Electronic Devices and Circuits', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt76', facultyId: 'f3', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Intellectual Property Right', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt77', facultyId: 'f32', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt78', facultyId: 'f31', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt79', facultyId: 'f24', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Electronic Devices and Circuits', class: 'ECE Year II', roomNo: 'A314' },
+
+{ id: 'tt80', facultyId: 'f32', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt81', facultyId: 'UNKNOWN', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt82', facultyId: 'f24', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Electronic Devices and Circuits', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt83', facultyId: 'UNKNOWN', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt84', facultyId: 'f6', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Digital Logic Design', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt85', facultyId: 'f3', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Intellectual Property Right', class: 'ECE Year II', roomNo: 'A314' },
+
+{ id: 'tt86', facultyId: 'f48', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Signals and Systems', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt87', facultyId: 'f48', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Signals and Systems', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt88', facultyId: 'f6', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Digital Logic Design', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt89', facultyId: 'f50', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Life Skills', class: 'ECE Year II', roomNo: 'A314' },
+
+{ id: 'tt90', facultyId: 'f48', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Signals and Systems', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt91', facultyId: 'f50', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Life Skills', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt92', facultyId: 'f3', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Intellectual Property Right', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt93', facultyId: 'f24', day: 'Thu', startTime: '13:10', endTime: '15:00', subject: 'Electronic Devices and Circuits Lab', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt94', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'ECE Year II', roomNo: 'A314' },
+
+{ id: 'tt95', facultyId: 'UNKNOWN', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt96', facultyId: 'f48', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Signals and Systems', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt97', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt98', facultyId: 'f32', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt99', facultyId: 'f6', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'ECE Year II', roomNo: 'A314' }
   
 ]
 
