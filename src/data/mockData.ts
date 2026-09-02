@@ -46,7 +46,7 @@ export const faculty: Faculty[] = [
   { id: 'f32', schoolId: 'stem', name: 'Dr. Archana Babu', phone: '+919947622958', email: 'archana.babu@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '332', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f33', schoolId: 'stem', name: 'Dr. Nitha V R', phone: '+918138085414', email: 'nitha.vr@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '333', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f34', schoolId: 'stem', name: 'Dr. Soumya Haridas', phone: '+918606838427', email: 'soumya.haridas@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '334', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
-  { id: 'f35', schoolId: 'stem', name: 'Ms. Neethu Kunjappan', phone: '+917337229854', email: 'neethu.kunjappan@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '335', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f35', schoolId: 'stem', name: 'Ms. Neethu Kunjappan', phone: '+918075133398', email: 'neethu.kunjappan@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '335', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f36', schoolId: 'stem', name: 'Ms.Archana Ajith', phone: '+919526693390', email: 'archana.ajith@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '336', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f37', schoolId: 'stem', name: 'Ms. Kripa Radhakrishnan', phone: '+918891697910', email: 'kripa.r@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '337' , totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0},
   { id: 'f38', schoolId: 'stem', name: 'Ms. Deepa P. L.', phone: '+919495229779', email: 'deepa.pl@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '338', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
@@ -71,6 +71,8 @@ export const faculty: Faculty[] = [
   { id: 'f57', schoolId: 'stem', name: 'Ms. Devika', phone: '+917337229854', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '353', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f58', schoolId: 'stem', name: 'Ms. Anupriya', phone: '+919400308747', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '354', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f59', schoolId: 'stem', name: 'Prof. Vivek Deshpande', phone: '+917337229854', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Professor – Faculty of STEM', roomNo: '355', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f60', schoolId: 'stem', name: 'Bhavesh B.', phone: '+917025736777', email: 'bhavesh.b@cvv.ac.in', designation: 'COO CVV | Joint Secretary CVV Trust', roomNo: '355', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  
 ];
 
 export const timetable: TimetableEntry[] = [
