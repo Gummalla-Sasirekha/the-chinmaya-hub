@@ -73,331 +73,39 @@ export const faculty: Faculty[] = [
   { id: 'f59', schoolId: 'stem', name: 'Prof. Vivek Deshpande', phone: '+917337229854', email: 'gummalla.cvv230163@cvv.ac.in', designation: 'Professor – Faculty of STEM', roomNo: '355', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
 ];
 
-export const timetable: TimetableEntry[] = [
-
-// =========================================================
-// B.Tech CSE - AIML - YEAR II
-// Room: A204
-// =========================================================
-  { id: 'tt1', facultyId: 'f33', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt2', facultyId: 'f12', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt3', facultyId: 'f14', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Object Oriented Programming', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt4', facultyId: 'f13', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt5', facultyId: 'f33', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt6', facultyId: 'f51', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt7', facultyId: 'f17', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt8', facultyId: 'f13', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt9', facultyId: 'f12', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Digital Logic Design', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt10', facultyId: 'f17', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt11', facultyId: 'f51', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt12', facultyId: 'f33', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt13', facultyId: 'f33', day: 'Wed', startTime: '09:00', endTime: '11:00', subject: 'Machine Learning Lab', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt14', facultyId: 'f17', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt15', facultyId: 'f14', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt16', facultyId: 'f17', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt17', facultyId: 'f12', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt18', facultyId: 'f33', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt19', facultyId: 'f14', day: 'Thu', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt20', facultyId: 'f33', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Machine Learning Lab', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt21', facultyId: 'f51', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt22', facultyId: 'f33', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-  { id: 'tt23', facultyId: 'f13', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
-
-// =========================================================
-// B.Tech CSE - AIML 2
-// Year III
-// Room: A402
-// =========================================================
-
-{ id: 'tt24', facultyId: 'f38', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt25', facultyId: 'f33', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt26', facultyId: 'f10', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Generative AI and LLM', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt27', facultyId: 'f54', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt28', facultyId: 'f22', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt29', facultyId: 'f55', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Data and Visual Analytics', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt30', facultyId: 'f59', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Analog Electronic Circuits', class: 'AIML 2', roomNo: 'A402' },
-
-{ id: 'tt31', facultyId: 'f38', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt32', facultyId: 'f45', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt33', facultyId: 'f59', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt34', facultyId: 'f33', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt35', facultyId: 'f10', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt36', facultyId: 'f45', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 2', roomNo: 'A402' },
-
-{ id: 'tt37', facultyId: 'f38', day: 'Wed', startTime: '09:00', endTime: '11:00', subject: 'Computer Networks Lab', class: 'AIML 2', roomNo: 'A101' },
-{ id: 'tt38', facultyId: 'f38', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks Lab', class: 'AIML 2', roomNo: 'A101' },
-{ id: 'tt39', facultyId: 'f54', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt40', facultyId: 'f22', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'AIML 2', roomNo: 'A402' },
-
-{ id: 'tt41', facultyId: 'f45', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt42', facultyId: 'f33', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt43', facultyId: 'f54', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Data Visualisation', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt44', facultyId: 'f22', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Big Data Analytics', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt45', facultyId: 'f33', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt46', facultyId: 'f10', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt47', facultyId: 'f55', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Data and Visual Analytics', class: 'AIML 2', roomNo: 'A402' },
-
-{ id: 'tt48', facultyId: 'f45', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt49', facultyId: 'f38', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt50', facultyId: 'f59', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt51', facultyId: 'f55', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Data and Visual Analytics', class: 'AIML 2', roomNo: 'A402' },
-{ id: 'tt52', facultyId: 'f37', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'AIML 2', roomNo: 'A402' },
-
-
-// =========================================================
-// B.Tech CSE - AIML 1
-// Year III
-// Room: A316
-// =========================================================
-
-{ id: 'tt53', facultyId: 'f42', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt54', facultyId: 'f59', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Analog Electronic Circuits', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt55', facultyId: 'f42', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt56', facultyId: 'f54', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt57', facultyId: 'f53', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt58', facultyId: 'f10', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt59', facultyId: 'f38', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Computer Networks', class: 'AIML 1', roomNo: 'A316' },
-
-{ id: 'tt60', facultyId: 'f10', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt61', facultyId: 'f55', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Data and Visual Analytics', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt62', facultyId: 'f38', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt63', facultyId: 'f5', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt64', facultyId: 'f33', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt65', facultyId: 'f55', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Data and Visual Analytics', class: 'AIML 1', roomNo: 'A316' },
-
-{ id: 'tt66', facultyId: 'f13', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt67', facultyId: 'f59', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Analog Electronic Circuits', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt68', facultyId: 'f42', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt69', facultyId: 'f54', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt70', facultyId: 'f53', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'AIML 1', roomNo: 'A316' },
-
-{ id: 'tt71', facultyId: 'f55', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Data and Visual Analytics', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt72', facultyId: 'f5', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt73', facultyId: 'f54', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Data Visualisation', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt74', facultyId: 'f53', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Big Data Analytics', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt75', facultyId: 'f38', day: 'Thu', startTime: '13:10', endTime: '16:00', subject: 'Computer Networks Lab', class: 'AIML 1', roomNo: 'A101' },
-
-{ id: 'tt76', facultyId: 'f59', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Analog Electronic Circuits', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt77', facultyId: 'f42', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt78', facultyId: 'f5', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt79', facultyId: 'f10', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 1', roomNo: 'A316' },
-{ id: 'tt80', facultyId: 'f9', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'AIML 1', roomNo: 'A316' },
-  
-// =========================================================
-// B.Tech CSE - DATA SCIENCE - YEAR III
-// Room: A404
-// =========================================================
-  { id: 'tt81', facultyId: 'f38', day: 'Mon', startTime: '09:00', endTime: '11:00', subject: 'Computer Networks Lab', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt82', facultyId: 'f38', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks Lab', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt83', facultyId: 'f56', day: 'Mon', startTime: '13:10', endTime: '16:00', subject: 'Big Data Processing Lab', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt84', facultyId: 'f25', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt85', facultyId: 'f43', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt86', facultyId: 'f25', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt87', facultyId: 'f43', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt88', facultyId: 'f56', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Big Data Processing', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt89', facultyId: 'f50', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Constitution of India', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt90', facultyId: 'f57', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt91', facultyId: 'f43', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt92', facultyId: 'f25', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt93', facultyId: 'f57', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt94', facultyId: 'f43', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt95', facultyId: 'f38', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt96', facultyId: 'f25', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt97', facultyId: 'f57', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt98', facultyId: 'f47', day: 'Thu', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt99', facultyId: 'f38', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt100', facultyId: 'f56', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Big Data Processing', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt101', facultyId: 'f38', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt102', facultyId: 'f50', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Constitution of India', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt103', facultyId: 'f56', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Big Data Processing', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-  { id: 'tt104', facultyId: 'f50', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Constitution of India', class: 'B.Tech CSE Data Science Year III', roomNo: 'A404' },
-
-// =========================================================
-// B.Tech CSE - CYBER SECURITY - YEAR III
-// Room: A410
-// =========================================================
-  { id: 'tt105', facultyId: 'f43', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt106', facultyId: 'f25', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt107', facultyId: 'f54', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Router and Mobile Forensics', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt108', facultyId: 'f38', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Computer Networks', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt109', facultyId: 'f53', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Steganography and Digital Watermarking', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt110', facultyId: 'f50', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Constitution of India', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt111', facultyId: 'f54', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Router and Mobile Forensics', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt112', facultyId: 'f38', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt113', facultyId: 'f50', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Constitution of India', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt114', facultyId: 'f25', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt115', facultyId: 'f53', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Steganography and Digital Watermarking', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt116', facultyId: 'f43', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt117', facultyId: 'f38', day: 'Wed', startTime: '09:00', endTime: '11:00', subject: 'Computer Networks Lab', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt118', facultyId: 'f38', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks Lab', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt119', facultyId: 'f43', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt120', facultyId: 'f25', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt121', facultyId: 'f38', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt122', facultyId: 'f58', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Operating System Security', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt123', facultyId: 'f54', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Router and Mobile Forensics', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt124', facultyId: 'f50', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Constitution of India', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt125', facultyId: 'f58', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Operating System Security', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt126', facultyId: 'f43', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt127', facultyId: 'f25', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt128', facultyId: 'f53', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Steganography and Digital Watermarking', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt129', facultyId: 'f58', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Operating System Security', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt130', facultyId: 'f41', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-  { id: 'tt131', facultyId: 'f49', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'B.Tech CSE Cyber Security Year III', roomNo: 'A410' },
-
-// =========================================================
-// B.Tech ECE - YEAR III
-// Room: A513
-// =========================================================
-  { id: 'tt132', facultyId: 'f23', day: 'Mon', startTime: '09:00', endTime: '11:00', subject: 'Digital Signal Processing Lab', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt133', facultyId: 'f23', day: 'Mon', startTime: '09:00', endTime: '11:00', subject: 'Digital Signal Processing Lab', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt134', facultyId: 'f48', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Control Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt135', facultyId: 'f24', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Embedded Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt136', facultyId: 'f23', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Digital Signal Processing', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt137', facultyId: 'f48', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Control Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt138', facultyId: 'f23', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Digital Signal Processing', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt139', facultyId: 'f23', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Electromagnetic Waves and Antenna Propagation', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt140', facultyId: 'f18', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Professional Ethics', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt141', facultyId: 'f48', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Control Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt142', facultyId: 'f24', day: 'Tue', startTime: '14:00', endTime: '16:00', subject: 'Embedded Systems Lab', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt143', facultyId: 'f24', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Information Theory and Coding', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt144', facultyId: 'f23', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Digital Signal Processing', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt145', facultyId: 'f24', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Information Theory and Coding', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt146', facultyId: 'f18', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Professional Ethics', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt147', facultyId: 'f23', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Digital Signal Processing', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt148', facultyId: 'f24', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Embedded Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt149', facultyId: 'f23', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Electromagnetic Waves and Antenna Propagation', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt150', facultyId: 'f7', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Entrepreneurship', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt151', facultyId: 'f23', day: 'Thu', startTime: '14:00', endTime: '16:00', subject: 'Electromagnetic Waves and Antennas Lab', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt152', facultyId: 'f23', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Electromagnetic Waves and Antenna Propagation', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt153', facultyId: 'f7', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Entrepreneurship', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt154', facultyId: 'f23', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Electromagnetic Waves and Antenna Propagation', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt155', facultyId: 'f24', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Information Theory and Coding', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt156', facultyId: 'f24', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Embedded Systems', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-  { id: 'tt157', facultyId: 'f7', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Entrepreneurship', class: 'B.Tech ECE Year III', roomNo: 'A513' },
-
-// =========================================================
-// B.Tech ECE - YEAR II
-// Room: A314
-// =========================================================
-  { id: 'tt158', facultyId: 'f6', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Digital Logic Design', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt159', facultyId: 'f24', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Electronic Devices and Circuits', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt160', facultyId: 'f3', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Intellectual Property Right', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt161', facultyId: 'f32', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt162', facultyId: 'f31', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt163', facultyId: 'f24', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Electronic Devices and Circuits', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt164', facultyId: 'f32', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Mathematics (Probability Theory and Stochastic Processes', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt165', facultyId: 'unknown', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Network Theory and Analysis', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt166', facultyId: 'f24', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Electronic Devices and Circuits', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt167', facultyId: 'unknown', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Network Theory and Analysis', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt168', facultyId: 'f6', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Digital Logic Design', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt169', facultyId: 'f3', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Intellectual Property Right', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt170', facultyId: 'f48', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Signals and Systems', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt171', facultyId: 'f48', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Signals and Systems', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt172', facultyId: 'f6', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Digital Logic Design', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt173', facultyId: 'f50', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Life Skills', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt174', facultyId: 'f48', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Signals and Systems', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt175', facultyId: 'f50', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Life Skills', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt176', facultyId: 'f3', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Intellectual Property Right', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt177', facultyId: 'f24', day: 'Thu', startTime: '13:10', endTime: '15:00', subject: 'Electronic Devices and Circuits Lab', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt178', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt179', facultyId: 'unknown', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Network Theory and Analysis', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt180', facultyId: 'f48', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Signals and Systems', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt181', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt182', facultyId: 'f32', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-  { id: 'tt183', facultyId: 'f6', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'B.Tech ECE Year II', roomNo: 'A314' },
-
-// =========================================================
-// B.Tech CSE - CYBER SECURITY - YEAR II
-// Room: A410
-// =========================================================
-  { id: 'tt184', facultyId: 'f12', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Digital Logic Design', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt185', facultyId: 'f22', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Environmental Science', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt186', facultyId: 'f25', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt187', facultyId: 'f31', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt188', facultyId: 'f9', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Information Theory for Cyber Security', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt189', facultyId: 'f26', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt190', facultyId: 'f22', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Environmental Science', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt191', facultyId: 'f9', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Information Theory for Cyber Security', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt192', facultyId: 'f26', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt193', facultyId: 'f22', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Environmental Science', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt194', facultyId: 'f25', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt195', facultyId: 'f12', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt196', facultyId: 'f26', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt197', facultyId: 'f26', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt198', facultyId: 'f54', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Scripting Language for Security', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt199', facultyId: 'f9', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Information Theory for Cyber Security', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt200', facultyId: 'f12', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Digital Logic Design', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt201', facultyId: 'f25', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt202', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt203', facultyId: 'f54', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Scripting Language for Security', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt204', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Cyber Security Year II' },
-  { id: 'tt205', facultyId: 'f25', day: 'Fri', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'B.Tech CSE Cyber Security Year II' },
-
-// =========================================================
-// B.Tech CSE - DATA SCIENCE - YEAR II
-// Room: A315
-// =========================================================
-  { id: 'tt206', facultyId: 'f53', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Data Science', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt207', facultyId: 'f32', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt208', facultyId: 'f10', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt209', facultyId: 'f22', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Environmental Science', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt210', facultyId: 'f25', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt211', facultyId: 'f31', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt212', facultyId: 'f32', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt213', facultyId: 'f10', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt214', facultyId: 'f26', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt215', facultyId: 'f22', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Environmental Science', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt216', facultyId: 'f53', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt217', facultyId: 'f32', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt218', facultyId: 'f10', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt219', facultyId: 'f26', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt220', facultyId: 'f22', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Environmental Science', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt221', facultyId: 'f25', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt222', facultyId: 'f32', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt223', facultyId: 'f10', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt224', facultyId: 'f26', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt225', facultyId: 'f26', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt226', facultyId: 'f10', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt227', facultyId: 'f32', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt228', facultyId: 'f32', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt229', facultyId: 'f10', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Statistical Modelling and Numerical Methods', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt230', facultyId: 'f53', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt231', facultyId: 'f25', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt232', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt233', facultyId: 'f10', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt234', facultyId: 'f32', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt235', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-  { id: 'tt236', facultyId: 'f25', day: 'Fri', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'B.Tech CSE Data Science Year II', roomNo: 'A315' },
-
 // =========================================================
 // B.Tech CSE - BATCH 1 - YEAR II
 // Room: A202
 // =========================================================
-  { id: 'tt237', facultyId: 'f17', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt238', facultyId: 'f2', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt239', facultyId: 'unknown', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt240', facultyId: 'f12', day: 'Mon', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt241', facultyId: 'f6', day: 'Tue', startTime: '09:00', endTime: '11:00', subject: 'Idea Lab Workshop', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt242', facultyId: 'f6', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Idea Lab Workshop', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt243', facultyId: 'f37', day: 'Tue', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt244', facultyId: 'f37', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt245', facultyId: 'unknown', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt246', facultyId: 'f12', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Digital Logic Design', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt247', facultyId: 'f37', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt248', facultyId: 'f17', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt249', facultyId: 'f52', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt250', facultyId: 'f33', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt251', facultyId: 'f52', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt252', facultyId: 'f33', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt253', facultyId: 'f2', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Machine Learning', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt254', facultyId: 'f12', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt255', facultyId: 'f17', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt256', facultyId: 'f12', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Digital Logic Design', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt257', facultyId: 'unknown', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' },
-  { id: 'tt258', facultyId: 'f52', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'B.Tech CSE Batch 1 Year II', roomNo: 'A202' }
 
+{ id: 'tt1', facultyId: 'f17', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt2', facultyId: 'f2', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Introduction to Machine Learning', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt3', facultyId: 'UNKNOWN', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt4', facultyId: 'f37', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt5', facultyId: 'f12', day: 'Mon', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 
-];
+{ id: 'tt6', facultyId: 'f6', day: 'Tue', startTime: '09:00', endTime: '11:00', subject: 'Idea Lab Workshop', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt7', facultyId: 'f6', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Idea Lab Workshop', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt8', facultyId: 'f37', day: 'Tue', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+
+{ id: 'tt9', facultyId: 'f37', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt10', facultyId: 'UNKNOWN', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt11', facultyId: 'f12', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Digital Logic Design', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt12', facultyId: 'f17', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+
+{ id: 'tt13', facultyId: 'f37', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt14', facultyId: 'f17', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Discrete Mathematical Structures', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt15', facultyId: 'f52', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt16', facultyId: 'f2', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Machine Learning', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt17', facultyId: 'f52', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt18', facultyId: 'f2', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Introduction to Machine Learning', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+
+{ id: 'tt19', facultyId: 'f2', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Machine Learning', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt20', facultyId: 'f12', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt21', facultyId: 'f17', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt22', facultyId: 'f12', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Digital Logic Design', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt23', facultyId: 'UNKNOWN', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt24', facultyId: 'f52', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 
 
 export const announcements: Announcement[] = [
