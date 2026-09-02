@@ -317,7 +317,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt172', facultyId: 'f37', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'CSE Data Science Year III', roomNo: 'A404' },
 { id: 'tt173', facultyId: 'f50', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Constitution of India', class: 'CSE Data Science Year III', roomNo: 'A404' },
 { id: 'tt174', facultyId: 'f56', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Big Data Processing', class: 'CSE Data Science Year III', roomNo: 'A404' },
-{ id: 'tt175', facultyId: 'f50', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Constitution of India', class: 'CSE Data Science Year III', roomNo: 'A404' }
+{ id: 'tt175', facultyId: 'f50', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Constitution of India', class: 'CSE Data Science Year III', roomNo: 'A404' },
 
 // =========================================================
 // B.Tech CSE AIML - BATCH 1 - YEAR III (AIML 1)
