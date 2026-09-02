@@ -108,7 +108,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt23', facultyId: 'UNKNOWN', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt24', facultyId: 'f52', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 
-  // =========================================================
+// =========================================================
 // B.Tech CSE AIML - YEAR II
 // Room: A204
 // =========================================================
@@ -434,6 +434,30 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt259', facultyId: 'f24', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Embedded Systems', class: 'ECE Year III', roomNo: 'A513' },
 { id: 'tt260', facultyId: 'f7', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Entrepreneurship', class: 'ECE Year III', roomNo: 'A513' },
 
+
+// =========================================================
+// B.Tech CSE - YEAR IV
+// Electives: Human Computer Interaction / Pattern Recognition
+// Room: A230
+// =========================================================
+
+{ id: 'tt261', facultyId: 'f8', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Human Computer Interaction', class: 'CSE Year IV', roomNo: 'A230' },
+
+{ id: 'tt262', facultyId: 'f56', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Pattern Recognition', class: 'CSE Year IV', roomNo: 'A230' },
+{ id: 'tt263', facultyId: 'f56', day: 'Wed', startTime: '14:00', endTime: '15:00', subject: 'Pattern Recognition', class: 'CSE Year IV', roomNo: 'A230' },
+{ id: 'tt264', facultyId: 'f8', day: 'Wed', startTime: '15:00', endTime: '16:00', subject: 'Human Computer Interaction', class: 'CSE Year IV', roomNo: 'A230' },
+
+{ id: 'tt265', facultyId: 'f56', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Pattern Recognition', class: 'CSE Year IV', roomNo: 'A230' },
+{ id: 'tt266', facultyId: 'f8', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Human Computer Interaction', class: 'CSE Year IV', roomNo: 'A230' },
+{ id: 'tt267', facultyId: 'f56', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Pattern Recognition', class: 'CSE Year IV', roomNo: 'A230' },
+{ id: 'tt268', facultyId: 'f8', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Human Computer Interaction', class: 'CSE Year IV', roomNo: 'A230' },
+
+{ id: 'tt269', facultyId: 'f8', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Human Computer Interaction', class: 'CSE Year IV', roomNo: 'A230' },
+{ id: 'tt270', facultyId: 'f56', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Pattern Recognition', class: 'CSE Year IV', roomNo: 'A230' },
+{ id: 'tt271', facultyId: 'f8', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Human Computer Interaction', class: 'CSE Year IV', roomNo: 'A230' },
+{ id: 'tt272', facultyId: 'f56', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Pattern Recognition', class: 'CSE Year IV', roomNo: 'A230' },
+  
+  
 // =========================================================
 // BCA 1 Year III
 // Room: A416
