@@ -106,7 +106,41 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt21', facultyId: 'f17', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt22', facultyId: 'f12', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Digital Logic Design', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt23', facultyId: 'UNKNOWN', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
-{ id: 'tt24', facultyId: 'f52', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE Batch 1 Year II', roomNo: 'A202' }
+{ id: 'tt24', facultyId: 'f52', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+
+  // =========================================================
+// B.Tech CSE AIML - YEAR II
+// Room: A204
+// =========================================================
+
+{ id: 'tt25', facultyId: 'f33', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Machine Learning', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt26', facultyId: 'f12', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt27', facultyId: 'f14', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Object Oriented Programming', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt28', facultyId: 'f13', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Universal Human Values - 2', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt29', facultyId: 'f33', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Machine Learning', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt30', facultyId: 'f51', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE AIML Year II', roomNo: 'A204' },
+
+{ id: 'tt31', facultyId: 'f17', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt32', facultyId: 'f13', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Universal Human Values - 2', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt33', facultyId: 'f12', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Digital Logic Design', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt34', facultyId: 'f17', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt35', facultyId: 'f51', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt36', facultyId: 'f33', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Introduction to Machine Learning', class: 'CSE AIML Year II', roomNo: 'A204' },
+
+{ id: 'tt37', facultyId: 'f33', day: 'Wed', startTime: '09:00', endTime: '11:00', subject: 'Machine Learning Lab', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt38', facultyId: 'f17', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt39', facultyId: 'f14', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'CSE AIML Year II', roomNo: 'A204' },
+
+{ id: 'tt40', facultyId: 'f17', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt41', facultyId: 'f12', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt42', facultyId: 'f33', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Machine Learning', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt43', facultyId: 'f14', day: 'Thu', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'CSE AIML Year II', roomNo: 'A204' },
+
+{ id: 'tt44', facultyId: 'f33', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Machine Learning Lab', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt45', facultyId: 'f51', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt46', facultyId: 'f33', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Machine Learning', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt47', facultyId: 'f13', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE AIML Year II', roomNo: 'A204' },
+{ id: 'tt48', facultyId: 'f14', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE AIML Year II', roomNo: 'A204' }
 ]
 
 
