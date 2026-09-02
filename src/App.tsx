@@ -111,19 +111,6 @@ if (view === 'login') {
     />
   )
 }
-  // AdminDashboard is protected by the verified role saved in state.
-  if (view === 'admin' && role === 'admin') {
-    return (
-      <AdminDashboard
-        onLogout={() => {
-          setRole('student')
-          setFacultyId(undefined)
-          setSchool(null)
-          setView('login')
-        }}
-      />
-    )
-  }
 
   if (view === 'schools') {
     return <SchoolSelection schools={schools} onSelect={select} />
