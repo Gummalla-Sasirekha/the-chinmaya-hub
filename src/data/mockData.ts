@@ -104,67 +104,85 @@ export const timetable: TimetableEntry[] = [
   { id: 'tt23', facultyId: 'f13', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'B.Tech CSE AIML Year II', roomNo: 'A204' },
 
 // =========================================================
-// B.Tech CSE - AIML - YEAR III
-// Room: A316 / A402
+// B.Tech CSE - AIML 2
+// Year III
+// Room: A402
 // =========================================================
-  { id: 'tt24', facultyId: 'f38', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt25', facultyId: 'f33', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt26', facultyId: 'f10', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt27', facultyId: 'f54', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt28', facultyId: 'f22', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt29', facultyId: 'f55', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Data and Visual Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt30', facultyId: 'f59', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt31', facultyId: 'f38', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt32', facultyId: 'f45', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt33', facultyId: 'f59', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt34', facultyId: 'f33', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt35', facultyId: 'f10', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt36', facultyId: 'f45', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt37', facultyId: 'f38', day: 'Wed', startTime: '09:00', endTime: '11:00', subject: 'Computer Networks Lab', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt38', facultyId: 'f38', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks Lab', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt39', facultyId: 'f54', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt40', facultyId: 'f22', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt41', facultyId: 'f45', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt42', facultyId: 'f33', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt43', facultyId: 'f54', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Data Visualisation', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt44', facultyId: 'f22', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Big Data Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt45', facultyId: 'f33', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt46', facultyId: 'f10', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt47', facultyId: 'f55', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Data and Visual Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt48', facultyId: 'f45', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt49', facultyId: 'f38', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt50', facultyId: 'f59', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt51', facultyId: 'f55', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Data and Visual Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt52', facultyId: 'f37', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'B.Tech CSE AIML Year III', roomNo: 'A402' },
-  { id: 'tt53', facultyId: 'f42', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt54', facultyId: 'f59', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt55', facultyId: 'f42', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt56', facultyId: 'f54', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt57', facultyId: 'f53', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt58', facultyId: 'f10', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt59', facultyId: 'f38', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt60', facultyId: 'f10', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt61', facultyId: 'f55', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Data and Visual Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt62', facultyId: 'f38', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt63', facultyId: 'f38', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Computer Networks', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt64', facultyId: 'f33', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt65', facultyId: 'f55', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Data and Visual Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt66', facultyId: 'f33', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt67', facultyId: 'f59', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt68', facultyId: 'f42', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt69', facultyId: 'f54', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt70', facultyId: 'f53', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt71', facultyId: 'f55', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Data and Visual Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt72', facultyId: 'f33', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt73', facultyId: 'f54', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Data Visualisation', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt74', facultyId: 'f53', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Big Data Analytics', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt75', facultyId: 'f38', day: 'Thu', startTime: '13:10', endTime: '16:00', subject: 'Computer Networks Lab', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt76', facultyId: 'f59', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Analog Electronic Circuits', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt77', facultyId: 'f42', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt78', facultyId: 'f33', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt79', facultyId: 'f10', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Generative AI and LLM', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
-  { id: 'tt80', facultyId: 'f37', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'B.Tech CSE AIML Year III', roomNo: 'A316' },
 
+{ id: 'tt24', facultyId: 'f38', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt25', facultyId: 'f33', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt26', facultyId: 'f10', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Generative AI and LLM', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt27', facultyId: 'f54', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt28', facultyId: 'f22', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt29', facultyId: 'f55', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Data and Visual Analytics', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt30', facultyId: 'f59', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Analog Electronic Circuits', class: 'AIML 2', roomNo: 'A402' },
+
+{ id: 'tt31', facultyId: 'f38', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt32', facultyId: 'f45', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt33', facultyId: 'f59', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt34', facultyId: 'f33', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt35', facultyId: 'f10', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt36', facultyId: 'f45', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 2', roomNo: 'A402' },
+
+{ id: 'tt37', facultyId: 'f38', day: 'Wed', startTime: '09:00', endTime: '11:00', subject: 'Computer Networks Lab', class: 'AIML 2', roomNo: 'A101' },
+{ id: 'tt38', facultyId: 'f38', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks Lab', class: 'AIML 2', roomNo: 'A101' },
+{ id: 'tt39', facultyId: 'f54', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt40', facultyId: 'f22', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'AIML 2', roomNo: 'A402' },
+
+{ id: 'tt41', facultyId: 'f45', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt42', facultyId: 'f33', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt43', facultyId: 'f54', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Data Visualisation', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt44', facultyId: 'f22', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Big Data Analytics', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt45', facultyId: 'f33', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt46', facultyId: 'f10', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt47', facultyId: 'f55', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Data and Visual Analytics', class: 'AIML 2', roomNo: 'A402' },
+
+{ id: 'tt48', facultyId: 'f45', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt49', facultyId: 'f38', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt50', facultyId: 'f59', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Analog Electronic Circuits', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt51', facultyId: 'f55', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Data and Visual Analytics', class: 'AIML 2', roomNo: 'A402' },
+{ id: 'tt52', facultyId: 'f37', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'AIML 2', roomNo: 'A402' },
+
+
+// =========================================================
+// B.Tech CSE - AIML 1
+// Year III
+// Room: A316
+// =========================================================
+
+{ id: 'tt53', facultyId: 'f42', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt54', facultyId: 'f59', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Analog Electronic Circuits', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt55', facultyId: 'f42', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt56', facultyId: 'f54', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt57', facultyId: 'f53', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt58', facultyId: 'f10', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt59', facultyId: 'f38', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Computer Networks', class: 'AIML 1', roomNo: 'A316' },
+
+{ id: 'tt60', facultyId: 'f10', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt61', facultyId: 'f55', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Data and Visual Analytics', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt62', facultyId: 'f38', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt63', facultyId: 'f5', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt64', facultyId: 'f33', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt65', facultyId: 'f55', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Data and Visual Analytics', class: 'AIML 1', roomNo: 'A316' },
+
+{ id: 'tt66', facultyId: 'f13', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt67', facultyId: 'f59', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Analog Electronic Circuits', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt68', facultyId: 'f42', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt69', facultyId: 'f54', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Data Visualisation', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt70', facultyId: 'f53', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Big Data Analytics', class: 'AIML 1', roomNo: 'A316' },
+
+{ id: 'tt71', facultyId: 'f55', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Data and Visual Analytics', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt72', facultyId: 'f5', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt73', facultyId: 'f54', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Data Visualisation', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt74', facultyId: 'f53', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Big Data Analytics', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt75', facultyId: 'f38', day: 'Thu', startTime: '13:10', endTime: '16:00', subject: 'Computer Networks Lab', class: 'AIML 1', roomNo: 'A101' },
+
+{ id: 'tt76', facultyId: 'f59', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Analog Electronic Circuits', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt77', facultyId: 'f42', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt78', facultyId: 'f5', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt79', facultyId: 'f10', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Generative AI and LLM', class: 'AIML 1', roomNo: 'A316' },
+{ id: 'tt80', facultyId: 'f9', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'AIML 1', roomNo: 'A316' },
+  
 // =========================================================
 // B.Tech CSE - DATA SCIENCE - YEAR III
 // Room: A404
