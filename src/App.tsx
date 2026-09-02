@@ -13,7 +13,6 @@ import {
   getSchools,
   getTimetable,
 } from './data/repository'
-import { getUserProfile, signIn } from './lib/firebase'
 import LoginScreen from './components/LoginScreen'
 import SchoolSelection from './components/SchoolSelection'
 import Dashboard from './components/Dashboard'
@@ -74,42 +73,45 @@ export default function App() {
     }
   }, [school])
 
-  if (view === 'login') {
-    return (
-      <LoginScreen
-        onLogin={async (identifier, password, selectedRole) => {
-          const user = await signIn(identifier, password)
-          const profile = user ? await getUserProfile(user.uid) : null
+if (view === 'login') {
+  return (
+    <LoginScreen
+      onLogin={async (identifier, password, selectedRole) => {
+        const email = identifier.trim().toLowerCase()
 
-          // Firebase profile role is the authority for real users.
-          // Admins are routed automatically even though Admin is hidden
-          // from the normal Student/Faculty role selector.
-          const userRole = profile?.role ?? selectedRole
+        // Student demo login
+        if (
+          selectedRole === 'student' &&
+          email === 'student@cvv.ac.in' &&
+          password === 'student123'
+        ) {
+          setRole('student')
+          setFacultyId(undefined)
+          setSchool(null)
+          setView('schools')
+          return
+        }
 
-          // Keep the Student/Faculty role validation unchanged.
-          if (
-            profile &&
-            userRole !== 'admin' &&
-            userRole !== selectedRole
-          ) {
-            throw new Error(
-              `This account is registered as ${userRole}.`
-            )
-          }
+        // Faculty demo login
+        if (
+          selectedRole === 'faculty' &&
+          email === 'faculty@cvv.ac.in' &&
+          password === 'faculty123'
+        ) {
+          setRole('faculty')
+          setFacultyId('f1')
+          setSchool(null)
+          setView('schools')
+          return
+        }
 
-          setRole(userRole)
-          setFacultyId(profile?.facultyId)
-
-          if (userRole === 'admin') {
-            setView('admin')
-          } else {
-            setView('schools')
-          }
-        }}
-      />
-    )
-  }
-
+        throw new Error(
+          'Invalid email or password. Please check your login details.'
+        )
+      }}
+    />
+  )
+}
   // AdminDashboard is protected by the verified role saved in state.
   if (view === 'admin' && role === 'admin') {
     return (
