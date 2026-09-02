@@ -212,7 +212,38 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt97', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt98', facultyId: 'f32', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt99', facultyId: 'f6', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'ECE Year II', roomNo: 'A314' },
-  
+
+// =========================================================
+// B.Tech CSE - CYBER SECURITY - YEAR II
+// Room: 
+// =========================================================
+
+{ id: 'tt100', facultyId: 'f12', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II' },
+{ id: 'tt101', facultyId: 'f22', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Environmental Science', class: 'CSE Cyber Security Year II' },
+{ id: 'tt102', facultyId: 'f25', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II' },
+{ id: 'tt103', facultyId: 'f31', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II' },
+{ id: 'tt104', facultyId: 'f9', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II' },
+
+{ id: 'tt105', facultyId: 'f26', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II' },
+{ id: 'tt106', facultyId: 'f22', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Environmental Science', class: 'CSE Cyber Security Year II' },
+{ id: 'tt107', facultyId: 'f9', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II' },
+{ id: 'tt108', facultyId: 'f26', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II' },
+{ id: 'tt109', facultyId: 'f22', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Environmental Science', class: 'CSE Cyber Security Year II' },
+
+{ id: 'tt110', facultyId: 'f25', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II' },
+{ id: 'tt111', facultyId: 'f12', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II' },
+{ id: 'tt112', facultyId: 'f26', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II' },
+{ id: 'tt113', facultyId: 'f26', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II' },
+
+{ id: 'tt114', facultyId: 'f54', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Scripting Language for Security', class: 'CSE Cyber Security Year II' },
+{ id: 'tt115', facultyId: 'f9', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II' },
+{ id: 'tt116', facultyId: 'f12', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II' },
+{ id: 'tt117', facultyId: 'f25', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II' },
+{ id: 'tt118', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II' },
+
+{ id: 'tt119', facultyId: 'f54', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Scripting Language for Security', class: 'CSE Cyber Security Year II' },
+{ id: 'tt120', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II' },
+{ id: 'tt121', facultyId: 'f25', day: 'Fri', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'CSE Cyber Security Year II' }
 ]
 
 
