@@ -12,14 +12,14 @@ export const schools: School[] = [
 ]
 
 export const faculty: Faculty[] = [
-  { id: 'f1', schoolId: 'stem', name: 'Dr. Anand H. S.', phone: '+919567092300', email: 'associatedean.stem@cvv.ac.in', designation: 'Associate Dean — STEM | Head – Department of Artificial Intelligence and Emerging Technologies', roomNo: '301', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f1', schoolId: 'stem', name: 'Dr. Anand H. S.', phone: '+919567092300', email: 'associatedean.stem@cvv.ac.in', designation: 'Associate Dean - STEM | Head – Department of Artificial Intelligence and Emerging Technologies', roomNo: '301', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f2', schoolId: 'stem', name: 'Dr. Resmi N.G.', phone: '+919633291997', email: 'resmi.ng@cvv.ac.in', designation: 'Head – Department of Computer Science and Engineering | Senior Assistant Professor', roomNo: '302', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
-  { id: 'f3', schoolId: 'stem', name: 'Dr. Praveen K M', phone: '+918547674715', email: 'praveen.km@cvv.ac.in', designation: 'Assistant Dean – Research', roomNo: '303', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
-  { id: 'f4', schoolId: 'stem', name: 'Dr. Raisun Mathew', phone: '+919048101997', email: 'raisun.mathew@cvv.ac.in', designation: 'Assistant Dean – Doctoral Programmes | Assistant Professor | Associate Head of School, School of Linguistics and Literary Studies (LLS)', roomNo: '304', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
-  { id: 'f5', schoolId: 'stem', name: 'Ms. Pradeeba V.', phone: '+919751994860', email: 'pradeeba.v@cvv.ac.in', designation: 'Assistant Professor', roomNo: '305', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f3', schoolId: 'stem', name: 'Dr. Praveen K M', phone: '+918547674715', email: 'praveen.km@cvv.ac.in', designation: 'Assistant Dean - Research', roomNo: '303', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f4', schoolId: 'stem', name: 'Dr. Raisun Mathew', phone: '+919048101997', email: 'raisun.mathew@cvv.ac.in', designation: 'Assistant Dean - Doctoral Programmes | Assistant Professor | Associate Head of School, School of Linguistics and Literary Studies (LLS)', roomNo: '304', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f5', schoolId: 'stem', name: 'Ms. Pradeeba V.', phone: '+919751994860', email: 'pradeeba.v@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '305', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f6', schoolId: 'stem', name: 'Dr. S.M. Sharma', phone: '+918126761060', email: 'savitesh.sharma@cvv.ac.in ', designation: 'Professor | Head - Robotics and Automation Research Centre', roomNo: '306', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
-  { id: 'f7', schoolId: 'stem', name: 'Dr. Vidya Gopal T. V.', phone: '+917012491344', email: 'vidya.gopaltv@cvv.ac.in', designation: 'Senior Assistant Professor and Assistant Dean – Entrepreneurial Learning | Faculty of STEM', roomNo: '307' , totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0},
-  { id: 'f8', schoolId: 'stem', name: 'Dr. Anupama Jims', phone: '+917034961505', email: 'anupama.jims@cvv.ac.in', designation: 'Head – Centre for  Oceanic AI | Assistant Dean- External Affairs & Internationalisation , Director in Charge Innovation and Incubation Centre, Director- AI Innovation and Research Lab. | Assistant Professor – Faculty of STEM', roomNo: '308', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
+  { id: 'f7', schoolId: 'stem', name: 'Dr. Vidya Gopal T. V.', phone: '+917012491344', email: 'vidya.gopaltv@cvv.ac.in', designation: 'Senior Assistant Professor and Assistant Dean - Entrepreneurial Learning | Faculty of STEM', roomNo: '307' , totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0},
+  { id: 'f8', schoolId: 'stem', name: 'Dr. Anupama Jims', phone: '+917034961505', email: 'anupama.jims@cvv.ac.in', designation: 'Head – Centre for  Oceanic AI | Assistant Dean - External Affairs & Internationalisation , Director in Charge Innovation and Incubation Centre, Director- AI Innovation and Research Lab. | Assistant Professor – Faculty of STEM', roomNo: '308', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f9', schoolId: 'stem', name: 'Dr. Uma Narayanan', phone: '+918089541154', email: 'uma.narayanan@cvv.ac.in', designation: 'Senior Assistant Professor – Faculty of STEM', roomNo: '309' , totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0},
   { id: 'f10', schoolId: 'stem', name: 'Dr. Sreenu G', phone: '+919495264590', email: 'sreenu.g@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '310', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f11', schoolId: 'stem', name: 'Dr. Kavitha Rajan', phone: '+919966655730', email: 'kavitha.rajan@cvv.ac.in', designation: 'Assistant Professor – Faculty of STEM', roomNo: '311', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
@@ -142,7 +142,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt47', facultyId: 'f13', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE AIML Year II', roomNo: 'A204' },
 { id: 'tt48', facultyId: 'f14', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE AIML Year II', roomNo: 'A204' },
 
-  // =========================================================
+// =========================================================
 // B.Tech CSE - DATA SCIENCE - YEAR II
 // Room: A315
 // =========================================================
@@ -215,36 +215,36 @@ export const timetable: TimetableEntry[] = [
 
 // =========================================================
 // B.Tech CSE - CYBER SECURITY - YEAR II
-// Room: 
+// Room: A315
 // =========================================================
 
-{ id: 'tt100', facultyId: 'f12', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II' },
-{ id: 'tt101', facultyId: 'f22', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Environmental Science', class: 'CSE Cyber Security Year II' },
-{ id: 'tt102', facultyId: 'f25', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II' },
-{ id: 'tt103', facultyId: 'f31', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II' },
-{ id: 'tt104', facultyId: 'f9', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II' },
+{ id: 'tt100', facultyId: 'f12', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt101', facultyId: 'f22', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Environmental Science', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt102', facultyId: 'f25', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt103', facultyId: 'f31', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt104', facultyId: 'f9', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
 
-{ id: 'tt105', facultyId: 'f26', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II' },
-{ id: 'tt106', facultyId: 'f22', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Environmental Science', class: 'CSE Cyber Security Year II' },
-{ id: 'tt107', facultyId: 'f9', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II' },
-{ id: 'tt108', facultyId: 'f26', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II' },
-{ id: 'tt109', facultyId: 'f22', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Environmental Science', class: 'CSE Cyber Security Year II' },
+{ id: 'tt105', facultyId: 'f26', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt106', facultyId: 'f22', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Environmental Science', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt107', facultyId: 'f9', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt108', facultyId: 'f26', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt109', facultyId: 'f22', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Environmental Science', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
 
-{ id: 'tt110', facultyId: 'f25', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II' },
-{ id: 'tt111', facultyId: 'f12', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II' },
-{ id: 'tt112', facultyId: 'f26', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II' },
-{ id: 'tt113', facultyId: 'f26', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II' },
+{ id: 'tt110', facultyId: 'f25', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt111', facultyId: 'f12', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt112', facultyId: 'f26', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt113', facultyId: 'f26', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
 
-{ id: 'tt114', facultyId: 'f54', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Scripting Language for Security', class: 'CSE Cyber Security Year II' },
-{ id: 'tt115', facultyId: 'f9', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II' },
-{ id: 'tt116', facultyId: 'f12', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II' },
-{ id: 'tt117', facultyId: 'f25', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II' },
-{ id: 'tt118', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II' },
+{ id: 'tt114', facultyId: 'f54', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Scripting Language for Security', class: 'CSE Cyber Security Year II', roomNo: 'A101' },
+{ id: 'tt115', facultyId: 'f9', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt116', facultyId: 'f12', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Digital Logic Design', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt117', facultyId: 'f25', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt118', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
 
-{ id: 'tt119', facultyId: 'f54', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Scripting Language for Security', class: 'CSE Cyber Security Year II' },
-{ id: 'tt120', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II' },
-{ id: 'tt121', facultyId: 'f25', day: 'Fri', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'CSE Cyber Security Year II' },
-
+{ id: 'tt119', facultyId: 'f54', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Scripting Language for Security', class: 'CSE Cyber Security Year II', roomNo: 'A101' },
+{ id: 'tt120', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt121', facultyId: 'f25', day: 'Fri', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'CSE Cyber Security Year II', roomNo: 'NEW LAB 2' },
+  
 // =========================================================
 // B.Tech CSE - CYBER SECURITY - YEAR III
 // Room: A410
