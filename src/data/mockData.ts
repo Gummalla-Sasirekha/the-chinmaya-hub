@@ -175,7 +175,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt70', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt71', facultyId: 'f53', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt72', facultyId: 'f31', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt73', facultyId: 'f25', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' }
+{ id: 'tt73', facultyId: 'f25', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
 
 // =========================================================
 // B.Tech ECE - YEAR II
