@@ -84,7 +84,7 @@ export const timetable: TimetableEntry[] = [
 
 { id: 'tt1', facultyId: 'f17', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt2', facultyId: 'f2', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Introduction to Machine Learning', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
-{ id: 'tt3', facultyId: 'UNKNOWN', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt3', facultyId: 'f18', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt4', facultyId: 'f37', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt5', facultyId: 'f12', day: 'Mon', startTime: '14:00', endTime: '16:00', subject: 'Digital Logic Design Lab', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 
@@ -93,7 +93,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt8', facultyId: 'f37', day: 'Tue', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 
 { id: 'tt9', facultyId: 'f37', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
-{ id: 'tt10', facultyId: 'UNKNOWN', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt10', facultyId: 'f18', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt11', facultyId: 'f12', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Digital Logic Design', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt12', facultyId: 'f17', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 
@@ -108,7 +108,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt20', facultyId: 'f12', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Digital Logic Design', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt21', facultyId: 'f17', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt22', facultyId: 'f12', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Digital Logic Design', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
-{ id: 'tt23', facultyId: 'UNKNOWN', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
+{ id: 'tt23', facultyId: 'f18', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 { id: 'tt24', facultyId: 'f52', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Indian Knowledge System: Self-Unfoldment', class: 'CSE Batch 1 Year II', roomNo: 'A202' },
 
 // =========================================================
