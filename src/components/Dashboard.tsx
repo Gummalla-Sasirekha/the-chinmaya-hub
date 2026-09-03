@@ -17,11 +17,14 @@ type Props = {
   onLogout: () => void
 }
 
-const schoolBackgrounds: Record<string, string> = {
-  stem: 'bg-blue-50',
-  management: 'bg-emerald-50',
-  education: 'bg-violet-50',
-  arts: 'bg-orange-50',
+const schoolGradients: Record<string, string> = {
+  stem: 'bg-gradient-to-br from-slate-800 via-slate-700 to-orange-600',
+  management:
+    'bg-gradient-to-br from-emerald-900 via-emerald-700 to-teal-500',
+  education:
+    'bg-gradient-to-br from-violet-900 via-violet-700 to-purple-500',
+  arts:
+    'bg-gradient-to-br from-rose-900 via-rose-700 to-orange-500',
 }
 
 export default function Dashboard({
@@ -35,13 +38,12 @@ export default function Dashboard({
   onChangeSchool,
   onLogout,
 }: Props) {
-  const background =
-    schoolBackgrounds[school.id] ?? 'bg-slate-50'
+  const schoolGradient =
+    schoolGradients[school.id] ??
+    'bg-gradient-to-br from-slate-800 via-slate-700 to-orange-600'
 
   return (
-    <main
-      className={`screen min-h-screen px-6 pb-8 pt-8 ${background}`}
-    >
+    <main className="screen min-h-screen bg-slate-50 px-6 pb-8 pt-8">
 
       {/* Header */}
       <header className="flex items-center justify-between gap-2">
@@ -64,7 +66,7 @@ export default function Dashboard({
             onClick={onChangeSchool}
             className="rounded-lg bg-white px-2.5 py-2 text-[11px] font-semibold text-slate-600 shadow-sm"
           >
-            Change
+            Change School
           </button>
 
           <button
@@ -78,16 +80,18 @@ export default function Dashboard({
 
       {/* School */}
       <section className="mt-6">
-        <div className="glass rounded-2xl p-5">
-          <p className="text-xs font-semibold uppercase tracking-[.18em] text-orange-500">
+        <div
+          className={`rounded-3xl p-6 text-white shadow-lg ${schoolGradient}`}
+        >
+          <p className="text-xs font-semibold uppercase tracking-[.18em] text-white/80">
             Your school
           </p>
 
-          <h2 className="mt-2 text-xl font-bold text-slate-900">
+          <h2 className="mt-3 text-2xl font-bold leading-tight">
             {school.name}
           </h2>
 
-          <p className="mt-1 text-sm text-slate-500">
+          <p className="mt-4 text-sm text-white/75">
             Faculty, announcements and academic information
           </p>
         </div>
@@ -186,7 +190,7 @@ export default function Dashboard({
             <button
               key={announcement.id}
               onClick={onAnnouncements}
-              className="glass flex w-full items-center gap-3 rounded-2xl p-4 text-left"
+              className="glass flex w-full items-center gap-3 rounded-2xl p-4 text-left transition active:scale-[.99]"
             >
               <div className="inline-flex shrink-0 items-center justify-center rounded-lg bg-orange-50 p-2 text-base">
                 🔔
@@ -228,7 +232,7 @@ export default function Dashboard({
 
           {/* Faculty */}
           <div className="px-2 py-4 text-center">
-            <p className="text-lg font-bold text-slate-900">
+            <p className="text-lg font-bold text-orange-500">
               {faculty.length}
             </p>
 
@@ -239,7 +243,7 @@ export default function Dashboard({
 
           {/* Alerts */}
           <div className="px-2 py-4 text-center">
-            <p className="text-lg font-bold text-slate-900">
+            <p className="text-lg font-bold text-pink-500">
               {announcements.length}
             </p>
 
@@ -250,7 +254,7 @@ export default function Dashboard({
 
           {/* Duties */}
           <div className="px-2 py-4 text-center">
-            <p className="text-lg font-bold text-slate-900">
+            <p className="text-lg font-bold text-cyan-500">
               —
             </p>
 
@@ -261,7 +265,7 @@ export default function Dashboard({
 
           {/* Evaluation */}
           <div className="px-2 py-4 text-center">
-            <p className="text-lg font-bold text-slate-900">
+            <p className="text-lg font-bold text-violet-500">
               —
             </p>
 
