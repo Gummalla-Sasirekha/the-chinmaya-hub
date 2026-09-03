@@ -628,7 +628,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt389', facultyId: 'f26', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Probability and Statistics', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt390', facultyId: 'f58', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Digital Image Processing', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt391', facultyId: 'f40', day: 'Tue', startTime: '12:10', endTime: '13:10', subject: 'Software Engineering', class: 'BCA 1 Year II', roomNo: 'A504' },
-{ id: 'tt392', facultyId: 'f60', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'IKS: Self-Unfoldment', class: 'BCA 1 Year II', roomNo: 'A504' },
+{ id: 'tt392', facultyId: 'f60', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'IKS: Self-Unfoldment', class: 'BCA 1 Year II', roomNo: 'A504' },
 
 { id: 'tt393', facultyId: 'f58', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Digital Image Processing', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt394', facultyId: 'f40', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Software Engineering', class: 'BCA 1 Year II', roomNo: 'A504' },
