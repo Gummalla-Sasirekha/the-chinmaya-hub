@@ -45,7 +45,19 @@ TIME_SLOTS = [
 def clean_text(text):
     text = text.replace("\n", " ")
     text = re.sub(r"\s+", " ", text)
-    return text.strip()
+    text = text.strip()
+
+    corrections = {
+        "b. pinta muralidharan": "Dr. Dinta Muralidharan",
+        "b. pinta Muralidharan": "Dr. Dinta Muralidharan",
+        "pinta muralidharan": "Dr. Dinta Muralidharan",
+        "Dinta Muralidharan": "Dr. Dinta Muralidharan",
+    }
+
+    for wrong, correct in corrections.items():
+        text = text.replace(wrong, correct)
+
+    return text
 
 
 def ocr_cell(cell):
