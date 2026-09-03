@@ -17,6 +17,13 @@ type Props = {
   onLogout: () => void
 }
 
+const schoolBackgrounds: Record<string, string> = {
+  stem: 'bg-blue-50',
+  management: 'bg-emerald-50',
+  education: 'bg-violet-50',
+  arts: 'bg-orange-50',
+}
+
 export default function Dashboard({
   school,
   faculty,
@@ -28,8 +35,13 @@ export default function Dashboard({
   onChangeSchool,
   onLogout,
 }: Props) {
+  const background =
+    schoolBackgrounds[school.id] ?? 'bg-slate-50'
+
   return (
-    <main className="screen px-6 pb-8 pt-8">
+    <main
+      className={`screen min-h-screen px-6 pb-8 pt-8 ${background}`}
+    >
 
       {/* Header */}
       <header className="flex items-center justify-between gap-2">
