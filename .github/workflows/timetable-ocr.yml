@@ -1,1 +1,27 @@
+name: Extract Timetable Data
 
+on:
+  workflow_dispatch:
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install OCR tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+          pip install pytesseract pillow opencv-python
+
+      - name: Run timetable extractor
+        run: |
+          python scripts/extract-timetable.py
