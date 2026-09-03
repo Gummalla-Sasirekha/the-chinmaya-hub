@@ -231,8 +231,8 @@ export const timetable: TimetableEntry[] = [
 
 { id: 'tt105', facultyId: 'f26', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
 { id: 'tt106', facultyId: 'f22', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Environmental Science', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
-{ id: 'tt107', facultyId: 'f9', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
-{ id: 'tt108', facultyId: 'f26', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt107', facultyId: 'f9', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Information Theory for Cyber Security', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
+{ id: 'tt108', facultyId: 'f26', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Discrete Mathematical Structures', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
 { id: 'tt109', facultyId: 'f22', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Environmental Science', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
 
 { id: 'tt110', facultyId: 'f25', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Cyber Security Year II', roomNo: 'A315' },
