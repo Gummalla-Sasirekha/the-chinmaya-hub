@@ -135,8 +135,15 @@ if (view === 'login') {
 }
 
   if (view === 'schools') {
-    return <SchoolSelection schools={schools} onSelect={select} />
-  }
+  return (
+    <SchoolSelection
+      schools={schools}
+      onSelect={select}
+      onBack={() => navigate('login')}
+    />
+  )
+}
+  
 
   const selected = school ?? schools[0]
 
