@@ -1,7 +1,7 @@
 import type { Announcement, Faculty, School, TimetableEntry } from '../types'
 
 export const schools: School[] = [
-  { id: 'stem', name: 'Faculty of Science, Technology, Engineering and Mathematics (STEM)' },
+  { id: 'stem', name: 'Science, Technology, Engineering and Mathematics (STEM)' },
   { id: 'business', name: 'School of Business and Economics' },
   { id: 'education', name: 'School of Education, Governance, Culture & Social Systems' },
   { id: 'kalayoga', name: 'School of Kalayoga' },
