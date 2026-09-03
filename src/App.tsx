@@ -184,13 +184,30 @@ if (view === 'login') {
   }
 
   return (
-    <Dashboard
-      school={selected}
-      faculty={faculty}
-      announcements={announcements}
-      role={role}
-      onDirectory={() => navigate('directory')}
-      onAnnouncements={() => navigate('announcements')}
-    />
+   <Dashboard
+  school={selected}
+  faculty={faculty}
+  announcements={announcements}
+  role={role}
+  onDirectory={() => navigate('directory')}
+  onAnnouncements={() => navigate('announcements')}
+  onChangeSchool={() => {
+    setSchool(null)
+    setActiveFaculty(null)
+    navigate('schools')
+  }}
+  onLogout={() => {
+    setSchool(null)
+    setActiveFaculty(null)
+    setFacultyId(undefined)
+    setRole('student')
+    window.history.replaceState(
+      { view: 'login' },
+      '',
+      window.location.href
+    )
+    setView('login')
+  }}
+/> 
   )
 }
