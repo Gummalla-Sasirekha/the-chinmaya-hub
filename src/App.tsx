@@ -31,6 +31,28 @@ type View =
 
 export default function App() {
   const [view, setView] = useState<View>('login')
+  const navigate = (nextView: View) => {
+  window.history.pushState({ view: nextView }, '', window.location.href)
+  setView(nextView)
+}
+  useEffect(() => {
+  window.history.replaceState(
+    { view: 'login' },
+    '',
+    window.location.href
+  )
+
+  const handlePopState = (event: PopStateEvent) => {
+    const previousView = event.state?.view ?? 'login'
+    setView(previousView)
+  }
+
+  window.addEventListener('popstate', handlePopState)
+
+  return () => {
+    window.removeEventListener('popstate', handlePopState)
+  }
+}, [])
   const [school, setSchool] = useState<School | null>(null)
   const [schools, setSchools] = useState<School[]>([])
   const [faculty, setFaculty] = useState<Faculty[]>([])
@@ -56,12 +78,12 @@ export default function App() {
       }
     }
 
-    setView('dashboard')
+    navigate('dashboard')
   }
 
   const showProfile = (person: Faculty) => {
     setActiveFaculty(person)
-    setView('profile')
+    navigate('profile')
     getTimetable(person.id).then(setTimetable)
   }
 
@@ -87,7 +109,7 @@ if (view === 'login') {
           setRole('student')
           setFacultyId(undefined)
           setSchool(null)
-          setView('schools')
+          navigate('schools')
           return
         }
 
@@ -100,7 +122,7 @@ if (view === 'login') {
           setRole('faculty')
           setFacultyId('f1')
           setSchool(null)
-          setView('schools')
+          navigate('schools')
           return
         }
 
@@ -127,8 +149,8 @@ if (view === 'login') {
       <FacultyDirectory
         school={selected}
         faculty={faculty}
-        onBack={() => setView('dashboard')}
-        onAnnouncements={() => setView('announcements')}
+        onBack={() => navigate('dashboard')}
+        onAnnouncements={() => navigate('announcements')}
         onViewProfile={showProfile}
       />
     )
@@ -139,7 +161,7 @@ if (view === 'login') {
       <FacultyProfile
         faculty={activeFaculty}
         timetable={timetable}
-        onBack={() => setView('directory')}
+        onBack={() => navigate('directory')}
       />
     )
   }
@@ -149,7 +171,7 @@ if (view === 'login') {
       <Announcements
         school={selected}
         announcements={announcements}
-        onBack={() => setView('dashboard')}
+        onBack={() => navigate('dashboard')}
       />
     )
   }
@@ -160,8 +182,8 @@ if (view === 'login') {
       faculty={faculty}
       announcements={announcements}
       role={role}
-      onDirectory={() => setView('directory')}
-      onAnnouncements={() => setView('announcements')}
+      onDirectory={() => navigate('directory')}
+      onAnnouncements={() => navigate('announcements')}
     />
   )
 }
