@@ -621,19 +621,19 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt383', facultyId: 'f26', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Probability and Statistics', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt384', facultyId: 'f43', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Python Programming', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt385', facultyId: 'f58', day: 'Mon', startTime: '12:10', endTime: '13:10', subject: 'Digital Image Processing', class: 'BCA 1 Year II', roomNo: 'A504' },
-{ id: 'tt386', facultyId: 'f66', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'IKS: Self-Unfoldment', class: 'BCA 1 Year II', roomNo: 'A504' },
+{ id: 'tt386', facultyId: 'f60', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'IKS: Self-Unfoldment', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt387', facultyId: 'f13', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Disaster Management', class: 'BCA 1 Year II', roomNo: 'A504' },
 
 { id: 'tt388', facultyId: 'f43', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Python Programming', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt389', facultyId: 'f26', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Probability and Statistics', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt390', facultyId: 'f58', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Digital Image Processing', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt391', facultyId: 'f40', day: 'Tue', startTime: '12:10', endTime: '13:10', subject: 'Software Engineering', class: 'BCA 1 Year II', roomNo: 'A504' },
-{ id: 'tt392', facultyId: 'f66', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'IKS: Self-Unfoldment', class: 'BCA 1 Year II', roomNo: 'A504' },
+{ id: 'tt392', facultyId: 'f60', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'IKS: Self-Unfoldment', class: 'BCA 1 Year II', roomNo: 'A504' },
 
 { id: 'tt393', facultyId: 'f58', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Digital Image Processing', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt394', facultyId: 'f40', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Software Engineering', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt395', facultyId: 'f13', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Disaster Management', class: 'BCA 1 Year II', roomNo: 'A504' },
-{ id: 'tt396', facultyId: 'f66', day: 'Wed', startTime: '12:10', endTime: '13:10', subject: 'IKS: Self-Unfoldment', class: 'BCA 1 Year II', roomNo: 'A504' },
+{ id: 'tt396', facultyId: 'f60', day: 'Wed', startTime: '12:10', endTime: '13:10', subject: 'IKS: Self-Unfoldment', class: 'BCA 1 Year II', roomNo: 'A504' },
 
 { id: 'tt397', facultyId: 'f13', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Disaster Management', class: 'BCA 1 Year II', roomNo: 'A504' },
 { id: 'tt398', facultyId: 'f40', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Software Engineering', class: 'BCA 1 Year II', roomNo: 'A504' },
