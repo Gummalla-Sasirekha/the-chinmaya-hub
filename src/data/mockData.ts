@@ -168,20 +168,18 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt61', facultyId: 'f25', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt62', facultyId: 'f10', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A301' },
 { id: 'tt63', facultyId: 'f26', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt64', facultyId: 'f26', day: 'Wed', startTime: '13:10', endTime: '14:00', subject: 'Discrete Mathematical Structures', class: 'CSE Data Science Year II', roomNo: 'A315' },
 
-{ id: 'tt64', facultyId: 'f10', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'CSE Data Science Year II', roomNo: 'A201' },
-{ id: 'tt65', facultyId: 'f10', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A301' },
-{ id: 'tt66', facultyId: 'f53', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A418' },
-{ id: 'tt67', facultyId: 'f25', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt68', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt65', facultyId: 'f10', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'CSE Data Science Year II', roomNo: 'A201' },
+{ id: 'tt66', facultyId: 'f10', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A301' },
+{ id: 'tt67', facultyId: 'f53', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A418' },
+{ id: 'tt68', facultyId: 'f25', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt69', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
 
-{ id: 'tt69', facultyId: 'f10', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'CSE Data Science Year II', roomNo: 'A201' },
-{ id: 'tt70', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt71', facultyId: 'f53', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A418' },
-{ id: 'tt72', facultyId: 'f31', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt73', facultyId: 'f25', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
-
-
+{ id: 'tt70', facultyId: 'f10', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'CSE Data Science Year II', roomNo: 'A201' },
+{ id: 'tt71', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt72', facultyId: 'f25', day: 'Fri', startTime: '13:10', endTime: '16:00', subject: 'Object Oriented Programming Lab', class: 'CSE Data Science Year II', roomNo: 'NEW LAB 2' },
+  
 // =========================================================
 // B.Tech ECE - YEAR II
 // Room: A314
@@ -287,7 +285,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt147', facultyId: 'f41', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'CSE Cyber Security Year III', roomNo: 'A410' },
 { id: 'tt148', facultyId: 'f49', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Minor Project 2', class: 'CSE Cyber Security Year III', roomNo: 'A410' },
 
-  // =========================================================
+// =========================================================
 // B.Tech CSE - DATA SCIENCE - YEAR III
 // Room: A404
 // =========================================================
