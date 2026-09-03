@@ -146,7 +146,7 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt48', facultyId: 'f14', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE AIML Year II', roomNo: 'A204' },
 
 
- // =========================================================
+// =========================================================
 // B.Tech CSE - DATA SCIENCE - YEAR II
 // Room: A315
 // =========================================================
@@ -716,22 +716,22 @@ export const timetable: TimetableEntry[] = [
 // Room: A302
 // =========================================================
 
-{ id: 'tt453', facultyId: 'f56', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 1 Year III' },
-{ id: 'tt454', facultyId: 'f55', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 1 Year III' },
-{ id: 'tt455', facultyId: 'f35', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Data Encryption and Compression', class: 'CSE Batch 1 Year III' },
-{ id: 'tt456', facultyId: 'f53', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Data Science', class: 'CSE Batch 1 Year III' },
+{ id: 'tt453', facultyId: 'f56', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 1 Year III, CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt454', facultyId: 'f55', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt455', facultyId: 'f35', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Data Encryption and Compression', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt456', facultyId: 'f53', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Data Science', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
 { id: 'tt457', facultyId: 'f5', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 { id: 'tt458', facultyId: 'f55', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Data and Visual Analytics', class: 'CSE Batch 1 Year III' },
 { id: 'tt459', facultyId: 'f53', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 1 Year III' },
 { id: 'tt460', facultyId: 'f49', day: 'Mon', startTime: '14:00', endTime: '16:00', subject: 'Computer Networks Lab', class: 'CSE Batch 1 Year III', roomNo: 'A101' },
 
-{ id: 'tt461', facultyId: 'f55', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Data and Visual Analytics', class: 'CSE Batch 1 Year III' },
-{ id: 'tt462', facultyId: 'f53', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 1 Year III' },
+{ id: 'tt461', facultyId: 'f55', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Data and Visual Analytics', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt462', facultyId: 'f53', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
 { id: 'tt463', facultyId: 'f42', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
-{ id: 'tt464', facultyId: 'f56', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 1 Year III' },
-{ id: 'tt465', facultyId: 'f55', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 1 Year III' },
-{ id: 'tt466', facultyId: 'f35', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Data Encryption and Compression', class: 'CSE Batch 1 Year III' },
-{ id: 'tt467', facultyId: 'f53', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'CSE Batch 1 Year III' },
+{ id: 'tt464', facultyId: 'f56', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt465', facultyId: 'f55', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt466', facultyId: 'f35', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Data Encryption and Compression', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt467', facultyId: 'f53', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
 { id: 'tt468', facultyId: 'f44', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Software Engineering', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 { id: 'tt469', facultyId: 'f16', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Constitution of India', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 { id: 'tt470', facultyId: 'f44', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Software Engineering', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
@@ -743,17 +743,17 @@ export const timetable: TimetableEntry[] = [
 
 { id: 'tt475', facultyId: 'f44', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Software Engineering', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 { id: 'tt476', facultyId: 'f42', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
-{ id: 'tt477', facultyId: 'f56', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 1 Year III' },
-{ id: 'tt478', facultyId: 'f55', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 1 Year III' },
-{ id: 'tt479', facultyId: 'f35', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Data Encryption and Compression', class: 'CSE Batch 1 Year III' },
-{ id: 'tt480', facultyId: 'f53', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'CSE Batch 1 Year III' },
+{ id: 'tt477', facultyId: 'f56', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt478', facultyId: 'f55', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt479', facultyId: 'f35', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Data Encryption and Compression', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt480', facultyId: 'f53', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
 { id: 'tt481', facultyId: 'f42', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 { id: 'tt482', facultyId: 'f16', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Constitution of India', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 
 { id: 'tt483', facultyId: 'f49', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Computer Networks', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
-{ id: 'tt484', facultyId: 'f55', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Data and Visual Analytics', class: 'CSE Batch 1 Year III' },
-{ id: 'tt485', facultyId: 'f53', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 1 Year III' },
-{ id: 'tt486', facultyId: 'f5', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Theory of Computation', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
+{ id: 'tt484', facultyId: 'f55', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Data and Visual Analytics', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt485', facultyId: 'f53', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 1 Year III , CSE Batch 2 Year III, CSE Batch 3 Year III' },
+{ id: 'tt486', facultyId: 'f16', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Constitution of India', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 { id: 'tt487', facultyId: 'f5', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 { id: 'tt488', facultyId: 'f48', day: 'Fri', startTime: '14:00', endTime: '16:00', subject: 'Project 1', class: 'CSE Batch 1 Year III', roomNo: 'A302' },
 
@@ -762,23 +762,12 @@ export const timetable: TimetableEntry[] = [
 // Room: A304
 // =========================================================
 
-{ id: 'tt489', facultyId: 'f56', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 2 Year III' },
-{ id: 'tt490', facultyId: 'f55', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 2 Year III' },
-{ id: 'tt491', facultyId: 'f35', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Data Encryption and Compression', class: 'CSE Batch 2 Year III' },
-{ id: 'tt492', facultyId: 'f53', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Data Science', class: 'CSE Batch 2 Year III' },
+
 { id: 'tt493', facultyId: 'f49', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
-{ id: 'tt494', facultyId: 'f55', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Data and Visual Analytics', class: 'CSE Batch 2 Year III' },
-{ id: 'tt495', facultyId: 'f53', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 2 Year III' },
 { id: 'tt496', facultyId: 'f42', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
 { id: 'tt497', facultyId: 'UNKNOWN', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Project 1', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
 
-{ id: 'tt498', facultyId: 'f55', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Data and Visual Analytics', class: 'CSE Batch 2 Year III' },
-{ id: 'tt499', facultyId: 'f53', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 2 Year III' },
 { id: 'tt500', facultyId: 'f33', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
-{ id: 'tt501', facultyId: 'f56', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 2 Year III' },
-{ id: 'tt502', facultyId: 'f55', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 2 Year III' },
-{ id: 'tt503', facultyId: 'f35', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Data Encryption and Compression', class: 'CSE Batch 2 Year III' },
-{ id: 'tt504', facultyId: 'f53', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'CSE Batch 2 Year III' },
 { id: 'tt505', facultyId: 'f49', day: 'Tue', startTime: '13:10', endTime: '16:00', subject: 'Computer Networks Lab', class: 'CSE Batch 2 Year III', roomNo: 'A101' },
 
 { id: 'tt506', facultyId: 'UNKNOWN', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Constitution of India', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
@@ -789,16 +778,10 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt510', facultyId: 'f33', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
 { id: 'tt511', facultyId: 'f49', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
 { id: 'tt512', facultyId: 'f44', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Software Engineering', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
-{ id: 'tt513', facultyId: 'f56', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 2 Year III' },
-{ id: 'tt514', facultyId: 'f55', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 2 Year III' },
-{ id: 'tt515', facultyId: 'f35', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Data Encryption and Compression', class: 'CSE Batch 2 Year III' },
-{ id: 'tt516', facultyId: 'f53', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Batch 2 Year III' },
 { id: 'tt517', facultyId: 'UNKNOWN', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Constitution of India', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
 { id: 'tt518', facultyId: 'f44', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Software Engineering', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
 
 { id: 'tt519', facultyId: 'f42', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
-{ id: 'tt520', facultyId: 'f55', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Data and Visual Analytics', class: 'CSE Batch 2 Year III' },
-{ id: 'tt521', facultyId: 'f53', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 2 Year III' },
 { id: 'tt522', facultyId: 'f49', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Computer Networks', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
 { id: 'tt523', facultyId: 'f42', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
 { id: 'tt524', facultyId: 'f33', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Theory of Computation', class: 'CSE Batch 2 Year III', roomNo: 'A304' },
@@ -809,24 +792,12 @@ export const timetable: TimetableEntry[] = [
 // Room: A310
 // =========================================================
 
-{ id: 'tt526', facultyId: 'f56', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 3 Year III' },
-{ id: 'tt527', facultyId: 'f55', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 3 Year III' },
-{ id: 'tt528', facultyId: 'f35', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Data Encryption and Compression', class: 'CSE Batch 3 Year III' },
-{ id: 'tt529', facultyId: 'f53', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Data Science', class: 'CSE Batch 3 Year III' },
 { id: 'tt530', facultyId: 'f45', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
-{ id: 'tt531', facultyId: 'f55', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Data and Visual Analytics', class: 'CSE Batch 3 Year III' },
-{ id: 'tt532', facultyId: 'f53', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 3 Year III' },
 { id: 'tt533', facultyId: 'f5', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Theory of Computation', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 { id: 'tt534', facultyId: 'f44', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Software Engineering', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 { id: 'tt535', facultyId: 'f61', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Constitution of India', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 
-{ id: 'tt536', facultyId: 'f55', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Data and Visual Analytics', class: 'CSE Batch 3 Year III' },
-{ id: 'tt537', facultyId: 'f53', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 3 Year III' },
 { id: 'tt538', facultyId: 'f5', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Theory of Computation', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
-{ id: 'tt539', facultyId: 'f56', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 3 Year III' },
-{ id: 'tt540', facultyId: 'f55', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 3 Year III' },
-{ id: 'tt541', facultyId: 'f35', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Data Encryption and Compression', class: 'CSE Batch 3 Year III' },
-{ id: 'tt542', facultyId: 'f53', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'CSE Batch 3 Year III' },
 { id: 'tt543', facultyId: 'f49', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Computer Networks', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 { id: 'tt544', facultyId: 'f27', day: 'Tue', startTime: '14:00', endTime: '16:00', subject: 'Project 1', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 
@@ -838,16 +809,10 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt549', facultyId: 'f61', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Constitution of India', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 { id: 'tt550', facultyId: 'f49', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Computer Networks', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 { id: 'tt551', facultyId: 'f45', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
-{ id: 'tt552', facultyId: 'f56', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Deep Learning - Batch 1', class: 'CSE Batch 3 Year III' },
-{ id: 'tt553', facultyId: 'f55', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Deep Learning - Batch 2', class: 'CSE Batch 3 Year III' },
-{ id: 'tt554', facultyId: 'f35', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Data Encryption and Compression', class: 'CSE Batch 3 Year III' },
-{ id: 'tt555', facultyId: 'f53', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Batch 3 Year III' },
 { id: 'tt556', facultyId: 'f45', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Design and Analysis of Algorithms', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 { id: 'tt557', facultyId: 'f61', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Constitution of India', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 
 { id: 'tt558', facultyId: 'f5', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Theory of Computation', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
-{ id: 'tt559', facultyId: 'f55', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Data and Visual Analytics', class: 'CSE Batch 3 Year III' },
-{ id: 'tt560', facultyId: 'f53', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Steganography and Digital Watermarking', class: 'CSE Batch 3 Year III' },
 { id: 'tt561', facultyId: 'f44', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Software Engineering', class: 'CSE Batch 3 Year III', roomNo: 'A310' },
 { id: 'tt562', facultyId: 'f49', day: 'Fri', startTime: '13:10', endTime: '16:00', subject: 'Computer Networks Lab', class: 'CSE Batch 3 Year III', roomNo: 'A101' }
 
