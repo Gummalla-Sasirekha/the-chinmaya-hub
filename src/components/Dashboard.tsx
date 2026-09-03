@@ -38,7 +38,6 @@ export default function Dashboard({
       <header className="flex items-center justify-between gap-2">
         <div className="min-w-0">
           <p className="text-sm text-slate-500">Good morning,</p>
-
           <h1 className="text-xl font-bold text-slate-900">
             CVV Family
             <span className="ml-1 rounded-full bg-slate-100 px-2 py-1 text-[10px] uppercase tracking-wide text-slate-600">
@@ -76,36 +75,6 @@ export default function Dashboard({
         </p>
       </section>
 
-      <section className="mt-5 grid grid-cols-2 gap-3">
-        <Stat
-          label="Total faculty"
-          value={faculty.length}
-          accent="text-orange-500"
-        />
-
-        <Stat
-          label="Active alerts"
-          value={announcements.length}
-          accent="text-rose-500"
-        />
-
-        <Stat
-          label="Upcoming duties"
-          value={announcements.filter(
-            (a) => a.category !== 'Circular'
-          ).length}
-          accent="text-sky-600"
-        />
-
-        <Stat
-          label="Pending evaluation"
-          value={announcements.filter(
-            (a) => a.category === 'Evaluation'
-          ).length}
-          accent="text-violet-600"
-        />
-      </section>
-
       <section className="mt-7">
         <h2 className="font-bold text-slate-800">Quick access</h2>
 
@@ -115,14 +84,8 @@ export default function Dashboard({
             className="glass min-h-28 rounded-2xl p-4 text-left"
           >
             <span className="text-xl">♙</span>
-
-            <p className="mt-3 font-semibold">
-              Faculty directory
-            </p>
-
-            <p className="mt-1 text-xs text-slate-500">
-              Find & contact
-            </p>
+            <p className="mt-3 font-semibold">Faculty directory</p>
+            <p className="mt-1 text-xs text-slate-500">Find & contact</p>
           </button>
 
           <button
@@ -130,11 +93,7 @@ export default function Dashboard({
             className="glass min-h-28 rounded-2xl p-4 text-left"
           >
             <span className="text-xl">♢</span>
-
-            <p className="mt-3 font-semibold">
-              Announcements
-            </p>
-
+            <p className="mt-3 font-semibold">Announcements</p>
             <p className="mt-1 text-xs text-slate-500">
               View latest updates
             </p>
@@ -144,9 +103,7 @@ export default function Dashboard({
 
       <section className="mt-7">
         <div className="flex items-center justify-between">
-          <h2 className="font-bold text-slate-800">
-            Recent activity
-          </h2>
+          <h2 className="font-bold text-slate-800">Recent activity</h2>
 
           <button
             onClick={onAnnouncements}
@@ -177,13 +134,17 @@ export default function Dashboard({
               </div>
             </div>
           ))}
+
+          {latest.length === 0 && (
+            <div className="rounded-2xl bg-white p-4 text-sm text-slate-500 shadow-sm">
+              No recent activity.
+            </div>
+          )}
         </div>
       </section>
 
       <section className="mt-7">
-        <h2 className="font-bold text-slate-800">
-          Duty allocation
-        </h2>
+        <h2 className="font-bold text-slate-800">Duty allocation</h2>
 
         <div className="mt-3 space-y-3 rounded-2xl bg-white p-4 shadow-sm">
           <Progress
@@ -205,6 +166,40 @@ export default function Dashboard({
           />
         </div>
       </section>
+
+      <section className="mt-7">
+        <h2 className="font-bold text-slate-800">Statistics</h2>
+
+        <div className="mt-3 grid grid-cols-4 divide-x rounded-2xl bg-white py-4 shadow-sm">
+          <Stat
+            label="Faculty"
+            value={faculty.length}
+            accent="text-orange-500"
+          />
+
+          <Stat
+            label="Alerts"
+            value={announcements.length}
+            accent="text-rose-500"
+          />
+
+          <Stat
+            label="Duties"
+            value={announcements.filter(
+              (a) => a.category !== 'Circular'
+            ).length}
+            accent="text-sky-600"
+          />
+
+          <Stat
+            label="Evaluation"
+            value={announcements.filter(
+              (a) => a.category === 'Evaluation'
+            ).length}
+            accent="text-violet-600"
+          />
+        </div>
+      </section>
     </main>
   )
 }
@@ -219,12 +214,9 @@ function Stat({
   accent: string
 }) {
   return (
-    <div className="rounded-2xl bg-white p-4 shadow-sm">
-      <p className={`text-2xl font-bold ${accent}`}>
-        {value}
-      </p>
-
-      <p className="mt-1 text-xs text-slate-500">
+    <div className="min-w-0 px-2 text-center">
+      <p className={`text-xl font-bold ${accent}`}>{value}</p>
+      <p className="mt-1 truncate text-[10px] text-slate-500">
         {label}
       </p>
     </div>
@@ -244,10 +236,7 @@ function Progress({
     <div>
       <div className="flex justify-between text-xs">
         <span className="text-slate-600">{label}</span>
-
-        <span className="font-semibold text-slate-700">
-          {value}%
-        </span>
+        <span className="font-semibold text-slate-700">{value}%</span>
       </div>
 
       <div className="mt-2 h-2 overflow-hidden rounded-full bg-slate-100">
