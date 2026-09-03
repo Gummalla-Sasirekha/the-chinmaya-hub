@@ -30,6 +30,7 @@ export default function Dashboard({
 }: Props) {
   return (
     <main className="screen px-6 pb-8 pt-8">
+
       {/* Header */}
       <header className="flex items-center justify-between gap-2">
         <div className="min-w-0">
@@ -93,25 +94,26 @@ export default function Dashboard({
         </div>
 
         <div className="mt-3 grid grid-cols-2 gap-3">
+
           {/* Faculty Directory */}
           <button
             onClick={onDirectory}
             className="glass min-h-32 rounded-2xl p-4 text-left transition active:scale-[.98]"
           >
-              <div className="grid size-11 place-items-center rounded-xl bg-orange-50">
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.5"
-    className="text-slate-700"
-  >
-    <circle cx="12" cy="7" r="3" />
-    <path d="M5 21c0-3.5 3-6 7-6s7 2.5 7 6" />
-  </svg>
-</div>
+            <div>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                className="text-slate-700"
+              >
+                <circle cx="12" cy="7" r="3" />
+                <path d="M5 21c0-3.5 3-6 7-6s7 2.5 7 6" />
+              </svg>
+            </div>
 
             <h3 className="mt-4 text-sm font-bold text-slate-800">
               Faculty Directory
@@ -127,19 +129,19 @@ export default function Dashboard({
             onClick={onAnnouncements}
             className="glass min-h-32 rounded-2xl p-4 text-left transition active:scale-[.98]"
           >
-           <div className="grid size-11 place-items-center rounded-xl bg-orange-50">
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.5"
-    className="text-slate-700"
-  >
-    <path d="M12 3L19 12L12 21L5 12Z" />
-  </svg>
-</div>
+            <div>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                className="text-slate-700"
+              >
+                <path d="M12 3L19 12L12 21L5 12Z" />
+              </svg>
+            </div>
 
             <h3 className="mt-4 text-sm font-bold text-slate-800">
               Announcements
@@ -155,8 +157,20 @@ export default function Dashboard({
             onClick={onTimetable}
             className="glass col-span-2 flex min-h-24 items-center gap-4 rounded-2xl p-4 text-left transition active:scale-[.98]"
           >
-            <div className="grid size-12 shrink-0 place-items-center rounded-xl bg-orange-50 text-xl">
-              📅
+            <div className="shrink-0">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.5"
+                className="text-slate-700"
+              >
+                <rect x="3" y="4" width="18" height="17" rx="2" />
+                <path d="M8 2v4M16 2v4M3 9h18" />
+                <path d="M8 13h2M14 13h2M8 17h2M14 17h2" />
+              </svg>
             </div>
 
             <div className="flex-1">
@@ -195,19 +209,19 @@ export default function Dashboard({
               onClick={onAnnouncements}
               className="glass flex w-full items-center gap-3 rounded-2xl p-4 text-left"
             >
-              <div className="grid size-11 place-items-center rounded-xl bg-orange-50">
-  <svg
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="1.5"
-    className="text-slate-700"
-  >
-    <path d="M12 3L19 12L12 21L5 12Z" />
-  </svg>
-</div>
+              <div className="shrink-0">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  className="text-slate-700"
+                >
+                  <path d="M12 3L19 12L12 21L5 12Z" />
+                </svg>
+              </div>
 
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-semibold text-slate-700">
@@ -242,6 +256,7 @@ export default function Dashboard({
         </h2>
 
         <div className="mt-3 grid grid-cols-4 divide-x overflow-hidden rounded-2xl bg-white shadow-sm">
+
           {/* Faculty */}
           <div className="px-2 py-4 text-center">
             <p className="text-lg font-bold text-slate-900">
@@ -285,8 +300,10 @@ export default function Dashboard({
               Evaluation
             </p>
           </div>
+
         </div>
       </section>
+
     </main>
   )
 }
