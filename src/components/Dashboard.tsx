@@ -100,19 +100,8 @@ export default function Dashboard({
             onClick={onDirectory}
             className="glass min-h-32 rounded-2xl p-4 text-left transition active:scale-[.98]"
           >
-            <div>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                className="text-slate-700"
-              >
-                <circle cx="12" cy="7" r="3" />
-                <path d="M5 21c0-3.5 3-6 7-6s7 2.5 7 6" />
-              </svg>
+            <div className="inline-flex items-center justify-center rounded-lg bg-orange-50 p-2 text-base">
+              👥
             </div>
 
             <h3 className="mt-4 text-sm font-bold text-slate-800">
@@ -129,18 +118,8 @@ export default function Dashboard({
             onClick={onAnnouncements}
             className="glass min-h-32 rounded-2xl p-4 text-left transition active:scale-[.98]"
           >
-            <div>
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                className="text-slate-700"
-              >
-                <path d="M12 3L19 12L12 21L5 12Z" />
-              </svg>
+            <div className="inline-flex items-center justify-center rounded-lg bg-orange-50 p-2 text-base">
+              🔔
             </div>
 
             <h3 className="mt-4 text-sm font-bold text-slate-800">
@@ -157,20 +136,8 @@ export default function Dashboard({
             onClick={onTimetable}
             className="glass col-span-2 flex min-h-24 items-center gap-4 rounded-2xl p-4 text-left transition active:scale-[.98]"
           >
-            <div className="shrink-0">
-              <svg
-                width="18"
-                height="18"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1.5"
-                className="text-slate-700"
-              >
-                <rect x="3" y="4" width="18" height="17" rx="2" />
-                <path d="M8 2v4M16 2v4M3 9h18" />
-                <path d="M8 13h2M14 13h2M8 17h2M14 17h2" />
-              </svg>
+            <div className="inline-flex shrink-0 items-center justify-center rounded-lg bg-orange-50 p-2 text-base">
+              📅
             </div>
 
             <div className="flex-1">
@@ -209,18 +176,8 @@ export default function Dashboard({
               onClick={onAnnouncements}
               className="glass flex w-full items-center gap-3 rounded-2xl p-4 text-left"
             >
-              <div className="shrink-0">
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  className="text-slate-700"
-                >
-                  <path d="M12 3L19 12L12 21L5 12Z" />
-                </svg>
+              <div className="inline-flex shrink-0 items-center justify-center rounded-lg bg-orange-50 p-2 text-base">
+                🔔
               </div>
 
               <div className="min-w-0 flex-1">
