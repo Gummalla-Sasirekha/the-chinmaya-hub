@@ -144,40 +144,42 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt47', facultyId: 'f13', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE AIML Year II', roomNo: 'A204' },
 { id: 'tt48', facultyId: 'f14', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE AIML Year II', roomNo: 'A204' },
 
-// =========================================================
+
+ // =========================================================
 // B.Tech CSE - DATA SCIENCE - YEAR II
 // Room: A315
 // =========================================================
 
-{ id: 'tt49', facultyId: 'f53', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt50', facultyId: 'f10', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt49', facultyId: 'f53', day: 'Mon', startTime: '09:00', endTime: '10:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A418' },
+{ id: 'tt50', facultyId: 'f10', day: 'Mon', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A301' },
 { id: 'tt51', facultyId: 'f22', day: 'Mon', startTime: '11:10', endTime: '12:10', subject: 'Environmental Science', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt52', facultyId: 'f25', day: 'Mon', startTime: '13:10', endTime: '14:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt53', facultyId: 'f31', day: 'Mon', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt54', facultyId: 'f10', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt54', facultyId: 'f10', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A301' },
 
 { id: 'tt55', facultyId: 'f26', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Discrete Mathematical Structures', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt56', facultyId: 'f22', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Environmental Science', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt57', facultyId: 'f53', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt58', facultyId: 'f10', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt57', facultyId: 'f53', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A418' },
+{ id: 'tt58', facultyId: 'f10', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A301' },
 { id: 'tt59', facultyId: 'f26', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Discrete Mathematical Structures', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt60', facultyId: 'f22', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Environmental Science', class: 'CSE Data Science Year II', roomNo: 'A315' },
 
 { id: 'tt61', facultyId: 'f25', day: 'Wed', startTime: '09:00', endTime: '10:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt62', facultyId: 'f10', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt62', facultyId: 'f10', day: 'Wed', startTime: '10:00', endTime: '11:00', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A301' },
 { id: 'tt63', facultyId: 'f26', day: 'Wed', startTime: '11:10', endTime: '12:10', subject: 'Discrete Mathematical Structures', class: 'CSE Data Science Year II', roomNo: 'A315' },
 
 { id: 'tt64', facultyId: 'f10', day: 'Thu', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'CSE Data Science Year II', roomNo: 'A201' },
-{ id: 'tt65', facultyId: 'f10', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt66', facultyId: 'f53', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt65', facultyId: 'f10', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Statistical Modelling and Numerical Methods', class: 'CSE Data Science Year II', roomNo: 'A301' },
+{ id: 'tt66', facultyId: 'f53', day: 'Thu', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A418' },
 { id: 'tt67', facultyId: 'f25', day: 'Thu', startTime: '14:00', endTime: '15:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt68', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
 
 { id: 'tt69', facultyId: 'f10', day: 'Fri', startTime: '09:00', endTime: '11:00', subject: 'Python and Statistical Modelling Lab', class: 'CSE Data Science Year II', roomNo: 'A201' },
 { id: 'tt70', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
-{ id: 'tt71', facultyId: 'f53', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A315' },
+{ id: 'tt71', facultyId: 'f53', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Introduction to Data Science', class: 'CSE Data Science Year II', roomNo: 'A418' },
 { id: 'tt72', facultyId: 'f31', day: 'Fri', startTime: '14:00', endTime: '15:00', subject: 'Universal Human Values - 2', class: 'CSE Data Science Year II', roomNo: 'A315' },
 { id: 'tt73', facultyId: 'f25', day: 'Fri', startTime: '15:00', endTime: '16:00', subject: 'Object Oriented Programming', class: 'CSE Data Science Year II', roomNo: 'A315' },
+
 
 // =========================================================
 // B.Tech ECE - YEAR II
