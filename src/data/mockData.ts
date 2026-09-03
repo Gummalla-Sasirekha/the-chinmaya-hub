@@ -195,9 +195,9 @@ export const timetable: TimetableEntry[] = [
 { id: 'tt79', facultyId: 'f24', day: 'Mon', startTime: '15:00', endTime: '16:00', subject: 'Electronic Devices and Circuits', class: 'ECE Year II', roomNo: 'A314' },
 
 { id: 'tt80', facultyId: 'f32', day: 'Tue', startTime: '09:00', endTime: '10:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'ECE Year II', roomNo: 'A314' },
-{ id: 'tt81', facultyId: 'UNKNOWN', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt81', facultyId: 'f59', day: 'Tue', startTime: '10:00', endTime: '11:00', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt82', facultyId: 'f24', day: 'Tue', startTime: '11:10', endTime: '12:10', subject: 'Electronic Devices and Circuits', class: 'ECE Year II', roomNo: 'A314' },
-{ id: 'tt83', facultyId: 'UNKNOWN', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt83', facultyId: 'f59', day: 'Tue', startTime: '13:10', endTime: '14:00', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt84', facultyId: 'f6', day: 'Tue', startTime: '14:00', endTime: '15:00', subject: 'Digital Logic Design', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt85', facultyId: 'f3', day: 'Tue', startTime: '15:00', endTime: '16:00', subject: 'Intellectual Property Right', class: 'ECE Year II', roomNo: 'A314' },
 
@@ -208,11 +208,11 @@ export const timetable: TimetableEntry[] = [
 
 { id: 'tt90', facultyId: 'f48', day: 'Thu', startTime: '09:00', endTime: '10:00', subject: 'Signals and Systems', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt91', facultyId: 'f50', day: 'Thu', startTime: '10:00', endTime: '11:00', subject: 'Life Skills', class: 'ECE Year II', roomNo: 'A314' },
-{ id: 'tt92', facultyId: 'f3', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Intellectual Property Right', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt92', facultyId: 'f59', day: 'Thu', startTime: '11:10', endTime: '12:10', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt93', facultyId: 'f24', day: 'Thu', startTime: '13:10', endTime: '15:00', subject: 'Electronic Devices and Circuits Lab', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt94', facultyId: 'f31', day: 'Thu', startTime: '15:00', endTime: '16:00', subject: 'Universal Human Values - 2', class: 'ECE Year II', roomNo: 'A314' },
 
-{ id: 'tt95', facultyId: 'UNKNOWN', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Network Theory and Analysis', class: 'ECE Year II', roomNo: 'A314' },
+{ id: 'tt95', facultyId: 'f3', day: 'Fri', startTime: '09:00', endTime: '10:00', subject: 'Intellectual Property Right', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt96', facultyId: 'f48', day: 'Fri', startTime: '10:00', endTime: '11:00', subject: 'Signals and Systems', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt97', facultyId: 'f31', day: 'Fri', startTime: '11:10', endTime: '12:10', subject: 'Universal Human Values - 2', class: 'ECE Year II', roomNo: 'A314' },
 { id: 'tt98', facultyId: 'f32', day: 'Fri', startTime: '13:10', endTime: '14:00', subject: 'Mathematics (Probability Theory and Stochastic Processes)', class: 'ECE Year II', roomNo: 'A314' },
