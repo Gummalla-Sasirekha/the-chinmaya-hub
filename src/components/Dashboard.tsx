@@ -1,5 +1,5 @@
 import type { Announcement, Faculty, School, UserRole } from '../types'
-type Props = { school: School; faculty: Faculty[]; announcements: Announcement[]; role: UserRole; onDirectory: () => void; onAnnouncements: () => void }
+type Props = { school: School; faculty: Faculty[]; announcements: Announcement[]; role: UserRole; onDirectory: () => void; onAnnouncements: () => void; onChangeSchool: () => void; onLogout: () => void }
 const categoryIcon: Record<string, string> = { Invigilation: '▣', Evaluation: '✓', Meeting: '◌', Circular: '◫' }
 export default function Dashboard({ school, faculty, announcements, role, onDirectory, onAnnouncements }: Props) {
   const latest = announcements.slice().sort((a, b) => b.date.localeCompare(a.date)).slice(0, 2)
