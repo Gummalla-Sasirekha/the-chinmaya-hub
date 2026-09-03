@@ -98,9 +98,20 @@ export default function Dashboard({
             onClick={onDirectory}
             className="glass min-h-32 rounded-2xl p-4 text-left transition active:scale-[.98]"
           >
-            <div className="grid size-11 place-items-center rounded-xl bg-orange-50 text-xl">
-              👥
-            </div>
+              <div className="grid size-11 place-items-center rounded-xl bg-orange-50">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    className="text-slate-700"
+  >
+    <circle cx="12" cy="7" r="3" />
+    <path d="M5 21c0-3.5 3-6 7-6s7 2.5 7 6" />
+  </svg>
+</div>
 
             <h3 className="mt-4 text-sm font-bold text-slate-800">
               Faculty Directory
@@ -116,9 +127,19 @@ export default function Dashboard({
             onClick={onAnnouncements}
             className="glass min-h-32 rounded-2xl p-4 text-left transition active:scale-[.98]"
           >
-            <div className="grid size-11 place-items-center rounded-xl bg-orange-50 text-xl">
-              🔔
-            </div>
+           <div className="grid size-11 place-items-center rounded-xl bg-orange-50">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    className="text-slate-700"
+  >
+    <path d="M12 3L19 12L12 21L5 12Z" />
+  </svg>
+</div>
 
             <h3 className="mt-4 text-sm font-bold text-slate-800">
               Announcements
@@ -174,9 +195,19 @@ export default function Dashboard({
               onClick={onAnnouncements}
               className="glass flex w-full items-center gap-3 rounded-2xl p-4 text-left"
             >
-              <div className="grid size-10 shrink-0 place-items-center rounded-xl bg-orange-50">
-                🔔
-              </div>
+              <div className="grid size-11 place-items-center rounded-xl bg-orange-50">
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    className="text-slate-700"
+  >
+    <path d="M12 3L19 12L12 21L5 12Z" />
+  </svg>
+</div>
 
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-semibold text-slate-700">
