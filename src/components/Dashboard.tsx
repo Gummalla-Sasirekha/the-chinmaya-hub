@@ -81,17 +81,17 @@ export default function Dashboard({
       {/* School */}
       <section className="mt-6">
         <div
-          className={`rounded-3xl p-6 text-white shadow-lg ${schoolGradient}`}
+          className={`rounded-2xl p-5 text-white shadow-md ${schoolGradient}`}
         >
-          <p className="text-xs font-semibold uppercase tracking-[.18em] text-white/80">
+          <p className="text-xs font-medium tracking-wide text-white/80">
             Your school
           </p>
 
-          <h2 className="mt-3 text-2xl font-bold leading-tight">
+          <h2 className="mt-2 text-xl font-bold leading-snug">
             {school.name}
           </h2>
 
-          <p className="mt-4 text-sm text-white/75">
+          <p className="mt-3 text-sm text-white/75">
             Faculty, announcements and academic information
           </p>
         </div>
