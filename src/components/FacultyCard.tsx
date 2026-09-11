@@ -22,7 +22,8 @@ export default function FacultyCard({
   return (
     <article className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_2px_10px_rgba(20,33,61,0.04)] transition-all duration-200 hover:border-[#C9A24D] hover:shadow-md">
 
-      {/* Faculty Info */}
+      {/* ================= FACULTY INFO ================= */}
+
       <button
         onClick={onViewProfile}
         aria-label={`View ${faculty.name}'s profile`}
@@ -47,7 +48,7 @@ export default function FacultyCard({
 
           <div className="mt-1.5 flex items-center gap-1.5">
 
-            {/* Location */}
+            {/* Room / Location */}
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -67,7 +68,7 @@ export default function FacultyCard({
 
         </div>
 
-        {/* Profile Arrow */}
+        {/* Profile arrow */}
         <span className="shrink-0 text-base text-[#C9A24D] transition-transform duration-200 group-hover:translate-x-1">
           →
         </span>
@@ -75,25 +76,28 @@ export default function FacultyCard({
       </button>
 
 
-      {/* Contact Actions */}
+      {/* ================= CONTACT ACTIONS ================= */}
+
       <div className="mt-4 flex gap-2 border-t border-slate-100 pt-3">
 
-        {/* CALL */}
+        {/* ================= CALL ================= */}
+
         <a
           href={`tel:${faculty.phone}`}
           aria-label={`Call ${faculty.name}`}
-          className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-xl bg-[#14213D] text-[11px] font-semibold text-white transition active:scale-95"
+          className="flex h-10 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition-all duration-200 hover:border-[#C9A24D] hover:bg-white active:scale-95"
         >
 
-          {/* Phone icon */}
+          {/* Green Phone Logo */}
           <svg
             viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            className="h-4 w-4 text-[#C9A24D]"
+            className="h-[18px] w-[18px]"
+            aria-hidden="true"
           >
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.08 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.27-1.25a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z" />
+            <path
+              fill="#25D366"
+              d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.61 21 3 13.39 3 4c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2Z"
+            />
           </svg>
 
           <span>Call</span>
@@ -101,30 +105,50 @@ export default function FacultyCard({
         </a>
 
 
-        {/* EMAIL */}
+        {/* ================= EMAIL ================= */}
+
         <a
           href={`mailto:${faculty.email}`}
           aria-label={`Email ${faculty.name}`}
-          className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition hover:border-[#C9A24D] active:scale-95"
+          className="flex h-10 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition-all duration-200 hover:border-[#C9A24D] hover:bg-white active:scale-95"
         >
 
-          {/* Email icon */}
+          {/* Gmail-style Logo */}
           <svg
             viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            className="h-4 w-4 text-[#C9A24D]"
+            className="h-[18px] w-[18px]"
+            aria-hidden="true"
           >
-            <rect
-              x="3"
-              y="5"
-              width="18"
-              height="14"
-              rx="2"
+            {/* Red */}
+            <path
+              fill="#EA4335"
+              d="M3 6.5v11.8c0 .94.76 1.7 1.7 1.7H7V10.1L12 14l5-3.9V20h2.3c.94 0 1.7-.76 1.7-1.7V6.5l-2.2 1.7L12 12.5 5.2 8.2 3 6.5Z"
             />
 
-            <path d="m3 7 9 6 9-6" />
+            {/* Blue */}
+            <path
+              fill="#4285F4"
+              d="M3 6.5 12 13.5V20H7V10.1L3 7V6.5Z"
+            />
+
+            {/* Green */}
+            <path
+              fill="#34A853"
+              d="M21 6.5v11.8c0 .94-.76 1.7-1.7 1.7H17V10.1l4-3.1v-.5Z"
+            />
+
+            {/* Yellow */}
+            <path
+              fill="#FBBC04"
+              d="m3 6.5 2.2 1.7L7 9.6V20H4.7c-.94 0-1.7-.76-1.7-1.7V6.5Z"
+            />
+
+            {/* Red top */}
+            <path
+              fill="#EA4335"
+              d="M3 6.5 5.2 8.2 12 13.5l6.8-5.3L21 6.5V5.7C21 4.76 20.24 4 19.3 4H4.7C3.76 4 3 4.76 3 5.7v.8Z"
+            />
+
           </svg>
 
           <span>Email</span>
@@ -132,28 +156,33 @@ export default function FacultyCard({
         </a>
 
 
-        {/* WHATSAPP */}
+        {/* ================= WHATSAPP ================= */}
+
         <a
           href={`https://wa.me/${whatsappPhone}`}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Chat with ${faculty.name} on WhatsApp`}
-          className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition hover:border-[#C9A24D] active:scale-95"
+          className="flex h-10 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition-all duration-200 hover:border-[#C9A24D] hover:bg-white active:scale-95"
         >
 
-          {/* WhatsApp-style recognizable icon */}
+          {/* WhatsApp Logo */}
           <svg
             viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            className="h-4 w-4 text-[#C9A24D]"
+            className="h-[18px] w-[18px]"
+            aria-hidden="true"
           >
-            <path d="M20.5 11.5a8.5 8.5 0 0 1-12.8 7.36L4 20l1.17-4.02A8.5 8.5 0 1 1 20.5 11.5Z" />
 
             <path
-              d="M8.5 8.5c.3-.6.6-.6.9-.6h.3c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4-.1.6l-.5.6c.5 1 1.3 1.8 2.3 2.3l.6-.5c.2-.2.4-.2.6-.1l1.4.6c.3.1.4.3.4.5v.3c0 .3 0 .6-.6.9-.4.2-1 .3-1.5.1-1.1-.3-2.3-1-3.4-2.1-1.1-1.1-1.8-2.3-2.1-3.4-.2-.5-.1-1.1.1-1.5Z"
+              fill="#25D366"
+              d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5Z"
             />
+
+            <path
+              fill="#fff"
+              d="M16.6 13.9c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.15-.25-.02-.39.11-.52.12-.12.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.02 2.6.13.17 1.76 2.69 4.27 3.77.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.48-.29Z"
+            />
+
           </svg>
 
           <span>WhatsApp</span>
