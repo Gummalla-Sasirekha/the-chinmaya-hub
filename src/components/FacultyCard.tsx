@@ -7,7 +7,6 @@ export default function FacultyCard({
   faculty: Faculty
   onViewProfile: () => void
 }) {
-  // Create simple initials for the avatar
   const initials = faculty.name
     .trim()
     .split(/\s+/)
@@ -16,20 +15,19 @@ export default function FacultyCard({
     .slice(0, 2)
     .toUpperCase()
 
-  // WhatsApp accepts digits only
   const whatsappPhone = faculty.phone
     .replace(/\D/g, '')
     .replace(/^00/, '')
 
   return (
-    <article className="group rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_2px_10px_rgba(20,33,61,0.04)] transition-all duration-200 hover:border-[#C9A24D] hover:shadow-md">
+    <article className="rounded-2xl border border-slate-200 bg-white p-4 shadow-[0_2px_10px_rgba(20,33,61,0.04)] transition-all duration-200 hover:border-[#C9A24D] hover:shadow-md">
 
-      {/* ==================== PROFILE ==================== */}
+      {/* ==================== FACULTY INFO ==================== */}
 
       <button
         onClick={onViewProfile}
         aria-label={`View ${faculty.name}'s profile`}
-        className="flex w-full items-center gap-3 text-left"
+        className="group flex w-full items-center gap-3 text-left"
       >
 
         {/* Initials */}
@@ -38,14 +36,14 @@ export default function FacultyCard({
         </div>
 
 
-        {/* Faculty information */}
+        {/* Details */}
         <div className="min-w-0 flex-1">
 
-          <h3 className="truncate text-sm font-bold text-[#14213D]">
+          <h3 className="truncate text-[15px] font-bold text-[#14213D]">
             {faculty.name}
           </h3>
 
-          <p className="mt-1 truncate text-xs font-medium text-slate-500">
+          <p className="mt-1 truncate text-xs text-slate-500">
             {faculty.designation}
           </p>
 
@@ -71,8 +69,8 @@ export default function FacultyCard({
         </div>
 
 
-        {/* Arrow */}
-        <span className="shrink-0 text-lg font-light text-[#C9A24D] transition-transform duration-200 group-hover:translate-x-1">
+        {/* Profile arrow */}
+        <span className="shrink-0 text-base text-[#C9A24D] transition-transform duration-200 group-hover:translate-x-1">
           →
         </span>
 
@@ -81,13 +79,13 @@ export default function FacultyCard({
 
       {/* ==================== CONTACT ACTIONS ==================== */}
 
-      <div className="mt-4 grid grid-cols-3 gap-2">
+      <div className="mt-4 flex gap-2 border-t border-slate-100 pt-3">
 
         {/* Call */}
         <a
           href={`tel:${faculty.phone}`}
           aria-label={`Call ${faculty.name}`}
-          className="flex h-10 items-center justify-center gap-1.5 rounded-xl bg-[#14213D] text-[11px] font-semibold text-white transition-all duration-200 hover:bg-[#1d3157] active:scale-95"
+          className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-xl bg-[#14213D] text-[11px] font-semibold text-white transition active:scale-95"
         >
 
           <svg
@@ -109,7 +107,7 @@ export default function FacultyCard({
         <a
           href={`mailto:${faculty.email}`}
           aria-label={`Email ${faculty.name}`}
-          className="flex h-10 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white text-[11px] font-semibold text-[#14213D] transition-all duration-200 hover:border-[#C9A24D] active:scale-95"
+          className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition hover:border-[#C9A24D] active:scale-95"
         >
 
           <svg
@@ -134,7 +132,7 @@ export default function FacultyCard({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Chat with ${faculty.name} on WhatsApp`}
-          className="flex h-10 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white text-[11px] font-semibold text-[#14213D] transition-all duration-200 hover:border-[#C9A24D] active:scale-95"
+          className="flex h-9 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition hover:border-[#C9A24D] active:scale-95"
         >
 
           <svg
