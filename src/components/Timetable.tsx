@@ -109,7 +109,7 @@ export default function Timetable({
 
 
   /* =====================================================
-     NON-STEM STATE
+     NON-STEM
   ===================================================== */
 
   if (school.id !== 'stem') {
@@ -127,9 +127,7 @@ export default function Timetable({
           <div className="rounded-3xl border border-slate-200 bg-white p-7 text-center shadow-[0_2px_10px_rgba(20,33,61,0.04)]">
 
             <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-[#14213D] text-[#C9A24D]">
-
               <CalendarIcon />
-
             </div>
 
             <h2 className="mt-5 text-lg font-bold text-[#14213D]">
@@ -151,12 +149,12 @@ export default function Timetable({
 
 
   /* =====================================================
-     SELECTED TIMETABLE
+     ACTUAL TIMETABLE
   ===================================================== */
 
   if (selectedCourse) {
     return (
-      <main className="min-h-screen bg-[#F7F5F0] px-5 pb-10 pt-6 text-[#14213D] sm:px-6">
+      <main className="min-h-screen bg-[#F7F5F0] px-4 pb-10 pt-6 text-[#14213D] sm:px-6">
 
         <Header
           eyebrow="Timetable"
@@ -164,13 +162,18 @@ export default function Timetable({
           onBack={() => setSelectedCourse(null)}
         />
 
-        <section className="mx-auto mt-7 max-w-2xl">
 
-          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_4px_16px_rgba(20,33,61,0.06)]">
+        <section className="mx-auto mt-7 max-w-4xl">
 
-            <div className="flex items-center gap-3 border-b border-slate-100 px-4 py-4">
+          {/* Timetable Card */}
 
-              <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-[#14213D] text-[#C9A24D]">
+          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-[0_4px_18px_rgba(20,33,61,0.06)]">
+
+            {/* Card Header */}
+
+            <div className="flex items-center gap-3 border-b border-slate-100 px-5 py-4">
+
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#14213D] text-[#C9A24D]">
                 <CalendarIcon />
               </div>
 
@@ -189,19 +192,66 @@ export default function Timetable({
             </div>
 
 
-            <div className="bg-white p-3 sm:p-5">
+            {/* ================= IMAGE VIEWER ================= */}
 
-              <img
-                src={selectedCourse.image}
-                alt={`${selectedCourse.name} timetable`}
-                className="h-auto w-full rounded-xl"
-              />
+            <div className="bg-[#F7F5F0] p-3 sm:p-5">
+
+              <div className="overflow-x-auto overflow-y-hidden rounded-2xl border border-slate-200 bg-white shadow-inner">
+
+                <div className="flex min-w-max justify-center p-3 sm:p-5">
+
+                  <img
+                    src={selectedCourse.image}
+                    alt={`${selectedCourse.name} timetable`}
+                    className="block h-auto w-[900px] max-w-none rounded-lg object-contain"
+                  />
+
+                </div>
+
+              </div>
+
+
+              {/* Hint */}
+
+              <div className="mt-3 flex items-center justify-center gap-2">
+
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.7"
+                  className="h-4 w-4 text-[#C9A24D]"
+                >
+                  <path d="M8 5v14M16 5v14" />
+                  <path d="m5 8 3-3 3 3M13 16l3 3 3-3" />
+                </svg>
+
+                <p className="text-[10px] font-medium text-slate-400">
+                  Swipe horizontally to view the full timetable
+                </p>
+
+              </div>
 
             </div>
 
           </div>
 
         </section>
+
+
+        {/* Footer */}
+
+        <footer className="mx-auto mt-10 max-w-2xl border-t border-slate-200 pt-5 text-center">
+
+          <p className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#C9A24D]">
+            CVV Academic Pulse
+          </p>
+
+          <p className="mt-1 text-[10px] text-slate-400">
+            Academic schedules, connected.
+          </p>
+
+        </footer>
 
       </main>
     )
@@ -239,13 +289,11 @@ export default function Timetable({
                 className="group flex min-h-[72px] w-full items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 text-left shadow-[0_2px_10px_rgba(20,33,61,0.04)] transition-all duration-200 hover:border-[#C9A24D] hover:shadow-md active:scale-[0.99]"
               >
 
-                {/* Number */}
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#14213D] text-xs font-bold text-[#C9A24D]">
                   {String(index + 1).padStart(2, '0')}
                 </span>
 
 
-                {/* Course */}
                 <span className="min-w-0 flex-1">
 
                   <span className="block truncate text-sm font-bold text-[#14213D]">
@@ -259,7 +307,6 @@ export default function Timetable({
                 </span>
 
 
-                {/* Arrow */}
                 <span className="shrink-0 text-lg text-[#C9A24D] transition-transform duration-200 group-hover:translate-x-1">
                   →
                 </span>
@@ -368,8 +415,6 @@ export default function Timetable({
 
       </section>
 
-
-      {/* Footer */}
 
       <footer className="mx-auto mt-10 max-w-2xl border-t border-slate-200 pt-5 text-center">
 
