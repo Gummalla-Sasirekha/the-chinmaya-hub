@@ -34,96 +34,132 @@ export default function LoginScreen({ onLogin }: Props) {
   }
 
   return (
-    <main className="screen flex flex-col px-6 pb-8 pt-14">
-      <div className="mb-auto">
-        <div className="mb-10 flex items-center gap-3">
-          <div className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-orange-400 to-rose-500 text-xl text-white shadow-lg">
+    <main className="min-h-screen bg-[#f7f5f0] px-5 py-8 sm:px-8">
+      <div className="mx-auto flex min-h-[calc(100vh-4rem)] max-w-md flex-col justify-center">
+
+        {/* Brand */}
+        <section className="mb-8 text-center">
+          <div className="mx-auto mb-5 grid size-16 place-items-center rounded-2xl bg-[#14213d] text-2xl text-[#d6b36a] shadow-sm">
             ॐ
           </div>
+
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9a7b3f]">
+            Chinmaya Vishwa Vidyapeeth
+          </p>
+
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-[#14213d]">
+            CVV Academic Pulse
+          </h1>
+
+          <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-slate-500">
+            Your academic community, in one simple place.
+          </p>
+        </section>
+
+        {/* Login Card */}
+        <section className="rounded-3xl border border-slate-200/80 bg-white p-6 shadow-[0_12px_40px_rgba(20,33,61,0.08)] sm:p-7">
+
+          <div className="mb-6">
+            <h2 className="text-lg font-semibold text-[#14213d]">
+              Welcome back
+            </h2>
+
+            <p className="mt-1 text-sm text-slate-500">
+              Sign in to continue to your academic space.
+            </p>
+          </div>
+
+          {/* Role Selection */}
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[.2em] text-orange-600">
-              Chinmaya
-            </p>
-            <p className="font-semibold text-slate-700">
-              Vishwavidyapeeth
-            </p>
-          </div>
-        </div>
+            <label className="text-sm font-medium text-slate-700">
+              Continue as
+            </label>
 
-        <p className="text-sm font-medium uppercase tracking-[.24em] text-orange-500">
-          Welcome to
-        </p>
-        <h1 className="mt-2 text-4xl font-bold tracking-tight text-slate-900">
-          CVV FAMILY
-        </h1>
-        <p className="mt-3 max-w-sm text-slate-500">
-          Your academic community, in one simple place.
-        </p>
-
-        <div className="glass mt-10 rounded-3xl p-5">
-          <p className="text-sm font-semibold text-slate-700">Sign in as</p>
-
-          <div className="mt-3 grid grid-cols-2 gap-2">
-            {(['student', 'faculty'] as UserRole[]).map(option => (
-              <button
-                key={option}
-                type="button"
-                onClick={() => setRole(option)}
-                className={`min-h-11 rounded-xl px-2 text-xs font-bold capitalize transition ${
-                  role === option
-                    ? 'bg-slate-800 text-white'
-                    : 'bg-white text-slate-500 shadow-sm'
-                }`}
-              >
-                {option}
-              </button>
-            ))}
+            <div className="mt-2 grid grid-cols-2 gap-2 rounded-xl bg-slate-100 p-1">
+              {(['student', 'faculty'] as UserRole[]).map(option => (
+                <button
+                  key={option}
+                  type="button"
+                  onClick={() => setRole(option)}
+                  className={`h-11 rounded-lg text-sm font-semibold capitalize transition ${
+                    role === option
+                      ? 'bg-[#14213d] text-white shadow-sm'
+                      : 'text-slate-500 hover:text-slate-700'
+                  }`}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
           </div>
 
-          <label
-            className="mt-5 block text-sm font-semibold text-slate-700"
-            htmlFor="identity"
-          >
-            CVV email
-          </label>
-          <input
-            id="identity"
-            value={identifier}
-            onChange={e => setIdentifier(e.target.value)}
-            className="mt-2 h-12 w-full rounded-xl border border-slate-200 bg-white px-4 outline-none transition focus:border-orange-400 focus:ring-4 focus:ring-orange-100"
-            placeholder="Enter your CVV email"
-          />
+          {/* Email */}
+          <div className="mt-5">
+            <label
+              htmlFor="identity"
+              className="text-sm font-medium text-slate-700"
+            >
+              CVV email
+            </label>
 
-          <label
-            className="mt-5 block text-sm font-semibold text-slate-700"
-            htmlFor="password"
-          >
-            Password
-          </label>
-          <input
-            id="password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            type="password"
-            className="mt-2 h-12 w-full rounded-xl border border-slate-200 bg-white px-4 outline-none transition focus:border-orange-400 focus:ring-4 focus:ring-orange-100"
-            placeholder="••••••••"
-          />
+            <input
+              id="identity"
+              value={identifier}
+              onChange={e => setIdentifier(e.target.value)}
+              type="email"
+              autoComplete="email"
+              className="mt-2 h-12 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#9a7b3f] focus:bg-white focus:ring-4 focus:ring-[#d6b36a]/15"
+              placeholder="Enter your CVV email"
+            />
+          </div>
 
-          {error && <p className="mt-3 text-sm text-rose-600">{error}</p>}
+          {/* Password */}
+          <div className="mt-5">
+            <label
+              htmlFor="password"
+              className="text-sm font-medium text-slate-700"
+            >
+              Password
+            </label>
 
+            <input
+              id="password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              type="password"
+              autoComplete="current-password"
+              className="mt-2 h-12 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#9a7b3f] focus:bg-white focus:ring-4 focus:ring-[#d6b36a]/15"
+              placeholder="Enter your password"
+            />
+          </div>
+
+          {/* Error */}
+          {error && (
+            <div className="mt-4 rounded-xl border border-red-100 bg-red-50 px-4 py-3">
+              <p className="text-sm text-red-600">
+                {error}
+              </p>
+            </div>
+          )}
+
+          {/* Login */}
           <button
             disabled={loading}
             onClick={submit}
-            className="mt-6 h-12 w-full rounded-xl bg-gradient-to-r from-orange-500 to-rose-500 font-semibold text-white shadow-lg transition active:scale-[.98] disabled:opacity-60"
+            className="mt-6 h-12 w-full rounded-xl bg-[#14213d] text-sm font-semibold text-white shadow-sm transition hover:bg-[#1b2d52] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-60"
           >
-            {loading ? 'Signing in…' : `Continue as ${role}`}
+            {loading
+              ? 'Signing in…'
+              : `Continue as ${role}`}
           </button>
-        </div>
-      </div>
+        </section>
 
-      <p className="mt-8 text-center text-xs text-slate-400">
-        For CVV students and faculty
-      </p>
+        {/* Footer */}
+        <p className="mt-6 text-center text-xs text-slate-400">
+          For CVV students and faculty
+        </p>
+
+      </div>
     </main>
   )
 }
