@@ -35,7 +35,7 @@ export default function FacultyCard({
           {initials}
         </div>
 
-        {/* Details */}
+        {/* Faculty Details */}
         <div className="min-w-0 flex-1">
 
           <h3 className="truncate text-[15px] font-bold text-[#14213D]">
@@ -48,13 +48,14 @@ export default function FacultyCard({
 
           <div className="mt-1.5 flex items-center gap-1.5">
 
-            {/* Room / Location */}
+            {/* Location Icon */}
             <svg
               viewBox="0 0 24 24"
               fill="none"
               stroke="currentColor"
               strokeWidth="1.8"
               className="h-3.5 w-3.5 text-[#C9A24D]"
+              aria-hidden="true"
             >
               <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
               <circle cx="12" cy="10" r="2.5" />
@@ -68,7 +69,7 @@ export default function FacultyCard({
 
         </div>
 
-        {/* Profile arrow */}
+        {/* View Profile Arrow */}
         <span className="shrink-0 text-base text-[#C9A24D] transition-transform duration-200 group-hover:translate-x-1">
           →
         </span>
@@ -88,7 +89,7 @@ export default function FacultyCard({
           className="flex h-10 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition-all duration-200 hover:border-[#C9A24D] hover:bg-white active:scale-95"
         >
 
-          {/* Green Phone Logo */}
+          {/* Green Phone Icon */}
           <svg
             viewBox="0 0 24 24"
             className="h-[18px] w-[18px]"
@@ -113,42 +114,24 @@ export default function FacultyCard({
           className="flex h-10 flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-[#F7F5F0] text-[11px] font-semibold text-[#14213D] transition-all duration-200 hover:border-[#C9A24D] hover:bg-white active:scale-95"
         >
 
-          {/* Gmail-style Logo */}
+          {/* Simple Envelope */}
           <svg
             viewBox="0 0 24 24"
-            className="h-[18px] w-[18px]"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="h-[18px] w-[18px] text-[#C9A24D]"
             aria-hidden="true"
           >
-            {/* Red */}
-            <path
-              fill="#EA4335"
-              d="M3 6.5v11.8c0 .94.76 1.7 1.7 1.7H7V10.1L12 14l5-3.9V20h2.3c.94 0 1.7-.76 1.7-1.7V6.5l-2.2 1.7L12 12.5 5.2 8.2 3 6.5Z"
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
             />
 
-            {/* Blue */}
-            <path
-              fill="#4285F4"
-              d="M3 6.5 12 13.5V20H7V10.1L3 7V6.5Z"
-            />
-
-            {/* Green */}
-            <path
-              fill="#34A853"
-              d="M21 6.5v11.8c0 .94-.76 1.7-1.7 1.7H17V10.1l4-3.1v-.5Z"
-            />
-
-            {/* Yellow */}
-            <path
-              fill="#FBBC04"
-              d="m3 6.5 2.2 1.7L7 9.6V20H4.7c-.94 0-1.7-.76-1.7-1.7V6.5Z"
-            />
-
-            {/* Red top */}
-            <path
-              fill="#EA4335"
-              d="M3 6.5 5.2 8.2 12 13.5l6.8-5.3L21 6.5V5.7C21 4.76 20.24 4 19.3 4H4.7C3.76 4 3 4.76 3 5.7v.8Z"
-            />
-
+            <path d="m3 7 9 6 9-6" />
           </svg>
 
           <span>Email</span>
@@ -173,13 +156,15 @@ export default function FacultyCard({
             aria-hidden="true"
           >
 
+            {/* Green WhatsApp Circle */}
             <path
               fill="#25D366"
               d="M12 2.5a9.5 9.5 0 0 0-8.2 14.3L2.5 21.5l4.9-1.3A9.5 9.5 0 1 0 12 2.5Z"
             />
 
+            {/* White Phone */}
             <path
-              fill="#fff"
+              fill="#FFFFFF"
               d="M16.6 13.9c-.25-.13-1.48-.73-1.71-.81-.23-.08-.4-.13-.57.13-.17.25-.65.81-.8.98-.15.17-.29.19-.54.06-.25-.13-1.06-.39-2.02-1.24-.75-.67-1.25-1.49-1.4-1.74-.15-.25-.02-.39.11-.52.12-.12.25-.29.38-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.57-1.37-.78-1.88-.2-.49-.41-.42-.57-.43h-.49c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.43 1.02 2.6.13.17 1.76 2.69 4.27 3.77.6.26 1.07.42 1.43.54.6.19 1.15.16 1.58.1.48-.07 1.48-.61 1.69-1.2.21-.59.21-1.1.15-1.2-.06-.1-.23-.16-.48-.29Z"
             />
 
