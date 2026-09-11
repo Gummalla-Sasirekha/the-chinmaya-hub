@@ -121,11 +121,11 @@ export default function App() {
           // Faculty demo login
           if (
             selectedRole === 'faculty' &&
-            email === 'faculty@cvv.ac.in' &&
-            password === 'faculty123'
+            email === 'pradeeba.v@cvv.ac.in' &&
+            password === 'pradeeba123'
           ) {
             setRole('faculty')
-            setFacultyId('f1')
+            setFacultyId('f5')
             setSchool(null)
             navigate('schools')
             return
