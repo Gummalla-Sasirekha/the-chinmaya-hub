@@ -80,9 +80,9 @@ export default function ExamDutyNotification({
           <div className="min-w-0 flex-1">
             
             <div className="flex flex-wrap items-center gap-2">
-              <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#C9A24D]">
-                Exam Duty
-              </p>
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#C9A24D]">
+  Invigilation Duty
+</span>
 
               <span className="rounded-full bg-[#14213D] px-2 py-1 text-[9px] font-bold uppercase tracking-wider text-white">
                 CIA-1
