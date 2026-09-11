@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Faculty, TimetableEntry } from '../types'
+import ExamDutyNotification from './ExamDutyNotification'
 
 type Props = {
   faculty: Faculty
@@ -137,6 +138,11 @@ export default function FacultyProfile({
         </div>
 
       </section>
+
+
+            {/* ================= EXAM DUTY NOTIFICATION ================= */}
+
+      <ExamDutyNotification faculty={faculty} />
 
 
       {/* ================= DUTY TRACKING ================= */}
