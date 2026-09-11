@@ -31,7 +31,7 @@ export default function Dashboard({
   return (
     <main className="min-h-screen bg-[#F7F5F0] px-5 pb-10 pt-7 text-[#14213D] sm:px-6">
 
-      {/* Header */}
+      {/* ==================== HEADER ==================== */}
       <header className="mx-auto flex max-w-2xl items-start justify-between gap-3">
 
         <div className="min-w-0">
@@ -50,37 +50,39 @@ export default function Dashboard({
           </div>
         </div>
 
-        <div className="flex shrink-0 gap-2">
+        <div className="flex shrink-0 items-center gap-2">
+
           <button
             onClick={onChangeSchool}
-            className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-semibold text-[#14213D] shadow-sm transition hover:border-[#C9A24D] active:scale-95"
+            className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-semibold text-[#14213D] shadow-sm transition-all duration-200 hover:border-[#C9A24D] hover:shadow-md active:scale-95"
           >
             Change School
           </button>
 
           <button
             onClick={onLogout}
-            className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-semibold text-slate-600 shadow-sm transition hover:border-[#C9A24D] hover:text-[#14213D] active:scale-95"
+            className="rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-semibold text-slate-600 shadow-sm transition-all duration-200 hover:border-[#C9A24D] hover:text-[#14213D] hover:shadow-md active:scale-95"
           >
             Logout
           </button>
+
         </div>
       </header>
 
 
-      {/* School Card */}
+      {/* ==================== SCHOOL CARD ==================== */}
       <section className="mx-auto mt-7 max-w-2xl">
 
-        <div className="relative overflow-hidden rounded-3xl bg-[#14213D] p-6 shadow-lg">
+        <div className="relative overflow-hidden rounded-3xl bg-[#14213D] px-5 py-5 shadow-lg sm:p-6">
 
-          {/* Gold accent */}
+          {/* Gold side accent */}
           <div className="absolute right-0 top-0 h-full w-1 bg-[#C9A24D]" />
 
           <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[#C9A24D]">
             Your school
           </p>
 
-          <h2 className="mt-3 max-w-lg text-2xl font-bold leading-snug text-white">
+          <h2 className="mt-3 max-w-lg text-[22px] font-bold leading-[1.25] text-white sm:text-2xl">
             {school.name}
           </h2>
 
@@ -89,20 +91,24 @@ export default function Dashboard({
           </p>
 
           <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/10 px-3 py-1.5">
+
             <span className="h-1.5 w-1.5 rounded-full bg-[#C9A24D]" />
+
             <span className="text-[10px] font-medium text-slate-200">
               Academic Space
             </span>
+
           </div>
 
         </div>
       </section>
 
 
-      {/* Quick Access */}
+      {/* ==================== QUICK ACCESS ==================== */}
       <section className="mx-auto mt-8 max-w-2xl">
 
         <div className="flex items-end justify-between">
+
           <div>
             <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#C9A24D]">
               Navigate
@@ -112,15 +118,16 @@ export default function Dashboard({
               Quick Access
             </h2>
           </div>
+
         </div>
 
 
         <div className="mt-4 grid grid-cols-2 gap-3">
 
-          {/* Faculty Directory */}
+          {/* -------- FACULTY DIRECTORY -------- */}
           <button
             onClick={onDirectory}
-            className="group min-h-[145px] rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A24D] hover:shadow-md active:scale-[.98]"
+            className="group min-h-[142px] rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-[0_2px_10px_rgba(20,33,61,0.04)] transition-all duration-200 hover:-translate-y-0.5 hover:border-[#C9A24D] hover:shadow-md active:scale-[.98]"
           >
 
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#14213D] text-[#C9A24D]">
@@ -151,10 +158,10 @@ export default function Dashboard({
           </button>
 
 
-          {/* Announcements */}
+          {/* -------- ANNOUNCEMENTS -------- */}
           <button
             onClick={onAnnouncements}
-            className="group min-h-[145px] rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-[#C9A24D] hover:shadow-md active:scale-[.98]"
+            className="group min-h-[142px] rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-[0_2px_10px_rgba(20,33,61,0.04)] transition-all duration-200 hover:-translate-y-0.5 hover:border-[#C9A24D] hover:shadow-md active:scale-[.98]"
           >
 
             <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#14213D] text-[#C9A24D]">
@@ -183,10 +190,10 @@ export default function Dashboard({
           </button>
 
 
-          {/* Timetable */}
+          {/* -------- TIMETABLE -------- */}
           <button
             onClick={onTimetable}
-            className="group col-span-2 flex min-h-[105px] items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-sm transition hover:border-[#C9A24D] hover:shadow-md active:scale-[.98]"
+            className="group col-span-2 flex min-h-[102px] items-center gap-4 rounded-2xl border border-slate-200 bg-white p-5 text-left shadow-[0_2px_10px_rgba(20,33,61,0.04)] transition-all duration-200 hover:border-[#C9A24D] hover:shadow-md active:scale-[.98]"
           >
 
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#14213D] text-[#C9A24D]">
@@ -206,6 +213,7 @@ export default function Dashboard({
             </div>
 
             <div className="min-w-0 flex-1">
+
               <h3 className="text-sm font-bold text-[#14213D]">
                 Timetable
               </h3>
@@ -213,9 +221,10 @@ export default function Dashboard({
               <p className="mt-1.5 text-xs leading-relaxed text-slate-500">
                 View your year and course timetable
               </p>
+
             </div>
 
-            <span className="text-xl font-light text-[#C9A24D] transition group-hover:translate-x-1">
+            <span className="text-xl font-light text-[#C9A24D] transition-transform duration-200 group-hover:translate-x-1">
               →
             </span>
 
@@ -225,12 +234,13 @@ export default function Dashboard({
       </section>
 
 
-      {/* Recent Activity */}
+      {/* ==================== RECENT ACTIVITY ==================== */}
       <section className="mx-auto mt-8 max-w-2xl">
 
         <div className="flex items-end justify-between">
 
           <div>
+
             <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#C9A24D]">
               Updates
             </p>
@@ -238,11 +248,12 @@ export default function Dashboard({
             <h2 className="mt-1 text-xl font-bold text-[#14213D]">
               Recent Activity
             </h2>
+
           </div>
 
           <button
             onClick={onAnnouncements}
-            className="text-xs font-semibold text-[#14213D] transition hover:text-[#C9A24D]"
+            className="text-xs font-semibold text-[#14213D] transition-colors hover:text-[#C9A24D]"
           >
             View all
           </button>
@@ -257,7 +268,7 @@ export default function Dashboard({
             <button
               key={announcement.id}
               onClick={onAnnouncements}
-              className="group flex w-full items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 text-left shadow-sm transition hover:border-[#C9A24D] hover:shadow-md active:scale-[.99]"
+              className="group flex w-full items-center gap-4 rounded-2xl border border-slate-200 bg-white p-4 text-left shadow-[0_2px_10px_rgba(20,33,61,0.04)] transition-all duration-200 hover:border-[#C9A24D] hover:shadow-md active:scale-[.99]"
             >
 
               <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#14213D] text-[#C9A24D]">
@@ -275,6 +286,7 @@ export default function Dashboard({
 
               </div>
 
+
               <div className="min-w-0 flex-1">
 
                 <p className="truncate text-sm font-semibold text-[#14213D]">
@@ -287,7 +299,8 @@ export default function Dashboard({
 
               </div>
 
-              <span className="text-lg text-[#C9A24D] transition group-hover:translate-x-1">
+
+              <span className="text-lg text-[#C9A24D] transition-transform duration-200 group-hover:translate-x-1">
                 →
               </span>
 
@@ -296,9 +309,10 @@ export default function Dashboard({
           ))}
 
 
+          {/* No announcements */}
           {announcements.length === 0 && (
 
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-[0_2px_10px_rgba(20,33,61,0.04)]">
 
               <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-[#14213D] text-[#C9A24D]">
                 —
@@ -320,7 +334,7 @@ export default function Dashboard({
       </section>
 
 
-      {/* Statistics */}
+      {/* ==================== STATISTICS ==================== */}
       <section className="mx-auto mt-8 max-w-2xl">
 
         <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#C9A24D]">
@@ -335,9 +349,9 @@ export default function Dashboard({
         <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
 
           {/* Faculty */}
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3.5 shadow-[0_2px_10px_rgba(20,33,61,0.04)]">
 
-            <p className="text-2xl font-bold text-[#14213D]">
+            <p className="text-[23px] font-bold tracking-tight text-[#14213D]">
               {faculty.length}
             </p>
 
@@ -351,9 +365,9 @@ export default function Dashboard({
 
 
           {/* Alerts */}
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3.5 shadow-[0_2px_10px_rgba(20,33,61,0.04)]">
 
-            <p className="text-2xl font-bold text-[#14213D]">
+            <p className="text-[23px] font-bold tracking-tight text-[#14213D]">
               {announcements.length}
             </p>
 
@@ -367,9 +381,9 @@ export default function Dashboard({
 
 
           {/* Duties */}
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3.5 shadow-[0_2px_10px_rgba(20,33,61,0.04)]">
 
-            <p className="text-2xl font-bold text-[#14213D]">
+            <p className="text-[23px] font-bold tracking-tight text-[#14213D]">
               —
             </p>
 
@@ -383,9 +397,9 @@ export default function Dashboard({
 
 
           {/* Evaluation */}
-          <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+          <div className="rounded-2xl border border-slate-200 bg-white px-4 py-3.5 shadow-[0_2px_10px_rgba(20,33,61,0.04)]">
 
-            <p className="text-2xl font-bold text-[#14213D]">
+            <p className="text-[23px] font-bold tracking-tight text-[#14213D]">
               —
             </p>
 
@@ -398,11 +412,10 @@ export default function Dashboard({
           </div>
 
         </div>
-
       </section>
 
 
-      {/* Footer */}
+      {/* ==================== FOOTER ==================== */}
       <footer className="mx-auto mt-10 max-w-2xl border-t border-slate-200 pt-5 text-center">
 
         <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#C9A24D]">
