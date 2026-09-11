@@ -12,47 +12,65 @@ export default function SchoolSelection({
   onBack,
 }: Props) {
   return (
-    <main className="screen px-6 pb-8 pt-10">
-      <button
-        onClick={onBack}
-        className="grid size-11 place-items-center rounded-xl text-xl text-slate-500"
-        aria-label="Go back"
-      >
-        ‹
-      </button>
+    <main className="min-h-screen bg-[#f7f5f0] px-5 pb-10 pt-7 sm:px-8">
+      <div className="mx-auto max-w-2xl">
 
-      <p className="mt-6 text-sm font-semibold uppercase tracking-[.2em] text-orange-500">
-        Step 1 of 1
-      </p>
+        {/* Back */}
+        <button
+          onClick={onBack}
+          className="grid size-10 place-items-center rounded-full border border-slate-200 bg-white text-xl text-[#14213d] shadow-sm transition hover:bg-slate-50 active:scale-95"
+          aria-label="Go back"
+        >
+          ←
+        </button>
 
-      <h1 className="mt-2 text-3xl font-bold text-slate-900">
-        Choose your school
-      </h1>
+        {/* Header */}
+        <section className="mt-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9a7b3f]">
+            Your academic space
+          </p>
 
-      <p className="mt-2 text-slate-500">
-        This personalises your faculty directory and announcements.
-      </p>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-[#14213d] sm:text-4xl">
+            Choose your school
+          </h1>
 
-      <div className="mt-8 space-y-3">
-        {schools.map((school, index) => (
-          <button
-            key={school.id}
-            onClick={() => onSelect(school)}
-            className="glass flex min-h-20 w-full items-center gap-4 rounded-2xl p-4 text-left transition hover:border-orange-200 active:scale-[.99]"
-          >
-            <span className="grid size-11 shrink-0 place-items-center rounded-xl bg-orange-50 font-bold text-orange-500">
-              0{index + 1}
-            </span>
+          <p className="mt-3 max-w-lg text-sm leading-6 text-slate-500 sm:text-base">
+            Select your school to personalize your faculty directory and
+            announcements.
+          </p>
+        </section>
 
-            <span className="flex-1 text-sm font-semibold leading-5 text-slate-700">
-              {school.name}
-            </span>
+        {/* Schools */}
+        <section className="mt-8 space-y-3">
+          {schools.map((school, index) => (
+            <button
+              key={school.id}
+              onClick={() => onSelect(school)}
+              className="group flex min-h-24 w-full items-center gap-4 rounded-2xl border border-slate-200/80 bg-white p-4 text-left shadow-[0_6px_24px_rgba(20,33,61,0.05)] transition-all hover:-translate-y-0.5 hover:border-[#d6b36a] hover:shadow-[0_10px_28px_rgba(20,33,61,0.08)] active:scale-[0.99] sm:p-5"
+            >
+              {/* Number */}
+              <span className="grid size-12 shrink-0 place-items-center rounded-xl bg-[#f8f1e3] text-sm font-bold text-[#9a7b3f]">
+                {String(index + 1).padStart(2, '0')}
+              </span>
 
-            <span className="text-xl text-orange-400">
-              ›
-            </span>
-          </button>
-        ))}
+              {/* School name */}
+              <span className="flex-1 text-sm font-semibold leading-6 text-[#14213d] sm:text-base">
+                {school.name}
+              </span>
+
+              {/* Arrow */}
+              <span className="grid size-9 shrink-0 place-items-center rounded-full text-lg text-slate-400 transition group-hover:bg-[#14213d] group-hover:text-white">
+                →
+              </span>
+            </button>
+          ))}
+        </section>
+
+        {/* Footer */}
+        <p className="mt-8 text-center text-xs text-slate-400">
+          CVV Academic Pulse
+        </p>
+
       </div>
     </main>
   )
