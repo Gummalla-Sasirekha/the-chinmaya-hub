@@ -30,15 +30,18 @@ export default function Announcements({
     useState<AnnouncementCategory | 'All'>('All')
 
   /*
-   * CIA-1 Examination Timetable
+   * ============================================================
+   * CIA-1 EXAMINATION TIMETABLE
    *
-   * This is intentionally added here instead of changing mockData.ts.
-   * That keeps the existing announcement data untouched.
+   * For now, only this announcement is displayed.
+   * Existing announcements are intentionally hidden.
+   * ============================================================
    */
+
   const ciaAnnouncement: Announcement = {
     id: 'cia-1-examination-timetable',
     schoolId: 'stem',
-    category: 'Evaluation',
+    category: 'Circular',
     title: 'CIA-1 Examination Timetable',
     priority: 'high',
     date: '2026-09-07',
@@ -50,18 +53,14 @@ export default function Announcements({
   }
 
   /*
-   * Add CIA-1 only for the STEM school.
-   *
-   * The duplicate check means that if you later add the same
-   * announcement to Firebase/mockData, it won't appear twice.
+   * Only show the CIA-1 timetable for STEM.
+   * Existing announcements are intentionally not included.
    */
+
   const allAnnouncements =
-    school.id === 'stem' &&
-    !announcements.some(
-      (item) => item.id === ciaAnnouncement.id,
-    )
-      ? [ciaAnnouncement, ...announcements]
-      : announcements
+    school.id === 'stem'
+      ? [ciaAnnouncement]
+      : []
 
   const visible = allAnnouncements.filter(
     (item) =>
@@ -235,12 +234,14 @@ export default function Announcements({
 
               <div className="flex items-center gap-2">
 
-                <div className="
-                  flex h-8 w-8 shrink-0
-                  items-center justify-center
-                  rounded-lg bg-[#14213D]
-                  text-[#C9A24D]
-                ">
+                <div
+                  className="
+                    flex h-8 w-8 shrink-0
+                    items-center justify-center
+                    rounded-lg bg-[#14213D]
+                    text-[#C9A24D]
+                  "
+                >
 
                   <svg
                     viewBox="0 0 24 24"
@@ -255,11 +256,13 @@ export default function Announcements({
 
                 </div>
 
-                <span className="
-                  text-[10px] font-bold uppercase
-                  tracking-[0.08em]
-                  text-[#C9A24D]
-                ">
+                <span
+                  className="
+                    text-[10px] font-bold uppercase
+                    tracking-[0.08em]
+                    text-[#C9A24D]
+                  "
+                >
                   {item.category}
                 </span>
 
@@ -293,13 +296,15 @@ export default function Announcements({
                 TITLE
             ================================================= */}
 
-            <h2 className="
-              mt-4
-              text-[15px]
-              font-bold
-              leading-6
-              text-[#14213D]
-            ">
+            <h2
+              className="
+                mt-4
+                text-[15px]
+                font-bold
+                leading-6
+                text-[#14213D]
+              "
+            >
               {item.title}
             </h2>
 
@@ -308,16 +313,20 @@ export default function Announcements({
                 INFORMATION
             ================================================= */}
 
-            <div className="
-              mt-4
-              border-t border-slate-100
-              pt-4
-            ">
+            <div
+              className="
+                mt-4
+                border-t border-slate-100
+                pt-4
+              "
+            >
 
-              <div className="
-                grid grid-cols-2
-                gap-x-4 gap-y-4
-              ">
+              <div
+                className="
+                  grid grid-cols-2
+                  gap-x-4 gap-y-4
+                "
+              >
 
                 {/* DATE */}
 
@@ -447,11 +456,13 @@ export default function Announcements({
 
             {item.attachmentUrl && (
 
-              <div className="
-                mt-5
-                border-t border-slate-100
-                pt-4
-              ">
+              <div
+                className="
+                  mt-5
+                  border-t border-slate-100
+                  pt-4
+                "
+              >
 
                 <a
                   href={item.attachmentUrl}
@@ -464,9 +475,7 @@ export default function Announcements({
                     border border-slate-200
                     bg-[#F7F5F0]
                     px-4 py-3
-
                     transition-all duration-200
-
                     hover:border-[#C9A24D]
                     hover:bg-white
                   "
@@ -474,18 +483,22 @@ export default function Announcements({
 
                   {/* PDF ICON + TEXT */}
 
-                  <div className="
-                    flex min-w-0
-                    items-center gap-3
-                  ">
+                  <div
+                    className="
+                      flex min-w-0
+                      items-center gap-3
+                    "
+                  >
 
-                    <div className="
-                      flex h-10 w-10 shrink-0
-                      items-center justify-center
-                      rounded-xl
-                      bg-[#14213D]
-                      text-[#C9A24D]
-                    ">
+                    <div
+                      className="
+                        flex h-10 w-10 shrink-0
+                        items-center justify-center
+                        rounded-xl
+                        bg-[#14213D]
+                        text-[#C9A24D]
+                      "
+                    >
 
                       <svg
                         viewBox="0 0 24 24"
@@ -506,21 +519,25 @@ export default function Announcements({
 
                     <div className="min-w-0">
 
-                      <p className="
-                        truncate
-                        text-xs
-                        font-bold
-                        text-[#14213D]
-                      ">
+                      <p
+                        className="
+                          truncate
+                          text-xs
+                          font-bold
+                          text-[#14213D]
+                        "
+                      >
                         {item.attachmentName ??
                           'View attachment'}
                       </p>
 
-                      <p className="
-                        mt-0.5
-                        text-[10px]
-                        text-slate-400
-                      ">
+                      <p
+                        className="
+                          mt-0.5
+                          text-[10px]
+                          text-slate-400
+                        "
+                      >
                         Open PDF document
                       </p>
 
@@ -531,12 +548,14 @@ export default function Announcements({
 
                   {/* ARROW */}
 
-                  <span className="
-                    ml-3
-                    shrink-0
-                    text-lg
-                    text-[#C9A24D]
-                  ">
+                  <span
+                    className="
+                      ml-3
+                      shrink-0
+                      text-lg
+                      text-[#C9A24D]
+                    "
+                  >
                     →
                   </span>
 
@@ -557,23 +576,27 @@ export default function Announcements({
 
         {!visible.length && (
 
-          <div className="
-            rounded-2xl
-            border border-slate-200
-            bg-white
-            px-6 py-12
-            text-center
-            shadow-sm
-          ">
-
-            <div className="
-              mx-auto
-              flex h-12 w-12
-              items-center justify-center
+          <div
+            className="
               rounded-2xl
-              bg-[#14213D]
-              text-[#C9A24D]
-            ">
+              border border-slate-200
+              bg-white
+              px-6 py-12
+              text-center
+              shadow-sm
+            "
+          >
+
+            <div
+              className="
+                mx-auto
+                flex h-12 w-12
+                items-center justify-center
+                rounded-2xl
+                bg-[#14213D]
+                text-[#C9A24D]
+              "
+            >
 
               <svg
                 viewBox="0 0 24 24"
@@ -589,21 +612,25 @@ export default function Announcements({
             </div>
 
 
-            <p className="
-              mt-4
-              text-sm
-              font-bold
-              text-[#14213D]
-            ">
+            <p
+              className="
+                mt-4
+                text-sm
+                font-bold
+                text-[#14213D]
+              "
+            >
               No announcements
             </p>
 
 
-            <p className="
-              mt-1
-              text-xs
-              text-slate-400
-            ">
+            <p
+              className="
+                mt-1
+                text-xs
+                text-slate-400
+              "
+            >
               No announcements in this category.
             </p>
 
@@ -618,30 +645,36 @@ export default function Announcements({
           FOOTER
       ===================================================== */}
 
-      <footer className="
-        mx-auto
-        mt-10
-        max-w-2xl
-        border-t border-slate-200
-        pt-5
-        text-center
-      ">
+      <footer
+        className="
+          mx-auto
+          mt-10
+          max-w-2xl
+          border-t border-slate-200
+          pt-5
+          text-center
+        "
+      >
 
-        <p className="
-          text-[9px]
-          font-semibold
-          uppercase
-          tracking-[0.2em]
-          text-[#C9A24D]
-        ">
+        <p
+          className="
+            text-[9px]
+            font-semibold
+            uppercase
+            tracking-[0.2em]
+            text-[#C9A24D]
+          "
+        >
           CVV Academic Pulse
         </p>
 
-        <p className="
-          mt-1
-          text-[10px]
-          text-slate-400
-        ">
+        <p
+          className="
+            mt-1
+            text-[10px]
+            text-slate-400
+          "
+        >
           Academic information, connected.
         </p>
 
@@ -668,36 +701,42 @@ function Info({
   return (
     <div className="flex items-start gap-2">
 
-      <div className="
-        mt-0.5
-        shrink-0
-        text-[#C9A24D]
-      ">
+      <div
+        className="
+          mt-0.5
+          shrink-0
+          text-[#C9A24D]
+        "
+      >
         {icon}
       </div>
 
 
       <div className="min-w-0">
 
-        <p className="
-          text-[9px]
-          font-bold
-          uppercase
-          tracking-[0.08em]
-          text-slate-400
-        ">
+        <p
+          className="
+            text-[9px]
+            font-bold
+            uppercase
+            tracking-[0.08em]
+            text-slate-400
+          "
+        >
           {label}
         </p>
 
 
-        <p className="
-          mt-0.5
-          break-words
-          text-xs
-          font-semibold
-          leading-5
-          text-[#14213D]
-        ">
+        <p
+          className="
+            mt-0.5
+            break-words
+            text-xs
+            font-semibold
+            leading-5
+            text-[#14213D]
+          "
+        >
           {value}
         </p>
 
