@@ -105,6 +105,12 @@ export default function Dashboard({
         </div>
       </section>
 
+      {role === 'faculty' && (
+        <ExamDutyNotification
+          faculty={faculty.find((person) => person.id === 'f5') ?? null}
+        />
+      )}
+
 
       {/* ==================== QUICK ACCESS ==================== */}
       <section className="mx-auto mt-8 max-w-2xl">
