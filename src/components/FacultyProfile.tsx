@@ -50,7 +50,7 @@ export default function FacultyProfile({
   return (
     <main className="min-h-screen bg-[#F7F5F0] px-5 pb-10 pt-6 text-[#14213D] sm:px-6">
 
-      {/* ==================== HEADER ==================== */}
+      {/* ================= HEADER ================= */}
 
       <header className="mx-auto flex max-w-2xl items-center gap-4">
 
@@ -84,7 +84,7 @@ export default function FacultyProfile({
       </header>
 
 
-      {/* ==================== PROFILE CARD ==================== */}
+      {/* ================= PROFILE ================= */}
 
       <section className="mx-auto mt-7 max-w-2xl">
 
@@ -100,7 +100,7 @@ export default function FacultyProfile({
               {initials}
             </div>
 
-            {/* Faculty information */}
+            {/* Details */}
             <div className="min-w-0">
 
               <h2 className="text-xl font-bold text-white">
@@ -139,19 +139,17 @@ export default function FacultyProfile({
       </section>
 
 
-      {/* ==================== DUTY TRACKING ==================== */}
+      {/* ================= DUTY TRACKING ================= */}
 
       <section className="mx-auto mt-8 max-w-2xl">
 
-        <div>
-          <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#C9A24D]">
-            Overview
-          </p>
+        <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-[#C9A24D]">
+          Overview
+        </p>
 
-          <h2 className="mt-1 text-xl font-bold text-[#14213D]">
-            Duty Tracking
-          </h2>
-        </div>
+        <h2 className="mt-1 text-xl font-bold text-[#14213D]">
+          Duty Tracking
+        </h2>
 
 
         <div className="mt-4 grid grid-cols-3 gap-3">
@@ -176,7 +174,7 @@ export default function FacultyProfile({
       </section>
 
 
-      {/* ==================== TIMETABLE ==================== */}
+      {/* ================= TIMETABLE ================= */}
 
       <section className="mx-auto mt-8 max-w-2xl">
 
@@ -201,7 +199,7 @@ export default function FacultyProfile({
           </div>
 
 
-          {/* Toggle */}
+          {/* Today / Weekly */}
           <div className="flex shrink-0 rounded-xl border border-slate-200 bg-white p-1 shadow-sm">
 
             <button
@@ -231,7 +229,7 @@ export default function FacultyProfile({
         </div>
 
 
-        {/* ==================== TODAY VIEW ==================== */}
+        {/* ================= TODAY ================= */}
 
         {timetableView === 'today' && (
 
@@ -246,7 +244,7 @@ export default function FacultyProfile({
 
                 <div className="flex items-start gap-3">
 
-                  {/* Gold timeline marker */}
+                  {/* Time icon */}
                   <div className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-[#F7F5F0] text-[#C9A24D]">
 
                     <svg
@@ -279,6 +277,11 @@ export default function FacultyProfile({
 
                   </div>
 
+
+                  <span className="text-lg text-[#C9A24D]">
+                    →
+                  </span>
+
                 </div>
 
               </article>
@@ -286,6 +289,7 @@ export default function FacultyProfile({
             ))}
 
 
+            {/* No classes */}
             {!visible.length && (
 
               <div className="rounded-2xl border border-slate-200 bg-white px-6 py-10 text-center shadow-sm">
@@ -330,7 +334,7 @@ export default function FacultyProfile({
         )}
 
 
-        {/* ==================== WEEKLY VIEW ==================== */}
+        {/* ================= WEEKLY ================= */}
 
         {timetableView === 'week' && (
 
@@ -424,7 +428,7 @@ export default function FacultyProfile({
       </section>
 
 
-      {/* ==================== FOOTER ==================== */}
+      {/* ================= FOOTER ================= */}
 
       <footer className="mx-auto mt-10 max-w-2xl border-t border-slate-200 pt-5 text-center">
 
@@ -443,7 +447,7 @@ export default function FacultyProfile({
 }
 
 
-/* ==================== STAT CARD ==================== */
+/* ================= STAT CARD ================= */
 
 function Stat({
   label,
@@ -462,8 +466,6 @@ function Stat({
       <p className="mt-1 text-[11px] font-medium text-slate-500">
         {label}
       </p>
-
-      <div className="mt-3 h-1 w-7 rounded-full bg-[#C9A24D]" />
 
     </div>
   )
