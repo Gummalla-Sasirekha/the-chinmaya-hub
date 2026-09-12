@@ -1,16 +1,5 @@
 import type { Announcement, Faculty, School, TimetableEntry } from '../types'
 
-export const schools: School[] = [
-  { id: 'stem', name: 'Science, Technology, Engineering and Mathematics (STEM)' },
-  { id: 'business', name: 'School of Business and Economics' },
-  { id: 'education', name: 'School of Education, Governance, Culture & Social Systems' },
-  { id: 'kalayoga', name: 'School of Kalayoga' },
-  { id: 'languages', name: 'School of Linguistics & Literary Studies' },
-  { id: 'philosophy', name: 'School of Philosophy, Psychology & Scientific Heritage' },
-  { id: 'vedic', name: 'School of Vedic Knowledge Systems' },
-  { id: 'physical-education', name: 'Department of Physical Education and Sports' }
-]
-
 export const faculty: Faculty[] = [
   { id: 'f1', schoolId: 'stem', name: 'Dr. Anand H. S.', phone: '+919567092300', email: 'associatedean.stem@cvv.ac.in', designation: 'Associate Dean - STEM | Head – Department of Artificial Intelligence and Emerging Technologies', roomNo: '301', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
   { id: 'f2', schoolId: 'stem', name: 'Dr. Resmi N.G.', phone: '+919633291997', email: 'resmi.ng@cvv.ac.in', designation: 'Head – Department of Computer Science and Engineering | Senior Assistant Professor', roomNo: '302', totalDutiesAllotted: 0, dutiesDone: 0, dutiesSwapped: 0 },
