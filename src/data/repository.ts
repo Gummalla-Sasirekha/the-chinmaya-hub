@@ -23,8 +23,6 @@ const normalizeFaculty = (id: string, data: Partial<Faculty>): Faculty => ({
 // ============================================================
 // SCHOOLS
 // ============================================================
-// Schools are now loaded from public/Schools.csv
-// instead of mockData.ts.
 
 export async function getSchools(): Promise<School[]> {
   try {
@@ -66,7 +64,6 @@ export async function getSchools(): Promise<School[]> {
     return schools
   } catch (error) {
     console.error('Could not load Schools.csv:', error)
-
     return []
   }
 }
@@ -78,27 +75,67 @@ export async function getSchools(): Promise<School[]> {
 export async function getFaculty(
   schoolId: string
 ): Promise<Faculty[]> {
-  if (!db) {
-    return mockFaculty.filter(
-      (faculty) => faculty.schoolId === schoolId
-    )
-  }
 
   try {
-    const snapshot = await getDocs(
-      query(
-        collection(db, 'faculty'),
-        where('schoolId', '==', schoolId)
-      )
+    const response = await fetch(
+      `${import.meta.env.BASE_URL}Faculty.csv`
     )
 
-    return snapshot.docs.map((d) =>
-      normalizeFaculty(
-        d.id,
-        d.data() as Partial<Faculty>
+    if (!response.ok) {
+      throw new Error('Failed to load Faculty.csv')
+    }
+
+    const text = await response.text()
+
+    const rows = text
+      .trim()
+      .split(/\r?\n/)
+      .slice(1)
+
+    const faculty: Faculty[] = rows
+      .map((row) => {
+        const values =
+          row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) ?? []
+
+        const clean = values.map((value) =>
+          value.replace(/^"|"$/g, '').trim()
+        )
+
+        return {
+          id: clean[0] ?? '',
+          name: clean[1] ?? '',
+          schoolId: clean[2] ?? '',
+          email: clean[3] ?? '',
+          phone: clean[4] ?? '',
+          designation: clean[5] ?? '',
+          roomNo: clean[6] ?? '',
+          totalDutiesAllotted: 0,
+          dutiesDone: 0,
+          dutiesSwapped: 0
+        }
+      })
+      .filter(
+        (faculty) =>
+          faculty.id &&
+          faculty.name &&
+          faculty.schoolId
       )
+
+    const schoolFaculty = faculty.filter(
+      (faculty) => faculty.schoolId === schoolId
     )
-  } catch {
+
+    if (schoolFaculty.length === 0) {
+      throw new Error(
+        `No faculty found for school: ${schoolId}`
+      )
+    }
+
+    return schoolFaculty
+
+  } catch (error) {
+    console.error('Could not load Faculty.csv:', error)
+
     return mockFaculty.filter(
       (faculty) => faculty.schoolId === schoolId
     )
@@ -112,26 +149,55 @@ export async function getFaculty(
 export async function getFacultyById(
   facultyId: string
 ): Promise<Faculty | null> {
-  if (!db) {
-    return (
-      mockFaculty.find(
-        (faculty) => faculty.id === facultyId
-      ) ?? null
-    )
-  }
 
   try {
-    const snapshot = await getDoc(
-      doc(db, 'faculty', facultyId)
+    const response = await fetch(
+      `${import.meta.env.BASE_URL}Faculty.csv`
     )
 
-    return snapshot.exists()
-      ? normalizeFaculty(
-          snapshot.id,
-          snapshot.data() as Partial<Faculty>
+    if (!response.ok) {
+      throw new Error('Failed to load Faculty.csv')
+    }
+
+    const text = await response.text()
+
+    const rows = text
+      .trim()
+      .split(/\r?\n/)
+      .slice(1)
+
+    const faculty = rows
+      .map((row) => {
+        const values =
+          row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) ?? []
+
+        const clean = values.map((value) =>
+          value.replace(/^"|"$/g, '').trim()
         )
-      : null
-  } catch {
+
+        return {
+          id: clean[0] ?? '',
+          name: clean[1] ?? '',
+          schoolId: clean[2] ?? '',
+          email: clean[3] ?? '',
+          phone: clean[4] ?? '',
+          designation: clean[5] ?? '',
+          roomNo: clean[6] ?? '',
+          totalDutiesAllotted: 0,
+          dutiesDone: 0,
+          dutiesSwapped: 0
+        } as Faculty
+      })
+
+    return (
+      faculty.find(
+        (person) => person.id === facultyId
+      ) ?? null
+    )
+
+  } catch (error) {
+    console.error('Could not load Faculty.csv:', error)
+
     return (
       mockFaculty.find(
         (faculty) => faculty.id === facultyId
@@ -147,6 +213,7 @@ export async function getFacultyById(
 export async function getTimetable(
   facultyId: string
 ): Promise<TimetableEntry[]> {
+
   if (!db) {
     return mockTimetable.filter(
       (entry) => entry.facultyId === facultyId
@@ -165,6 +232,7 @@ export async function getTimetable(
       id: d.id,
       ...d.data()
     } as TimetableEntry))
+
   } catch {
     return mockTimetable.filter(
       (entry) => entry.facultyId === facultyId
@@ -179,6 +247,7 @@ export async function getTimetable(
 export async function getAnnouncements(
   schoolId: string
 ): Promise<Announcement[]> {
+
   if (!db) {
     return mockAnnouncements.filter(
       (announcement) =>
@@ -198,6 +267,7 @@ export async function getAnnouncements(
       id: d.id,
       ...d.data()
     } as Announcement))
+
   } catch {
     return mockAnnouncements.filter(
       (announcement) =>
