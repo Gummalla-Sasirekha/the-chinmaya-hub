@@ -105,11 +105,11 @@ export default function Dashboard({
         </div>
       </section>
 
-      {role === 'faculty' && (
-        <ExamDutyNotification
-          faculty={faculty.find((person) => person.id === 'f5') ?? null}
-        />
-      )}
+      {role === 'faculty' && faculty.length > 0 && (
+  <ExamDutyNotification
+    faculty={faculty.find((person) => person.id === 'f5') ?? faculty[0]}
+  />
+)}
 
 
       {/* ==================== QUICK ACCESS ==================== */}
