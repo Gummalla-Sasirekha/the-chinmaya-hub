@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import type { Faculty, TimetableEntry } from '../types'
-import ExamDutyNotification from './ExamDutyNotification'
+<ExamDutyNotification faculty={faculty} />
 
 type Props = {
   faculty: Faculty
