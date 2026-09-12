@@ -1,4 +1,9 @@
-import type { Announcement, Faculty, School, TimetableEntry } from '../types'
+import type {
+  Announcement,
+  ExamDuty,
+  Faculty,
+  TimetableEntry,
+} from '../types'
 
 
 export const timetable: TimetableEntry[] = [
@@ -751,4 +756,32 @@ export const announcements: Announcement[] = [
   { id: 'a3', schoolId: 'stem', category: 'Meeting', title: 'Academic council meeting', priority: 'med', date: '2026-09-02', time: '02:30 PM', venue: 'Seminar Hall', assignedFaculty: ['Dr. Praveen K M', 'Dr. Kavitha Rajan'] },
   { id: 'a4', schoolId: 'stem', category: 'Circular', title: 'Updated examination guidelines', priority: 'low', date: '2026-08-28', time: 'All day', venue: 'Online', assignedFaculty: [] },
   { id: 'a5', schoolId: 'philosophy', category: 'Meeting', title: 'Department planning meeting', priority: 'med', date: '2026-09-03', time: '11:00 AM', venue: 'Block B', assignedFaculty: ['Dr. K. Suresh'] }
+]
+
+/* =========================
+   INVIGILATION DUTIES
+========================= */
+
+export const examDuties: ExamDuty[] = [
+  {
+    id: 'duty-f5-2026-09-15-an',
+    facultyId: 'f5',
+    date: '2026-09-15',
+    session: 'AN',
+    exam: 'CIA-1',
+  },
+  {
+    id: 'duty-f5-2026-09-16-fn',
+    facultyId: 'f5',
+    date: '2026-09-16',
+    session: 'FN',
+    exam: 'CIA-1',
+  },
+  {
+    id: 'duty-f5-2026-09-18-fn',
+    facultyId: 'f5',
+    date: '2026-09-18',
+    session: 'FN',
+    exam: 'CIA-1',
+  },
 ]
