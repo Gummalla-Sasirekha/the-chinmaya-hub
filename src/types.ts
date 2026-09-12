@@ -52,8 +52,18 @@ export type Announcement = {
   time: string
   venue: string
   assignedFaculty: string[]
-
-  // Optional attachment support
   attachmentUrl?: string
   attachmentName?: string
+}
+
+/* =========================
+   INVIGILATION DUTY
+========================= */
+
+export type ExamDuty = {
+  id: string
+  facultyId: string
+  date: string
+  session: 'FN' | 'AN'
+  exam: string
 }
