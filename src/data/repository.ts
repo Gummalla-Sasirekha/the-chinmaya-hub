@@ -20,9 +20,11 @@ const normalizeFaculty = (id: string, data: Partial<Faculty>): Faculty => ({
   dutiesSwapped: data.dutiesSwapped ?? 0
 })
 
-// Schools are loaded from public/Schools.csv.
-// Other data continues to use Firebase when configured,
-// with mock data as a fallback.
+// ============================================================
+// SCHOOLS
+// ============================================================
+// Schools are now loaded from public/Schools.csv
+// instead of mockData.ts.
 
 export async function getSchools(): Promise<School[]> {
   try {
@@ -64,9 +66,14 @@ export async function getSchools(): Promise<School[]> {
     return schools
   } catch (error) {
     console.error('Could not load Schools.csv:', error)
+
     return []
   }
 }
+
+// ============================================================
+// FACULTY
+// ============================================================
 
 export async function getFaculty(
   schoolId: string
@@ -78,14 +85,14 @@ export async function getFaculty(
   }
 
   try {
-    return (
-      await getDocs(
-        query(
-          collection(db, 'faculty'),
-          where('schoolId', '==', schoolId)
-        )
+    const snapshot = await getDocs(
+      query(
+        collection(db, 'faculty'),
+        where('schoolId', '==', schoolId)
       )
-    ).docs.map((d) =>
+    )
+
+    return snapshot.docs.map((d) =>
       normalizeFaculty(
         d.id,
         d.data() as Partial<Faculty>
@@ -97,6 +104,10 @@ export async function getFaculty(
     )
   }
 }
+
+// ============================================================
+// FACULTY BY ID
+// ============================================================
 
 export async function getFacultyById(
   facultyId: string
@@ -129,6 +140,10 @@ export async function getFacultyById(
   }
 }
 
+// ============================================================
+// TIMETABLE
+// ============================================================
+
 export async function getTimetable(
   facultyId: string
 ): Promise<TimetableEntry[]> {
@@ -139,14 +154,14 @@ export async function getTimetable(
   }
 
   try {
-    return (
-      await getDocs(
-        query(
-          collection(db, 'timetable'),
-          where('facultyId', '==', facultyId)
-        )
+    const snapshot = await getDocs(
+      query(
+        collection(db, 'timetable'),
+        where('facultyId', '==', facultyId)
       )
-    ).docs.map((d) => ({
+    )
+
+    return snapshot.docs.map((d) => ({
       id: d.id,
       ...d.data()
     } as TimetableEntry))
@@ -156,6 +171,10 @@ export async function getTimetable(
     )
   }
 }
+
+// ============================================================
+// ANNOUNCEMENTS
+// ============================================================
 
 export async function getAnnouncements(
   schoolId: string
@@ -168,17 +187,17 @@ export async function getAnnouncements(
   }
 
   try {
-    return (
-      await getDocs(
-        query(
-          collection(db, 'announcements'),
-          where('schoolId', '==', schoolId)
-        )
-      ).docs.map((d) => ({
-        id: d.id,
-        ...d.data()
-      } as Announcement))
+    const snapshot = await getDocs(
+      query(
+        collection(db, 'announcements'),
+        where('schoolId', '==', schoolId)
+      )
     )
+
+    return snapshot.docs.map((d) => ({
+      id: d.id,
+      ...d.data()
+    } as Announcement))
   } catch {
     return mockAnnouncements.filter(
       (announcement) =>
