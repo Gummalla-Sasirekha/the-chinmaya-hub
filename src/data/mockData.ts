@@ -770,6 +770,7 @@ export const examDuties: ExamDuty[] = [
     session: 'AN',
     exam: 'CIA-1',
   },
+
   {
     id: 'duty-f5-2026-09-16-fn',
     facultyId: 'f5',
@@ -777,6 +778,7 @@ export const examDuties: ExamDuty[] = [
     session: 'FN',
     exam: 'CIA-1',
   },
+
   {
     id: 'duty-f5-2026-09-18-fn',
     facultyId: 'f5',
