@@ -1,10 +1,29 @@
-import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore'
+import {
+  collection,
+  getDocs,
+  query,
+  where,
+} from 'firebase/firestore'
+
 import {
   announcements as mockAnnouncements,
-  timetable as mockTimetable
+  examDuties as mockExamDuties,
+  timetable as mockTimetable,
 } from './mockData'
+
 import { db } from '../lib/firebase'
-import type { Announcement, Faculty, School, TimetableEntry } from '../types'
+
+import type {
+  Announcement,
+  ExamDuty,
+  Faculty,
+  School,
+  TimetableEntry,
+} from '../types'
+
+/* =========================
+   CSV PARSER
+========================= */
 
 const parseCsvRow = (row: string): string[] => {
   const values: string[] = []
@@ -34,25 +53,9 @@ const parseCsvRow = (row: string): string[] => {
   return values
 }
 
-const normalizeFaculty = (
-  id: string,
-  data: Partial<Faculty>
-): Faculty => ({
-  id,
-  schoolId: data.schoolId ?? '',
-  name: data.name ?? '',
-  phone: data.phone ?? '',
-  email: data.email ?? '',
-  designation: data.designation ?? '',
-  roomNo: data.roomNo ?? '',
-  totalDutiesAllotted: data.totalDutiesAllotted ?? 0,
-  dutiesDone: data.dutiesDone ?? 0,
-  dutiesSwapped: data.dutiesSwapped ?? 0
-})
-
-// ============================================================
-// SCHOOLS
-// ============================================================
+/* =========================
+   SCHOOLS
+========================= */
 
 export async function getSchools(): Promise<School[]> {
   try {
@@ -77,7 +80,7 @@ export async function getSchools(): Promise<School[]> {
 
         return {
           id: values[0] ?? '',
-          name: values[1] ?? ''
+          name: values[1] ?? '',
         }
       })
       .filter(
@@ -92,15 +95,18 @@ export async function getSchools(): Promise<School[]> {
 
     return schools
   } catch (error) {
-    console.error('Could not load Schools.csv:', error)
+    console.error(
+      'Could not load Schools.csv:',
+      error
+    )
 
     return []
   }
 }
 
-// ============================================================
-// FACULTY
-// ============================================================
+/* =========================
+   FACULTY
+========================= */
 
 export async function getFaculty(
   schoolId: string
@@ -135,7 +141,7 @@ export async function getFaculty(
           roomNo: values[6] ?? '',
           totalDutiesAllotted: 0,
           dutiesDone: 0,
-          dutiesSwapped: 0
+          dutiesSwapped: 0,
         }
       })
       .filter(
@@ -146,18 +152,22 @@ export async function getFaculty(
       )
 
     return faculty.filter(
-      (faculty) => faculty.schoolId === schoolId
+      (faculty) =>
+        faculty.schoolId === schoolId
     )
   } catch (error) {
-    console.error('Could not load Faculty.csv:', error)
+    console.error(
+      'Could not load Faculty.csv:',
+      error
+    )
 
     return []
   }
 }
 
-// ============================================================
-// FACULTY BY ID
-// ============================================================
+/* =========================
+   FACULTY BY ID
+========================= */
 
 export async function getFacultyById(
   facultyId: string
@@ -191,32 +201,80 @@ export async function getFacultyById(
         roomNo: values[6] ?? '',
         totalDutiesAllotted: 0,
         dutiesDone: 0,
-        dutiesSwapped: 0
+        dutiesSwapped: 0,
       } as Faculty
     })
 
     return (
       faculty.find(
-        (person) => person.id === facultyId
+        (person) =>
+          person.id === facultyId
       ) ?? null
     )
   } catch (error) {
-    console.error('Could not load Faculty.csv:', error)
+    console.error(
+      'Could not load Faculty.csv:',
+      error
+    )
 
     return null
   }
 }
 
-// ============================================================
-// TIMETABLE
-// ============================================================
+/* =========================
+   INVIGILATION DUTIES
+========================= */
+
+export async function getExamDuties(
+  facultyId: string
+): Promise<ExamDuty[]> {
+  /*
+   * Firebase is not connected yet.
+   * Therefore we use mockData.ts.
+   */
+
+  if (!db) {
+    return mockExamDuties.filter(
+      (duty) =>
+        duty.facultyId === facultyId
+    )
+  }
+
+  try {
+    const snapshot = await getDocs(
+      query(
+        collection(db, 'examDuties'),
+        where(
+          'facultyId',
+          '==',
+          facultyId
+        )
+      )
+    )
+
+    return snapshot.docs.map((d) => ({
+      id: d.id,
+      ...d.data(),
+    } as ExamDuty))
+  } catch {
+    return mockExamDuties.filter(
+      (duty) =>
+        duty.facultyId === facultyId
+    )
+  }
+}
+
+/* =========================
+   TIMETABLE
+========================= */
 
 export async function getTimetable(
   facultyId: string
 ): Promise<TimetableEntry[]> {
   if (!db) {
     return mockTimetable.filter(
-      (entry) => entry.facultyId === facultyId
+      (entry) =>
+        entry.facultyId === facultyId
     )
   }
 
@@ -224,24 +282,29 @@ export async function getTimetable(
     const snapshot = await getDocs(
       query(
         collection(db, 'timetable'),
-        where('facultyId', '==', facultyId)
+        where(
+          'facultyId',
+          '==',
+          facultyId
+        )
       )
     )
 
     return snapshot.docs.map((d) => ({
       id: d.id,
-      ...d.data()
+      ...d.data(),
     } as TimetableEntry))
   } catch {
     return mockTimetable.filter(
-      (entry) => entry.facultyId === facultyId
+      (entry) =>
+        entry.facultyId === facultyId
     )
   }
 }
 
-// ============================================================
-// ANNOUNCEMENTS
-// ============================================================
+/* =========================
+   ANNOUNCEMENTS
+========================= */
 
 export async function getAnnouncements(
   schoolId: string
@@ -257,13 +320,17 @@ export async function getAnnouncements(
     const snapshot = await getDocs(
       query(
         collection(db, 'announcements'),
-        where('schoolId', '==', schoolId)
+        where(
+          'schoolId',
+          '==',
+          schoolId
+        )
       )
     )
 
     return snapshot.docs.map((d) => ({
       id: d.id,
-      ...d.data()
+      ...d.data(),
     } as Announcement))
   } catch {
     return mockAnnouncements.filter(
