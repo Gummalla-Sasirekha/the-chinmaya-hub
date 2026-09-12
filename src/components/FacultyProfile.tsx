@@ -18,6 +18,7 @@ const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 export default function FacultyProfile({
   faculty,
   timetable,
+  role,
   onBack,
 }: Props) {
   const initials = faculty.name
