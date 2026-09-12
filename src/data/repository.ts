@@ -2,7 +2,6 @@ import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firesto
 import {
   announcements as mockAnnouncements,
   faculty as mockFaculty,
-  schools as mockSchools,
   timetable as mockTimetable
 } from './mockData'
 import { db } from '../lib/firebase'
