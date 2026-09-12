@@ -26,7 +26,9 @@ const normalizeFaculty = (id: string, data: Partial<Faculty>): Faculty => ({
 
 export async function getSchools(): Promise<School[]> {
   try {
-    const response = await fetch(`${import.meta.env.BASE_URL}Schools.csv`)
+    const response = await fetch(
+      `${import.meta.env.BASE_URL}Schools.csv`
+    )
 
     if (!response.ok) {
       throw new Error('Failed to load Schools.csv')
@@ -41,7 +43,8 @@ export async function getSchools(): Promise<School[]> {
 
     const schools: School[] = rows
       .map((row) => {
-        const values = row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) ?? []
+        const values =
+          row.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g) ?? []
 
         const clean = values.map((value) =>
           value.replace(/^"|"$/g, '').trim()
@@ -59,13 +62,20 @@ export async function getSchools(): Promise<School[]> {
     }
 
     return schools
-  } catch {
-    return mockSchools
+  } catch (error) {
+    console.error('Could not load Schools.csv:', error)
+    return []
   }
 }
 
-export async function getFaculty(schoolId: string): Promise<Faculty[]> {
-  if (!db) return mockFaculty.filter(f => f.schoolId === schoolId)
+export async function getFaculty(
+  schoolId: string
+): Promise<Faculty[]> {
+  if (!db) {
+    return mockFaculty.filter(
+      (faculty) => faculty.schoolId === schoolId
+    )
+  }
 
   try {
     return (
@@ -75,14 +85,16 @@ export async function getFaculty(schoolId: string): Promise<Faculty[]> {
           where('schoolId', '==', schoolId)
         )
       )
-    ).docs.map(d =>
+    ).docs.map((d) =>
       normalizeFaculty(
         d.id,
         d.data() as Partial<Faculty>
       )
     )
   } catch {
-    return mockFaculty.filter(f => f.schoolId === schoolId)
+    return mockFaculty.filter(
+      (faculty) => faculty.schoolId === schoolId
+    )
   }
 }
 
@@ -90,9 +102,11 @@ export async function getFacultyById(
   facultyId: string
 ): Promise<Faculty | null> {
   if (!db) {
-    return mockFaculty.find(
-      faculty => faculty.id === facultyId
-    ) ?? null
+    return (
+      mockFaculty.find(
+        (faculty) => faculty.id === facultyId
+      ) ?? null
+    )
   }
 
   try {
@@ -107,9 +121,11 @@ export async function getFacultyById(
         )
       : null
   } catch {
-    return mockFaculty.find(
-      faculty => faculty.id === facultyId
-    ) ?? null
+    return (
+      mockFaculty.find(
+        (faculty) => faculty.id === facultyId
+      ) ?? null
+    )
   }
 }
 
@@ -118,7 +134,7 @@ export async function getTimetable(
 ): Promise<TimetableEntry[]> {
   if (!db) {
     return mockTimetable.filter(
-      entry => entry.facultyId === facultyId
+      (entry) => entry.facultyId === facultyId
     )
   }
 
@@ -130,13 +146,13 @@ export async function getTimetable(
           where('facultyId', '==', facultyId)
         )
       )
-    ).docs.map(d => ({
+    ).docs.map((d) => ({
       id: d.id,
       ...d.data()
     } as TimetableEntry))
   } catch {
     return mockTimetable.filter(
-      entry => entry.facultyId === facultyId
+      (entry) => entry.facultyId === facultyId
     )
   }
 }
@@ -146,7 +162,8 @@ export async function getAnnouncements(
 ): Promise<Announcement[]> {
   if (!db) {
     return mockAnnouncements.filter(
-      a => a.schoolId === schoolId
+      (announcement) =>
+        announcement.schoolId === schoolId
     )
   }
 
@@ -157,14 +174,15 @@ export async function getAnnouncements(
           collection(db, 'announcements'),
           where('schoolId', '==', schoolId)
         )
-      )
-    ).docs.map(d => ({
-      id: d.id,
-      ...d.data()
-    } as Announcement))
+      ).docs.map((d) => ({
+        id: d.id,
+        ...d.data()
+      } as Announcement))
+    )
   } catch {
     return mockAnnouncements.filter(
-      a => a.schoolId === schoolId
+      (announcement) =>
+        announcement.schoolId === schoolId
     )
   }
 }
