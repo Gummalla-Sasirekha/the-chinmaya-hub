@@ -1,0 +1,62 @@
+﻿faculty_id,name,school_id,email,phone,designation,room_no
+f1,Dr. Anand H. S.,stem,associatedean.stem@cvv.ac.in,+919567092300,Associate Dean - STEM | Head – Department of Artificial Intelligence and Emerging Technologies,301
+f2,Dr. Resmi N.G.,stem,resmi.ng@cvv.ac.in,+919633291997,Head – Department of Computer Science and Engineering | Senior Assistant Professor,302
+f3,Dr. Praveen K M,stem,praveen.km@cvv.ac.in,+918547674715,Assistant Dean - Research,303
+f4,Dr. Raisun Mathew,stem,raisun.mathew@cvv.ac.in,+919048101997,"Assistant Dean - Doctoral Programmes | Assistant Professor | Associate Head of School, School of Linguistics and Literary Studies (LLS)",304
+f5,Ms. Pradeeba V.,stem,pradeeba.v@cvv.ac.in,+919751994860,Assistant Professor – Faculty of STEM,305
+f6,Dr. S.M. Sharma,stem,savitesh.sharma@cvv.ac.in,+918126761060,Professor | Head - Robotics and Automation Research Centre,306
+f7,Dr. Vidya Gopal T. V.,stem,vidya.gopaltv@cvv.ac.in,+917012491344,Senior Assistant Professor and Assistant Dean - Entrepreneurial Learning | Faculty of STEM,307
+f8,Dr. Anupama Jims,stem,anupama.jims@cvv.ac.in,+917034961505,"Head – Centre for  Oceanic AI | Assistant Dean - External Affairs & Internationalisation , Director in Charge Innovation and Incubation Centre, Director- AI Innovation and Research Lab. | Assistant Professor – Faculty of STEM",308
+f9,Dr. Uma Narayanan,stem,uma.narayanan@cvv.ac.in,+918089541154,Senior Assistant Professor – Faculty of STEM,309
+f10,Dr. Sreenu G,stem,sreenu.g@cvv.ac.in,+919495264590,Assistant Professor – Faculty of STEM,310
+f11,Dr. Kavitha Rajan,stem,kavitha.rajan@cvv.ac.in,+919966655730,Assistant Professor – Faculty of STEM,311
+f12,Dr. Merin Skariah,stem,merin.skariah@cvv.ac.in,+918606606606,Assistant Professor – Faculty of STEM,312
+f13,Ms. Sneha Gopinath,stem,sneha.gopinath@cvv.ac.in,+919074930841,Assistant Professor – Faculty of STEM,313
+f14,Ms. Anuja G Krishnan,stem,anuja.gkrishnan@cvv.ac.in,+917736947442,Assistant Professor – Faculty of STEM,314
+f15,Mr. Athul Ravi,stem,athul.ravi@cvv.ac.in,+918547941399,Assistant Professor|Faculty of STEM | Head – Centre for Biomaterials and Sustainable Chemistry,315
+f16,Mr. Georgin M T,stem,georgin.mt@cvv.ac.in,+919400730565,Assistant Professor – Faculty of STEM,316
+f17,Dr. Akhila M S,stem,akhila.ms@cvv.ac.in,+919746305671,Assistant Professor – Faculty of STEM,317
+f18,Dr. Angita Ram V,stem,angita.ram@cvv.ac.in,+919515788406,Assistant Professor – Faculty of STEM,318
+f19,Dr. Josna James,stem,josna.james@cvv.ac.in,+918281660300,Assistant Professor – Faculty of STEM,319
+f20,Dr. Arya Chandran,stem,arya.chandran@cvv.ac.in,+918089217609,Assistant Professor – Faculty of STEM,320
+f21,Dr. Arya R,stem,arya.r@cvv.ac.in,+919496320854,Assistant Professor – Faculty of STEM,321
+f22,Dr. Reshma S,stem,reshma.s@cvv.ac.in,+919497273984,Assistant Professor – Faculty of STEM,322
+f23,Dr. Robin George,stem,robin.george@cvv.ac.in,+919446789968,Assistant Professor – Faculty of STEM,323
+f24,Dr. K R N Aswini,stem,aswini.krn@cvv.ac.in,+919493952288,Assistant Professor – Faculty of STEM,324
+f25,Dr. Megha V.,stem,megha.v@cvv.ac.in,+919539539830,Assistant Professor – Faculty of STEM,325
+f26,Dr. Saranya A. S,stem,saranya.as@cvv.ac.in,+919400151572,Assistant Professor – Faculty of STEM,326
+f27,Dr. Neha Elizabeth Thomas,stem,neha.thomas@cvv.ac.in,+919961237272,Assistant Professor – Faculty of STEM,327
+f28,Dr. Shyama S,stem,shyama.s@cvv.ac.in,+919400426707,Assistant Professor – Faculty of STEM,328
+f29,Dr. Shiju E.,stem,shiju.e@cvv.ac.in,+919497483977,Assistant Professor – Faculty of STEM,329
+f30,Dr. Smrithi M. Venugopal,stem,smrithi.mv@cvv.ac.in,+918547536318,Assistant Professor – Faculty of STEM,330
+f31,Dr. Suvanish Kumar,stem,suvanish.kumar@cvv.ac.in,+918921380928,Assistant Professor – Faculty of STEM,331
+f32,Dr. Archana Babu,stem,archana.babu@cvv.ac.in,+919947622958,Assistant Professor – Faculty of STEM,332
+f33,Dr. Nitha V R,stem,nitha.vr@cvv.ac.in,+918138085414,Assistant Professor – Faculty of STEM,333
+f34,Dr. Soumya Haridas,stem,soumya.haridas@cvv.ac.in,+918606838427,Assistant Professor – Faculty of STEM,334
+f35,Ms. Neethu Kunjappan,stem,neethu.kunjappan@cvv.ac.in,+918075133398,Assistant Professor – Faculty of STEM,335
+f36,Ms.Archana Ajith,stem,archana.ajith@cvv.ac.in,+919526693390,Assistant Professor – Faculty of STEM,336
+f37,Ms. Kripa Radhakrishnan,stem,kripa.r@cvv.ac.in,+918891697910,Assistant Professor – Faculty of STEM,337
+f38,Ms. Deepa P. L.,stem,deepa.pl@cvv.ac.in,+919495229779,Assistant Professor – Faculty of STEM,338
+f39,Mr. Sarath T. R.,stem,sarath.tr@cvv.ac.in,+919633244735,Assistant Professor – Faculty of STEM,339
+f40,Ms. Niby Babu,stem,niby.babu@cvv.ac.in,+919645025088,Assistant Professor – Faculty of STEM,340
+f41,Ms. Tiny Thampan,stem,tiny.thampan@cvv.ac.in,+919633418339,Assistant Professor – Faculty of STEM,341
+f42,Ms. Athira Ashok,stem,athira.ashok@cvv.ac.in,+919037301294,Assistant Professor – Faculty of STEM,342
+f43,Ms. Sneha Raj,stem,sneha.raj@cvv.ac.in,+917012471059,Assistant Professor – Faculty of STEM,343
+f44,Ms. Nimina George,stem,nimina.george@cvv.ac.in,+919037023304,Assistant Professor – Faculty of STEM,344
+f45,Ms. Lintu Sara Jose,stem,lintu.sarajose@cvv.ac.in,+919947800390,Assistant Professor – Faculty of STEM,345
+f46,Ms. Annmary Sunny,stem,annmary.sunny@cvv.ac.in,+918590969721,Assistant Professor –  Faculty of STEM,346
+f47,Mr. Alen T. Binu,stem,alen.tbinu@cvv.ac.in,+917558066581,Assistant Professor –  Faculty of STEM,347
+f48,Ms. Nikitha V,stem,nikitha.v@cvv.ac.in,+918139071268,Assistant Professor – Faculty of STEM,348
+f49,Ms. Gayathri Ashok,stem,gayathri.ashok@cvv.ac.in,+917012892169,Assistant Professor – Faculty of STEM,349
+f50,Dr. Mohini Billore,stem,mohini.b@cvv.ac.in,+919833212527,Assistant Professor – Faculty of STEM,350
+f51,Mr. Narayan Baban Shete,stem,narayan.shete@cvv.ac.in,+918928786552,Assistant Professor,350
+f52,Dr. Dinta Muralidharan,stem,dinta.muralidharan@cvv.ac.in,+919167670629,Assistant Professor,350
+f53,Ms. Suparna P,stem,suparna.p@cvv.ac.in,+917736958422,Assistant Professor – Faculty of STEM,350
+f54,Ms. Aparna S. Kudiyirickal,stem,aparna.skudiyirickal@cvv.ac.in,+919048876668,Assistant Professor – Faculty of STEM,350
+f55,Dr. Haritha H,stem,haritha.h@cvv.ac.in,+919961932229,Assistant Professor – Faculty of STEM,351
+f56,Ms. Jayalakshmi M,stem,jayalakshmi.m@cvv.ac.in,+916235494493,Assistant Professor – Faculty of STEM,352
+f57,Ms. Devika AJ,stem,devika.aj@cvv.ac.in,+918304084039,Assistant Professor – Faculty of STEM,353
+f58,Ms. Anupriya,stem,anupriya.ms@cvv.ac.in,+919400308747,Assistant Professor – Faculty of STEM,354
+f59,Prof. Vivek Deshpande,stem,vivek.vdeshpande@cvv.ac.in,+917337229854,Professor – Faculty of STEM,355
+f60,Bhavesh B.,stem,bhavesh.b@cvv.ac.in,+917025736777,COO CVV | Joint Secretary CVV Trust,355
+f61,Dr. Manosh Manoharan.,stem,manosh.manoharan@cvv.ac.in,+919544060505,Assistant Professor,355
