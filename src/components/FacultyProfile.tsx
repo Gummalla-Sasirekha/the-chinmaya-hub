@@ -1,10 +1,15 @@
 import { useMemo, useState } from 'react'
-import type { Faculty, TimetableEntry } from '../types'
-<ExamDutyNotification faculty={faculty} />
+import type {
+  Faculty,
+  TimetableEntry,
+  UserRole,
+} from '../types'
+import ExamDutyNotification from './ExamDutyNotification'
 
 type Props = {
   faculty: Faculty
   timetable: TimetableEntry[]
+  role: UserRole
   onBack: () => void
 }
 
@@ -142,7 +147,9 @@ export default function FacultyProfile({
 
             {/* ================= EXAM DUTY NOTIFICATION ================= */}
 
-      <ExamDutyNotification faculty={faculty} />
+{role === 'faculty' && (
+  <ExamDutyNotification faculty={faculty} />
+)}
 
 
       {/* ================= DUTY TRACKING ================= */}
