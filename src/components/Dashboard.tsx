@@ -5,8 +5,6 @@ import type {
   UserRole,
 } from '../types'
 
-import ExamDutyNotification from './ExamDutyNotification'
-
 type Props = {
   school: School
   faculty: Faculty[]
