@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 import type {
   Announcement,
   Faculty,
@@ -6,6 +7,7 @@ import type {
   TimetableEntry,
   UserRole,
 } from './types'
+
 import {
   getAnnouncements,
   getFaculty,
@@ -13,6 +15,7 @@ import {
   getSchools,
   getTimetable,
 } from './data/repository'
+
 import LoginScreen from './components/LoginScreen'
 import SchoolSelection from './components/SchoolSelection'
 import Dashboard from './components/Dashboard'
@@ -32,10 +35,16 @@ type View =
   | 'admin'
 
 export default function App() {
-  const [view, setView] = useState<View>('login')
+  const [view, setView] =
+    useState<View>('login')
 
   const navigate = (nextView: View) => {
-    window.history.pushState({ view: nextView }, '', window.location.href)
+    window.history.pushState(
+      { view: nextView },
+      '',
+      window.location.href
+    )
+
     setView(nextView)
   }
 
@@ -46,36 +55,80 @@ export default function App() {
       window.location.href
     )
 
-    const handlePopState = (event: PopStateEvent) => {
-      const previousView = event.state?.view ?? 'login'
+    const handlePopState = (
+      event: PopStateEvent
+    ) => {
+      const previousView =
+        event.state?.view ?? 'login'
+
       setView(previousView)
     }
 
-    window.addEventListener('popstate', handlePopState)
+    window.addEventListener(
+      'popstate',
+      handlePopState
+    )
 
     return () => {
-      window.removeEventListener('popstate', handlePopState)
+      window.removeEventListener(
+        'popstate',
+        handlePopState
+      )
     }
   }, [])
 
-  const [school, setSchool] = useState<School | null>(null)
-  const [schools, setSchools] = useState<School[]>([])
-  const [faculty, setFaculty] = useState<Faculty[]>([])
-  const [announcements, setAnnouncements] = useState<Announcement[]>([])
-  const [activeFaculty, setActiveFaculty] = useState<Faculty | null>(null)
-  const [timetable, setTimetable] = useState<TimetableEntry[]>([])
-  const [role, setRole] = useState<UserRole>('student')
-  const [facultyId, setFacultyId] = useState<string | undefined>()
+  const [school, setSchool] =
+    useState<School | null>(null)
+
+  const [schools, setSchools] =
+    useState<School[]>([])
+
+  const [faculty, setFaculty] =
+    useState<Faculty[]>([])
+
+  const [announcements, setAnnouncements] =
+    useState<Announcement[]>([])
+
+  const [activeFaculty, setActiveFaculty] =
+    useState<Faculty | null>(null)
+
+  const [timetable, setTimetable] =
+    useState<TimetableEntry[]>([])
+
+  const [role, setRole] =
+    useState<UserRole>('student')
+
+  const [facultyId, setFacultyId] =
+    useState<string | undefined>()
+
+  /* =========================
+     LOAD SCHOOLS
+  ========================= */
 
   useEffect(() => {
     getSchools().then(setSchools)
   }, [])
 
-  const select = async (selectedSchool: School) => {
+  /* =========================
+     SCHOOL SELECTION
+  ========================= */
+
+  const select = async (
+    selectedSchool: School
+  ) => {
     setSchool(selectedSchool)
 
-    if (role === 'faculty' && facultyId) {
-      const person = await getFacultyById(facultyId)
+    /*
+     * Faculty users go directly
+     * to their own profile.
+     */
+
+    if (
+      role === 'faculty' &&
+      facultyId
+    ) {
+      const person =
+        await getFacultyById(facultyId)
 
       if (person) {
         showProfile(person)
@@ -86,48 +139,89 @@ export default function App() {
     navigate('dashboard')
   }
 
-  const showProfile = (person: Faculty) => {
+  /* =========================
+     SHOW FACULTY PROFILE
+  ========================= */
+
+  const showProfile = (
+    person: Faculty
+  ) => {
     setActiveFaculty(person)
+
     navigate('profile')
-    getTimetable(person.id).then(setTimetable)
+
+    getTimetable(person.id)
+      .then(setTimetable)
   }
+
+  /* =========================
+     LOAD SCHOOL DATA
+  ========================= */
 
   useEffect(() => {
     if (school) {
-      getFaculty(school.id).then(setFaculty)
-      getAnnouncements(school.id).then(setAnnouncements)
+      getFaculty(school.id)
+        .then(setFaculty)
+
+      getAnnouncements(school.id)
+        .then(setAnnouncements)
     }
   }, [school])
+
+  /* =========================
+     LOGIN
+  ========================= */
 
   if (view === 'login') {
     return (
       <LoginScreen
-        onLogin={async (identifier, password, selectedRole) => {
-          const email = identifier.trim().toLowerCase()
+        onLogin={async (
+          identifier,
+          password,
+          selectedRole
+        ) => {
+          const email =
+            identifier
+              .trim()
+              .toLowerCase()
 
-          // Student demo login
+          /* =====================
+             STUDENT DEMO LOGIN
+          ===================== */
+
           if (
             selectedRole === 'student' &&
-            email === 'student@cvv.ac.in' &&
+            email ===
+              'student@cvv.ac.in' &&
             password === 'student123'
           ) {
             setRole('student')
             setFacultyId(undefined)
             setSchool(null)
+
             navigate('schools')
+
             return
           }
 
-          // Faculty demo login
+          /* =====================
+             FACULTY DEMO LOGIN
+          ===================== */
+
           if (
             selectedRole === 'faculty' &&
-            email === 'pradeeba.v@cvv.ac.in' &&
+            email ===
+              'pradeeba.v@cvv.ac.in' &&
             password === 'pradeeba123'
           ) {
             setRole('faculty')
+
             setFacultyId('f5')
+
             setSchool(null)
+
             navigate('schools')
+
             return
           }
 
@@ -139,74 +233,126 @@ export default function App() {
     )
   }
 
+  /* =========================
+     SCHOOL SELECTION
+  ========================= */
+
   if (view === 'schools') {
     return (
       <SchoolSelection
         schools={schools}
         onSelect={select}
-        onBack={() => navigate('login')}
+        onBack={() =>
+          navigate('login')
+        }
       />
     )
   }
 
-  const selected = school ?? schools[0]
+  const selected =
+    school ?? schools[0]
 
   if (!selected) {
     return null
   }
+
+  /* =========================
+     FACULTY DIRECTORY
+  ========================= */
 
   if (view === 'directory') {
     return (
       <FacultyDirectory
         school={selected}
         faculty={faculty}
-        onBack={() => navigate('dashboard')}
-        onAnnouncements={() => navigate('announcements')}
+        onBack={() =>
+          navigate('dashboard')
+        }
+        onAnnouncements={() =>
+          navigate('announcements')
+        }
         onViewProfile={showProfile}
       />
     )
   }
 
-  if (view === 'profile' && activeFaculty) {
+  /* =========================
+     FACULTY PROFILE
+  ========================= */
+
+  if (
+    view === 'profile' &&
+    activeFaculty
+  ) {
     return (
       <FacultyProfile
         faculty={activeFaculty}
         timetable={timetable}
-        onBack={() => navigate('directory')}
+        role={role}
+        onBack={() =>
+          navigate('directory')
+        }
       />
     )
   }
 
-  if (view === 'announcements') {
+  /* =========================
+     ANNOUNCEMENTS
+  ========================= */
+
+  if (
+    view === 'announcements'
+  ) {
     return (
       <Announcements
         school={selected}
-        announcements={announcements}
-        onBack={() => navigate('dashboard')}
+        announcements={
+          announcements
+        }
+        onBack={() =>
+          navigate('dashboard')
+        }
       />
     )
   }
+
+  /* =========================
+     TIMETABLE
+  ========================= */
 
   if (view === 'timetable') {
     return (
       <Timetable
         school={selected}
-        onBack={() => navigate('dashboard')}
+        onBack={() =>
+          navigate('dashboard')
+        }
       />
     )
   }
+
+  /* =========================
+     DASHBOARD
+  ========================= */
 
   return (
     <Dashboard
       school={selected}
       faculty={faculty}
-      announcements={announcements}
+      announcements={
+        announcements
+      }
       role={role}
-      onDirectory={() => navigate('directory')}
-      onAnnouncements={() => navigate('announcements')}
+      onDirectory={() =>
+        navigate('directory')
+      }
+      onAnnouncements={() =>
+        navigate('announcements')
+      }
       onChangeSchool={() => {
         setSchool(null)
         setActiveFaculty(null)
+
         navigate('schools')
       }}
       onLogout={() => {
@@ -223,77 +369,9 @@ export default function App() {
 
         setView('login')
       }}
-      onTimetable={() => navigate('timetable')}
+      onTimetable={() =>
+        navigate('timetable')
+      }
     />
   )
-}
-
-export type School = {
-  id: string
-  name: string
-}
-
-export type UserRole = 'admin' | 'faculty' | 'student'
-
-export type UserProfile = {
-  role: UserRole
-  facultyId?: string
-}
-
-export type Faculty = {
-  id: string
-  schoolId: string
-  name: string
-  phone: string
-  email: string
-  designation: string
-  roomNo: string
-  totalDutiesAllotted: number
-  dutiesDone: number
-  dutiesSwapped: number
-}
-
-export type TimetableEntry = {
-  id: string
-  facultyId: string
-  day: string
-  startTime: string
-  endTime: string
-  subject: string
-  class: string
-  roomNo?: string
-}
-
-export type AnnouncementCategory =
-  | 'Invigilation'
-  | 'Evaluation'
-  | 'Meeting'
-  | 'Circular'
-
-export type Priority = 'high' | 'med' | 'low'
-
-export type Announcement = {
-  id: string
-  schoolId: string
-  category: AnnouncementCategory
-  title: string
-  priority: Priority
-  date: string
-  time: string
-  venue: string
-  assignedFaculty: string[]
-  attachmentUrl?: string
-  attachmentName?: string
-}
-
-/* =========================
-   INVIGILATION DUTY
-========================= */
-
-export type ExamDuty = {
-  id: string
-  facultyId: string
-  date: string
-  session: 'FN' | 'AN'
-  exam: string
 }
